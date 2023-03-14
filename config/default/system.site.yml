@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: c839e6bb-45d4-4a81-82f2-bab0f548c375
+name: 'El gran sueno'
+mail: info@elgransueno.es
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /taxonomy/term/13
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

@@ -1,0 +1,23 @@
+uuid: 04d363d5-416b-4e16-8932-4fc04abb21d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.accommodation
+  module:
+    - text
+id: node.accommodation.body
+field_name: body
+entity_type: node
+bundle: accommodation
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

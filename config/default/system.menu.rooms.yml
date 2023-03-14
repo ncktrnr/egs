@@ -1,0 +1,8 @@
+uuid: b38b43a1-cffe-4647-be9c-aa56b5e8f240
+langcode: en
+status: true
+dependencies: {  }
+id: rooms
+label: Rooms
+description: ''
+locked: false

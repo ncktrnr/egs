@@ -1,0 +1,17 @@
+uuid: d7d167da-bcc1-46d3-9106-01b8fcff6af8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Campaign
+type: campaign
+description: 'Use <em>campaign</em> for content in the offers section'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

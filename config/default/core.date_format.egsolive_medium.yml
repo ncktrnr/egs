@@ -1,0 +1,13 @@
+uuid: ce73e024-a30c-42c0-af68-e880a92ca555
+langcode: en
+status: true
+dependencies:
+  enforced:
+    theme:
+      - egsolive
+_core:
+  default_config_hash: _uO5CNui2ZjH4AOKtTf84Q70nUq-1DmftwiWohjOY5Y
+id: egsolive_medium
+label: 'egsolive Medium'
+locked: false
+pattern: 'j  F,  Y'

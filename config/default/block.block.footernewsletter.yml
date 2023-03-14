@@ -1,0 +1,25 @@
+uuid: 003bd171-32b3-4579-a51d-886db3aa3713
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d386906b-2ed2-4fa3-9f31-6ef37b042dff'
+  module:
+    - block_content
+  theme:
+    - egsolive
+id: footernewsletter
+theme: egsolive
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:d386906b-2ed2-4fa3-9f31-6ef37b042dff'
+settings:
+  id: 'block_content:d386906b-2ed2-4fa3-9f31-6ef37b042dff'
+  label: 'Footer newsletter'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

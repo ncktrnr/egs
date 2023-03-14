@@ -1,0 +1,22 @@
+uuid: 03c1d8d2-60dd-444a-bf38-da1edf2bac85
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - egsolive
+_core:
+  default_config_hash: 5Nf5qyS-VUpN7E7g-34Uh8dC5bzRfY78emYnBqibQdA
+id: egsolive_help
+theme: egsolive
+region: content_above
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

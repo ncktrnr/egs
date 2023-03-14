@@ -1,0 +1,8 @@
+uuid: 7000f47a-fbab-4e52-b367-113d41f7a2f5
+langcode: en
+status: true
+dependencies: {  }
+id: accommodation_link_block
+label: 'Accommodation link block'
+revision: 0
+description: 'Use for rooms and apartments'

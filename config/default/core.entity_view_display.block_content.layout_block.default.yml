@@ -1,0 +1,85 @@
+uuid: 0a75b468-351a-45c8-afcd-d9ff1b3b7cff
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.layout_block
+    - field.field.block_content.layout_block.body
+    - field.field.block_content.layout_block.field_image
+    - field.field.block_content.layout_block.layout_builder__layout
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          ff107af6-6950-41ce-9b21-a8618866bb21:
+            uuid: ff107af6-6950-41ce-9b21-a8618866bb21
+            region: content
+            configuration:
+              id: 'field_block:block_content:layout_block:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a38d3e85-ecb9-4818-9efa-c0d84e907afd:
+            uuid: a38d3e85-ecb9-4818-9efa-c0d84e907afd
+            region: content
+            configuration:
+              id: 'field_block:block_content:layout_block:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.layout_block.default
+targetEntityType: block_content
+bundle: layout_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

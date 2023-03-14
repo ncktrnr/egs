@@ -1,0 +1,19 @@
+uuid: dfdc32c0-f190-48f4-ad0b-b893c2aa6e79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.accommodation
+id: node.accommodation.field_price
+field_name: field_price
+entity_type: node
+bundle: accommodation
+label: Price
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

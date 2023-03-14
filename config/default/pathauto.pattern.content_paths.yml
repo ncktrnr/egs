@@ -1,0 +1,14 @@
+uuid: 7d573a64-961f-4038-b346-53409e0b7b78
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_paths
+label: 'Content paths'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

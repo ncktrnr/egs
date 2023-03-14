@@ -1,0 +1,21 @@
+uuid: 614e5d16-c8a1-408c-8289-e9dcc3a93258
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_360
+    - node.type.accommodation
+  module:
+    - text
+id: node.accommodation.field_360
+field_name: field_360
+entity_type: node
+bundle: accommodation
+label: '360'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

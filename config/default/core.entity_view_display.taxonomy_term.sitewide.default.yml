@@ -1,0 +1,84 @@
+uuid: ae359f69-7389-47d9-9f26-3d1a7cb48cf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sitewide.field_image
+    - field.field.taxonomy_term.sitewide.layout_builder__layout
+    - taxonomy.vocabulary.sitewide
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          ee4461c9-72cd-4b5b-abe2-b07a25f89720:
+            uuid: ee4461c9-72cd-4b5b-abe2-b07a25f89720
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:sitewide:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0fbd1eb7-0cba-48d5-ab1e-0a3624549203:
+            uuid: 0fbd1eb7-0cba-48d5-ab1e-0a3624549203
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:sitewide:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.sitewide.default
+targetEntityType: taxonomy_term
+bundle: sitewide
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

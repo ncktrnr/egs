@@ -1,0 +1,21 @@
+uuid: ee2aeaf4-8aa9-44d8-8d11-b252647f20b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dropdown
+    - node.type.accommodation
+  module:
+    - text
+id: node.accommodation.field_dropdown
+field_name: field_dropdown
+entity_type: node
+bundle: accommodation
+label: Dropdown
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

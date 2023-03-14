@@ -1,0 +1,18 @@
+uuid: 036203e0-5446-4c22-bd2a-b2585d2c3a3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.accommodation_link_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.accommodation_link_block
+target_entity_type_id: block_content
+target_bundle: accommodation_link_block
+default_langcode: current_interface
+language_alterable: true

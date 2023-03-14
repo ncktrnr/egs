@@ -1,0 +1,17 @@
+uuid: b72aa2a9-0d74-4179-b0b2-c8166e306e5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Accommodation
+type: accommodation
+description: 'Use <em>accommodation</em> for rooms and apartments'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

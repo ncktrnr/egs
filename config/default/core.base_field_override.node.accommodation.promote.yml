@@ -1,0 +1,22 @@
+uuid: 9160eb95-1e10-45b9-ad7a-f5b04b27d419
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.accommodation
+id: node.accommodation.promote
+field_name: promote
+entity_type: node
+bundle: accommodation
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

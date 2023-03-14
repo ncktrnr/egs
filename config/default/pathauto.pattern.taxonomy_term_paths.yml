@@ -1,0 +1,14 @@
+uuid: 9976aac7-7df0-4239-9229-a20a844b3ae2
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term_paths
+label: 'Taxonomy term paths'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

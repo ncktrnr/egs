@@ -1,0 +1,19 @@
+uuid: 5c4890b7-34f1-4a04-8eaf-a320376adca7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_dropdown
+field_name: field_dropdown
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

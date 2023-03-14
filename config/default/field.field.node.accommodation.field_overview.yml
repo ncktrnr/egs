@@ -1,0 +1,21 @@
+uuid: a0d26d2a-7094-426f-9513-a67cc6703f49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_overview
+    - node.type.accommodation
+  module:
+    - text
+id: node.accommodation.field_overview
+field_name: field_overview
+entity_type: node
+bundle: accommodation
+label: Overview
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

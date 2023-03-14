@@ -1,0 +1,22 @@
+uuid: cc14150d-b951-4ccf-a9e0-1ebeffe6a0c2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - egsolive
+_core:
+  default_config_hash: JKABhIlFaSE3HnsI9f47vw2AlyvW4c_CkZw7P--7rs8
+id: egsolive_secondary_local_tasks
+theme: egsolive
+region: highlighted
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

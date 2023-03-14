@@ -1,0 +1,21 @@
+uuid: 8aba11a7-a9b9-4268-b891-7564efac1251
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_detail
+    - node.type.accommodation
+  module:
+    - text
+id: node.accommodation.field_detail
+field_name: field_detail
+entity_type: node
+bundle: accommodation
+label: Detail
+description: 'Single line, appears under image'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

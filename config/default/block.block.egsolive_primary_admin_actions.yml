@@ -1,0 +1,20 @@
+uuid: 91bc3811-db59-48da-a8fb-4e4df2a2f1d0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - egsolive
+_core:
+  default_config_hash: ZEvF9qso9iFnnpixhh0PPzBhVhHo0h5Cu2LRiFdfZ6Q
+id: egsolive_primary_admin_actions
+theme: egsolive
+region: highlighted
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

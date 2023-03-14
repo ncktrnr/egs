@@ -1,0 +1,55 @@
+uuid: 2902cc8b-0cb1-479c-8c86-27cb956c5d4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.sitewide.field_image
+    - field.field.taxonomy_term.sitewide.layout_builder__layout
+    - taxonomy.vocabulary.sitewide
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          cfb93c9e-c15d-4375-abd3-0437ac1c8280:
+            uuid: cfb93c9e-c15d-4375-abd3-0437ac1c8280
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:sitewide:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.sitewide.full
+targetEntityType: taxonomy_term
+bundle: sitewide
+mode: full
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_image: true
+  langcode: true
+  layout_builder__layout: true

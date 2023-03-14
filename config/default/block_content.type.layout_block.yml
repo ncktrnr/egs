@@ -1,0 +1,8 @@
+uuid: da26fd2e-5bb8-4ad8-bb29-1d26fb2293e5
+langcode: en
+status: true
+dependencies: {  }
+id: layout_block
+label: 'Layout block'
+revision: 0
+description: ''

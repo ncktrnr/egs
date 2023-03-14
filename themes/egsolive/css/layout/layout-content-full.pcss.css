@@ -1,0 +1,39 @@
+/**
+ * @file
+ * Grid system definition for the content full layout.
+ */
+
+@import '../base/variables.pcss.css';
+
+.layout--content-full,
+.layout--pass--content-full > * {
+  grid-column: 1 / 7;
+  width: 100%;
+
+  @media (--grid-md) {
+    grid-column: 2 / 14;
+  }
+
+  @media (--lg) {
+    grid-column: 1 / 15;
+  }
+}
+
+/*
+  If .layout--content-full is nested within itself, or an element that's inheriting the
+  layout--content-full styles from its parent region, go full width within its
+  parent .grid-full.
+*/
+.layout--pass--content-full > *,
+.layout--content-full {
+  & .layout--content-full,
+  & .layout--pass--content-full > * {
+    @media (--grid-md) {
+      grid-column: 1 / 13;
+    }
+
+    @media (--lg) {
+      grid-column: 1 / 11;
+    }
+  }
+}

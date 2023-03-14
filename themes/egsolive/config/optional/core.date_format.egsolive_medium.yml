@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    theme:
+      - egsolive
+id: egsolive_medium
+label: 'egsolive Medium'
+locked: false
+pattern: 'j  F,  Y'

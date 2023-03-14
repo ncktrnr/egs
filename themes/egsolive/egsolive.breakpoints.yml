@@ -1,0 +1,48 @@
+egsolive.sm:
+  label: Small
+  mediaQuery: 'all and (min-width: 500px)'
+  weight: 0
+  multipliers:
+    - 1x
+egsolive.md:
+  label: Medium
+  mediaQuery: 'all and (min-width: 700px)'
+  weight: 1
+  multipliers:
+    - 1x
+egsolive.lg:
+  label: Large
+  mediaQuery: 'all and (min-width: 1000px)'
+  weight: 2
+  multipliers:
+    - 1x
+egsolive.xl:
+  label: X-Large
+  mediaQuery: 'all and (min-width: 1300px)'
+  weight: 3
+  multipliers:
+    - 1x
+egsolive.nav-md:
+  label: Nav Medium
+  mediaQuery: 'all and (min-width: 500px)'
+  weight: 4
+  multipliers:
+    - 1x
+egsolive.nav:
+  label: Nav
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 5
+  multipliers:
+    - 1x
+egsolive.grid-md:
+  label: Grid Medium
+  mediaQuery: 'all and (min-width: 700px)'
+  weight: 6
+  multipliers:
+    - 1x
+egsolive.grid-max:
+  label: Grid Max
+  mediaQuery: 'all and (min-width: 1440px)'
+  weight: 7
+  multipliers:
+    - 1x

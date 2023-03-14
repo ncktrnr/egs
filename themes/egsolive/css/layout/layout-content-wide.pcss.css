@@ -1,0 +1,39 @@
+/**
+ * @file
+ * Grid system definition for the content wide layout.
+ */
+
+@import '../base/variables.pcss.css';
+
+.layout--content-wide,
+.layout--pass--content-wide > * {
+  grid-column: 1 / 7;
+  width: 100%;
+
+  @media (--grid-md) {
+    grid-column: 2 / 14;
+  }
+
+  @media (--lg) {
+    grid-column: 3 / 15;
+  }
+}
+
+/*
+  If .layout--content-wide is nested within itself, or an element that's inheriting the
+  layout--content-wide styles from its parent region, go full width within its
+  parent .grid-full.
+*/
+.layout--pass--content-wide > *,
+.layout--content-wide {
+  & .layout--content-wide,
+  & .layout--pass--content-wide > * {
+    @media (--grid-md) {
+      grid-column: 1 / 13;
+    }
+
+    @media (--lg) {
+      grid-column: 1 / 11;
+    }
+  }
+}

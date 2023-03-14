@@ -1,0 +1,34 @@
+# Drupal 8.x-1.3 2019-11-13
+-------------------------
+# Added support for following jQuery events:
+     - Click
+     - Hover
+     - Mouse Out
+     - Mouse Down
+     - Mouse Up
+     - Mouse Enter
+     - Mouse Leave
+     - Mouse Move
+# Refactored code to match the recent coding standards.
+# Fixed other minor issues.
+# Changed libraries path from "/libraries/animate.css" to "/libraries/animate_any"
+
+# Drupal 8.x-1.4 2020-05-01
+-------------------------
+# Added new Document onLoad event.
+# Make animate anu settings exportable configurations, users can easily deploy the configuration across multiple environment.
+# Added key "core_version_requirement" in info.yml to get module compatible with Drupal 9. Please check the changelog for more details [#3070687] https://www.drupal.org/node/3070687
+
+# Drupal 8.x-1.5 2022-05-12
+-------------------------
+# Module compatibility with the latest version of the animate any library (4.1.1)
+# Added new animations as per updated library - check the list here https://animate.style/
+# Changed libraries file name from "/libraries/animate_any/animate.css" to "/libraries/animate_any/animate.min.css"
+# Please download the latest library from here(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css) to this folder "/libraries/animate_any/" so that file path looks like "/libraries/animate_any/animate.min.css"
+
+# Drupal 9.x-1.0 2022-05-16
+-------------------------
+# Stable D9 release.
+# Fixed D9 compatibility error and warning.
+# Refactored code to match the recent coding standards.
+# Fixed other minor issues.

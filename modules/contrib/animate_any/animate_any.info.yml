@@ -1,0 +1,14 @@
+name: Animate Any
+description: Integrates CSS animate.css to apply animation to your site.
+core_version_requirement: ^9 || ^10
+configure: animate_any.animate_any_form
+package: Animation
+type: module
+# version: '9.x-1.0'
+# project: 'animate_any'
+# datestamp: 1588243519
+
+# Information added by Drupal.org packaging script on 2022-06-17
+version: '3.1.0'
+project: 'animate_any'
+datestamp: 1655449550

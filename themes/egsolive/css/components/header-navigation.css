@@ -291,3 +291,13 @@ body.is-always-mobile-nav .header-nav {
 .is-overlay-active .header-nav-overlay {
     display: block
 }
+
+#block-languageswitcher .links {
+  list-style-type: none;
+  display: flex
+}
+
+#block-languageswitcher .links .language-link {
+    margin-right: 1.125rem;
+    text-decoration: none;
+  }

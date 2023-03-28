@@ -3,7 +3,7 @@
  * Text Content.
  */
 
-@import "../base/variables.pcss.css";
+@import '../base/variables.pcss.css';
 
 .text-content,
 .cke_editable {
@@ -88,7 +88,7 @@
       position: absolute;
       inset-block-start: 0;
       inset-inline-start: 0;
-      content: "\201C";
+      content: '\201C';
       color: var(--color--blue-70);
       font-size: 54px;
     }
@@ -100,7 +100,7 @@
       width: var(--sp0-5);
       height: calc(100% - 30px);
       margin-inline-start: 4px;
-      content: "";
+      content: '';
       background: var(--color--gray-95);
     }
 
@@ -133,12 +133,10 @@
 
   & a {
     text-decoration: underline;
-    color: var(--color--white);
     box-shadow: none;
 
     &:hover {
       text-decoration: none;
-      color: var(--color--white);
       box-shadow: none;
     }
   }

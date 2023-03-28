@@ -185,3 +185,13 @@ body.is-always-mobile-nav {
     display: block;
   }
 }
+
+#block-languageswitcher .links {
+  list-style-type: none;
+  display: flex;
+
+  & .language-link {
+    margin-right: var(--sp);
+    text-decoration: none;
+  }
+}

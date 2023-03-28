@@ -11,9 +11,14 @@
  .
  */
 
+.social-bar {
+  padding-top: 2.25rem
+}
+
 @media (min-width: 75rem) {
 
 .social-bar {
+    padding-top: 0;
     flex-shrink: 0;
     width: 5.625rem;
     background-color: #fff
@@ -46,19 +51,19 @@
 
 [dir="ltr"] .social-bar__inner {
     padding-left: 0
-}
+  }
 
 [dir="rtl"] .social-bar__inner {
     padding-right: 0
-}
+  }
 
 [dir="ltr"] .social-bar__inner {
     padding-right: 0
-}
+  }
 
 [dir="rtl"] .social-bar__inner {
     padding-left: 0
-}
+  }
 
 .social-bar__inner {
     position: relative;
@@ -69,11 +74,11 @@
 
     [dir="ltr"] .social-bar__inner.is-fixed {
       left: 0
-}
+  }
 
     [dir="rtl"] .social-bar__inner.is-fixed {
       right: 0
-}
+  }
 
     .social-bar__inner.is-fixed {
       position: fixed;
@@ -96,11 +101,11 @@
 
       [dir="ltr"] .rotate > *:not(:first-child) {
         margin-right: 2.25rem
-}
+  }
 
       [dir="rtl"] .rotate > *:not(:first-child) {
         margin-left: 2.25rem
-}
+  }
     }
 
 @media (min-width: 75rem) {
@@ -108,12 +113,12 @@
 [dir="ltr"] .rotate .contextual {
       left: 100%;
       right: auto
-}
+  }
 
 [dir="rtl"] .rotate .contextual {
       right: 100%;
       left: auto
-}
+  }
 
 .rotate .contextual {
       transform: rotate(90deg); /* LTR */
@@ -122,22 +127,22 @@
 
       [dir="ltr"] .rotate .contextual .trigger {
         float: left
-}
+  }
 
       [dir="rtl"] .rotate .contextual .trigger {
         float: right
-}
+  }
     }
 
 @media (min-width: 75rem) {
 
 [dir="ltr"] .rotate {
     left: 50%
-}
+  }
 
 [dir="rtl"] .rotate {
     right: 50%
-}
+  }
 
 .rotate {
     position: absolute;
@@ -151,6 +156,25 @@
     @supports ((width: -webkit-max-content) or (width: max-content)) {
 
 .rotate {
+      width: -webkit-max-content;
+      width: max-content
+}
+    }
+  }
+
+.rotate .norotate {
+  margin-left: 0.3125rem
+}
+
+@media (min-width: 75rem) {
+
+.rotate .norotate {
+    transform: rotate(90deg) translateX(25%) /* LTR */
+}
+
+    @supports ((width: -webkit-max-content) or (width: max-content)) {
+
+.rotate .norotate {
       width: -webkit-max-content;
       width: max-content
 }

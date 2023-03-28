@@ -7,7 +7,6 @@
 
 .site-footer {
   position: relative; /* stack above left social bar */
-  color: var(--color--gray-50);
   background: var(--color--aths);
   background-image: url('../../images/footer-background.jpg');
   background-position: top left; /* LTR */
@@ -33,6 +32,7 @@
     }
   }
 }
+
 /*
 @media (--nav) {
   body:not(.is-always-mobile-nav) .site-footer {

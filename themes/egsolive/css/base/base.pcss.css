@@ -12,7 +12,7 @@
 }
 
 html {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
@@ -121,12 +121,17 @@ h5,
 h6 {
   margin-block: var(--sp);
   color: var(--color--gray-0);
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-weight: bold;
 
   @media (--md) {
     margin-block: var(--sp2);
   }
+}
+
+.field--label-hidden h2 {
+  margin-top: var(--sp);
+  margin-bottom: 0;
 }
 
 ul {

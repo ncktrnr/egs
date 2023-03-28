@@ -3,9 +3,10 @@
  * Buttons.
  */
 
-@import "../base/variables.pcss.css";
+@import '../base/variables.pcss.css';
 
-.button {
+.button,
+.banner_content .field--name-field-button a {
   display: inline-block;
   height: var(--sp3);
   margin-block: var(--sp1);
@@ -16,8 +17,8 @@
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  color: var(--color--blue-20);
-  border: solid 2px var(--color--blue-20);
+  color: var(--color--dark);
+  border: solid 2px var(--color--white);
   border-radius: var(--border-radius);
   background-color: var(--color--white);
   font-family: var(--font-sans);
@@ -29,20 +30,20 @@
   &:hover,
   &:focus {
     text-decoration: none;
-    color: var(--color--blue-10);
-    border: solid 2px var(--color--blue-10);
+    color: var(--color--white);
+    border: solid 2px var(--color--aths);
     background: none;
     font-weight: 700;
   }
 
   &:focus {
-    outline: 2px solid var(--color--blue-70);
+    outline: 2px solid var(--color--background);
     outline-offset: 2px;
   }
 
   &:active {
-    color: var(--color--blue-20);
-    border-color: var(--color--blue-20);
+    color: var(--color--aths);
+    border-color: var(--color--aths);
   }
 
   &:disabled,
@@ -114,17 +115,70 @@
     width: 0.5em;
     height: 0.5em;
     margin-inline-end: 0.5em;
-    content: "";
+    content: '';
     transform: rotate(45deg); /* LTR */
     border-block-end: solid 2px currentColor;
     border-inline-start: solid 2px currentColor;
   }
 }
 
-[dir="rtl"] .button--icon-back:before {
+[dir='rtl'] .button--icon-back:before {
   transform: rotate(-45deg);
 }
 
 .shepherd-cancel-icon {
   font-size: 1.5em;
+}
+
+.link_block__content .field--name-field-button a {
+  display: inline-block;
+  height: var(--sp3);
+  margin-block: var(--sp1);
+  margin-inline-start: 0;
+  margin-inline-end: var(--sp1);
+  padding-block: calc((var(--sp3) - var(--line-height-s)) / 2);
+  padding-inline: var(--sp1-5);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color--dark);
+  border: solid 2px var(--color--brown);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  box-shadow: 4px 4px 0 var(--color--aths);
+  transform: translate(-4px, -4px);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--color--brown);
+    border: solid 2px var(--color--aths);
+    background: none;
+    font-weight: 700;
+    box-shadow: 0 0px var(--color--aths);
+    transition: 0.25s;
+  }
+
+  &:focus {
+    outline: 2px solid var(--color--brown);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: var(--color--aths);
+    border-color: var(--color--aths);
+  }
+
+  @supports (display: inline-flex) {
+    display: inline-flex;
+    align-items: center;
+
+    /* Top padding accounts for font not being vertically centered within line-height. */
+    padding-block: 1px 0;
+    padding-inline: var(--sp1-5);
+    line-height: var(--line-height-s);
+  }
 }

@@ -114,7 +114,7 @@
     transform: scaleX(0);
     transform-origin: left;
     /* Intentionally not using CSS logical properties. */
-    border-top: solid 5px var(--color--blue-50);
+    border-top: solid 5px var(--color--green);
   }
 
   &:after {

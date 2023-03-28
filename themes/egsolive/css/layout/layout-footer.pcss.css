@@ -14,19 +14,33 @@
   z-index: 1;
 }
 
+.region--footer-top {
+  padding: var(--sp);
+  @media (--nav) {
+    padding: 0 var(--container-padding) 0 0;
+  }
+}
+
+.footer-row {
+  @media (--nav) {
+    width: calc(100% - var(--content-left));
+    margin-left: auto;
+    padding: 0 var(--container-padding) 0 0;
+  }
+}
+
 .site-footer__inner {
-  padding-block: var(--sp2);
-  border: 3px solid var(--color--white);
+  padding-top: var(--sp2);
 
   @media (--nav) {
-    padding-block: var(--sp4) calc(13 * var(--sp));
+    /* padding-block: var(--sp4) calc(13 * var(--sp)); */
   }
 }
 
 .region--footer_top__inner,
 .region--footer_bottom__inner {
   & > * {
-    margin-block-end: var(--sp2);
+    margin: var(--sp2);
 
     @media (--md) {
       flex: 1;
@@ -41,5 +55,18 @@
   @media (--md) {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.region--footer_top__inner {
+  border: 3px solid var(--color--white);
+  background-image: url('../../images/house-drawing.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: calc(15 * var(--sp));
+
+  @media (--nav) {
+    width: calc(100% - var(--content-left));
+    margin-left: auto;
   }
 }

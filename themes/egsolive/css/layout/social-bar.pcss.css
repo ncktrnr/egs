@@ -7,7 +7,10 @@
 @import '../base/variables.pcss.css';
 
 .social-bar {
+  padding-top: var(--sp2);
+
   @media (--nav) {
+    padding-top: 0;
     flex-shrink: 0;
     width: var(--content-left);
     background-color: var(--color--white);
@@ -71,6 +74,18 @@
     width: 100vh;
     transform: rotate(-90deg) translateX(-100%); /* LTR */
     transform-origin: left; /* LTR */
+
+    @supports (width: max-content) {
+      width: max-content;
+    }
+  }
+}
+
+.rotate .norotate {
+  margin-left: 5px;
+
+  @media (--nav) {
+    transform: rotate(90deg) translateX(25%); /* LTR */
 
     @supports (width: max-content) {
       width: max-content;

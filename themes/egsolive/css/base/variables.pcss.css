@@ -168,8 +168,10 @@
   --color--red: #e33f1e; /* Red */
   --color--gold: #fdca40; /* Gold */
   --color--dark: #591903; /* Baragon brown */
-  --color--dark: #3c3e42; /* Dark engine */
+  --color--dark-engine: #3c3e42; /* Dark engine */
+  --color--green-30: #3c4315; /* Verdun green dark */
   --color--green: #50591c; /* Verdun green */
+  --color--green-70: #78804a; /* Verdun green bright */
   --color--brown: #5f3400; /* Baker’s brown */
   --color--aths: #d6cfb2; /* Aths special */
   --color--background: #f8f7f3; /* light background */

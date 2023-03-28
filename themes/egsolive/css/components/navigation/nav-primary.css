@@ -194,7 +194,7 @@
     transform: scaleX(0);
     transform-origin: left;
     /* Intentionally not using CSS logical properties. */
-    border-top: solid 5px #2494db;
+    border-top: solid 5px #50591c;
   }
 
 .primary-nav__menu-link:hover .primary-nav__menu-link-inner:after {

@@ -2,3 +2,13 @@ name: lando-egs
 recipe: drupal9
 config:
   webroot: .
+services:
+  adminer:
+    type: compose
+    services:
+      image: dehy/adminer
+      command: "/bin/s6-svscan /etc/services.d"
+    portforward: true
+proxy:
+  adminer:
+    - adminer.lando-egs.lndo.site

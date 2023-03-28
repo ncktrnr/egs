@@ -12,7 +12,6 @@
 
 .site-footer {
   position: relative; /* stack above left social bar */
-  color: #9ea0a1;
   background: #d6cfb2;
   background-image: url('../../images/footer-background.jpg');
   background-position: top left /* LTR */

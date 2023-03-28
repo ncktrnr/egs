@@ -41,21 +41,25 @@
   ]
 %}
 
-<div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes.addClass('block__title') }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    <div{{ content_attributes.addClass('link_block__content') }}>
-      <div class="column">
-        {{ content.body }}
-        {{ content.field_button }}
-      </div>
-      <div class="column">  
-        {{ content.field_image }}
-      </div>  
+
+    <div{{ attributes.addClass(classes) }}>
+      {{ title_prefix }}
+      {% if label %}
+        <h2{{ title_attributes.addClass('block__title') }}>{{ label }}</h2>
+      {% endif %}
+      {{ title_suffix }}
+      {% block content %}
+        <div{{ content_attributes.addClass('link_block__content row') }}>
+          <div class="column">  
+            {{ content.field_image }}
+          </div>     
+          <div class="column">
+            {{ content.body }}
+            {{ content.field_button }}
+          </div>
+        </div>
+      {% endblock %}
     </div>
-  {% endblock %}
-</div>
+
+
+

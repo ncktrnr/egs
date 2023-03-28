@@ -3,7 +3,7 @@
  * Block styling.
  */
 
-@import "../base/variables.pcss.css";
+@import '../base/variables.pcss.css';
 
 .block__title {
   margin-block: 0 var(--sp);
@@ -16,3 +16,5 @@
 .site-footer .block__title {
   color: var(--color--gray-50);
 }
+
+/* block--bundle--link-block */

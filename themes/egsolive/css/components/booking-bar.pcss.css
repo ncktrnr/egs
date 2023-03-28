@@ -1,0 +1,68 @@
+/**
+ * @file
+ * Main Hero.
+ */
+
+@import '../base/variables.pcss.css';
+
+div#block-homehero {
+  margin-bottom: 0;
+}
+
+#block-bookingbar {
+  background-color: var(--color--dark);
+  box-shadow: 0 0.6875rem 3.125rem 0 rgba(0, 0, 0, 0.1);
+
+  @media (--grid-md) {
+    /* 700px */
+  }
+
+  @media (--lg) {
+    max-width: 90%;
+    margin: auto;
+    margin-top: -5rem;
+  }
+
+  @media (--xl) {
+    margin-top: -4.5rem;
+  }
+}
+
+#tbbform {
+  & ol {
+    list-style-type: none;
+  }
+  & fieldset {
+    border: none;
+  }
+  & p {
+    margin: unset;
+  }
+}
+
+.select_check_in,
+.select_check_out,
+.select_occupants {
+  margin-block-end: var(--sp);
+
+  & label {
+    color: var(--color--white);
+  }
+}
+
+#tbbform-container {
+  @media (--sm) {
+  }
+
+  @media (--grid-md) {
+    & #tbbform ol {
+      align-items: end;
+      display: flex;
+      justify-content: space-around;
+      padding-inline-start: 0;
+    }
+  }
+
+  @media (--lg) {
+  }
+}

@@ -4,6 +4,7 @@ global-styling:
     base:
       css/base/fonts.css: {}
       css/base/base.css: {}
+      css/base/custom.css: {}
       css/base/utility.css: {}
     layout:
       css/layout/layout.css: {}
@@ -24,6 +25,7 @@ global-styling:
       css/components/breadcrumb.css: {}
       css/components/embedded-media.css: {}
       css/components/footer.css: {}
+      css/components/booking-bar.css: {}
       css/components/button.css: {}
       css/components/container-inline.module.css: {}
       css/components/fieldset.css: {}

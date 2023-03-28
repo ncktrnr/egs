@@ -147,7 +147,7 @@
 .text-content blockquote:before, .cke_editable blockquote:before {
       position: absolute;
       top: 0;
-      content: "\201C";
+      content: '\201C';
       color: #53b0eb;
       font-size: 3.375rem;
     }
@@ -173,7 +173,7 @@
       bottom: 0;
       width: 0.5625rem;
       height: calc(100% - 1.875rem);
-      content: "";
+      content: '';
       background: #f7f9fa;
     }
 
@@ -216,13 +216,11 @@
 
 .site-footer .text-content a {
     text-decoration: underline;
-    color: #fff;
     box-shadow: none
   }
 
 .site-footer .text-content a:hover {
       text-decoration: none;
-      color: #fff;
       box-shadow: none;
     }
 

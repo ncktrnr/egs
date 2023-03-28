@@ -17,7 +17,7 @@
 }
 
 html {
-  font-family: 'metropolis', sans-serif;
+  font-family: 'Lora', 'georgia', serif;
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
@@ -136,7 +136,7 @@ h6 {
   margin-top: 1.125rem;
   margin-bottom: 1.125rem;
   color: #0d1214;
-  font-family: 'metropolis', sans-serif;
+  font-family: 'Lora', 'georgia', serif;
   font-weight: bold
 }
 
@@ -152,6 +152,11 @@ h6 {
     margin-bottom: 2.25rem
 }
   }
+
+.field--label-hidden h2 {
+  margin-top: 1.125rem;
+  margin-bottom: 0;
+}
 
 [dir="ltr"] ul {
   margin-left: 1.5em;

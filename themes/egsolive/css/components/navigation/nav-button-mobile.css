@@ -62,7 +62,7 @@
 }
 
 .mobile-nav-button:focus {
-    outline: solid 2px #0d77b5;
+    outline: solid 2px #3c4315;
   }
 
 .mobile-nav-button:active {
@@ -124,7 +124,7 @@
   display: block;
   width: 2.25rem;
   height: 0;
-  border-top: solid 3px #2494db
+  border-top: solid 3px #50591c
 }
 
 [dir="ltr"] .mobile-nav-button__icon:before {
@@ -140,9 +140,9 @@
     top: -0.6875rem;
     width: 100%;
     height: 0;
-    content: "";
+    content: '';
     transition: all 0.2s;
-    border-top: solid 3px #2494db;
+    border-top: solid 3px #50591c;
   }
 
 [dir="ltr"] .mobile-nav-button__icon:after {
@@ -159,21 +159,21 @@
     bottom: -0.5rem;
     width: 100%;
     height: 0;
-    content: "";
+    content: '';
     transition: all 0.2s;
-    border-top: solid 3px #2494db;
+    border-top: solid 3px #50591c;
   }
 
-.mobile-nav-button[aria-expanded="true"] .mobile-nav-button__icon {
+.mobile-nav-button[aria-expanded='true'] .mobile-nav-button__icon {
   border-top: 0
 }
 
-.mobile-nav-button[aria-expanded="true"] .mobile-nav-button__icon:before {
+.mobile-nav-button[aria-expanded='true'] .mobile-nav-button__icon:before {
     top: 0;
     transform: rotate(-45deg);
   }
 
-.mobile-nav-button[aria-expanded="true"] .mobile-nav-button__icon:after {
+.mobile-nav-button[aria-expanded='true'] .mobile-nav-button__icon:after {
     top: 0;
     transform: rotate(45deg);
   }

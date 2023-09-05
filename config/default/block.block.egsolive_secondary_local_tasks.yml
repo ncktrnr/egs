@@ -1,5 +1,5 @@
 uuid: cc14150d-b951-4ccf-a9e0-1ebeffe6a0c2
-langcode: en
+langcode: es
 status: true
 dependencies:
   theme:
@@ -9,12 +9,12 @@ _core:
 id: egsolive_secondary_local_tasks
 theme: egsolive
 region: highlighted
-weight: -3
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Secondary tabs'
+  label: 'Solapas secundarias'
   label_display: '0'
   provider: core
   primary: false

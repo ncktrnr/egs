@@ -1,0 +1,21 @@
+uuid: ba054c85-3944-4069-b910-80242b9745dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tagline
+    - paragraphs.paragraphs_type.recipe_card
+  module:
+    - text
+id: paragraph.recipe_card.field_tagline
+field_name: field_tagline
+entity_type: paragraph
+bundle: recipe_card
+label: Tagline
+description: 'Top line, e.g. a classic dish in under 30 mins. Serves 2.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

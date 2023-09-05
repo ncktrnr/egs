@@ -1,5 +1,5 @@
 uuid: 37f4859b-2a91-4240-bd2c-170ce198b5c9
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -14,13 +14,13 @@ dependencies:
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
-label: 'Anonymous user'
+label: 'Usuario anónimo'
 weight: 0
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'display eu cookie compliance popup'
   - 'search content'
   - 'use text format restricted_html'
-  - 'display eu cookie compliance popup'

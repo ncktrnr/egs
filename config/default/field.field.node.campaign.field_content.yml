@@ -1,0 +1,39 @@
+uuid: 037468fe-9f7d-4ea5-8b60-1a47100a4797
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.campaign
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.campaign.field_content
+field_name: field_content
+entity_type: node
+bundle: campaign
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image: image
+      text: text
+    negate: 0
+    target_bundles_drag_drop:
+      image:
+        weight: 4
+        enabled: true
+      recipe_card:
+        weight: 5
+        enabled: false
+      text:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

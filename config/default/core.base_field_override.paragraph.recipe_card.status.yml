@@ -1,0 +1,22 @@
+uuid: f26d98b4-97fb-4bd9-9d6b-2ee2128b2130
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.recipe_card
+id: paragraph.recipe_card.status
+field_name: status
+entity_type: paragraph
+bundle: recipe_card
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

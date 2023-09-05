@@ -1,0 +1,30 @@
+uuid: 83cf7afd-c90d-4a56-9edb-53af7787791b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a53a9560-4264-4f38-9c63-2bfa7dd5ba8c'
+  module:
+    - block_content
+    - system
+  theme:
+    - egsolive
+id: logosblock
+theme: egsolive
+region: content_below
+weight: 0
+provider: null
+plugin: 'block_content:a53a9560-4264-4f38-9c63-2bfa7dd5ba8c'
+settings:
+  id: 'block_content:a53a9560-4264-4f38-9c63-2bfa7dd5ba8c'
+  label: 'Logos block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

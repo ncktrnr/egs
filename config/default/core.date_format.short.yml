@@ -1,10 +1,10 @@
 uuid: 198e2852-7ddd-46f4-8254-657e9c11928f
-langcode: en
+langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: AlzeyytA8InBgxIG9H2UDJYs3CG98Zj6yRsDKmlbZwA
 id: short
-label: 'Default short date'
+label: 'Fecha corta por defecto'
 locked: false
-pattern: 'm/d/Y - H:i'
+pattern: 'd/m/Y - H:i'

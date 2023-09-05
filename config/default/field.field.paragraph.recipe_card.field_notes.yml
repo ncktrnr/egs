@@ -1,0 +1,21 @@
+uuid: 846d6017-c5d2-4279-b63c-5c5efdb77168
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_notes
+    - paragraphs.paragraphs_type.recipe_card
+  module:
+    - text
+id: paragraph.recipe_card.field_notes
+field_name: field_notes
+entity_type: paragraph
+bundle: recipe_card
+label: Notes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,5 +1,5 @@
 uuid: 76eb6cdf-e798-442a-b1ac-e17b9cf74498
-langcode: en
+langcode: es
 status: false
 dependencies:
   module:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: K7eNlfU7NEUajz01wItywZklr2oaPgL6s1_97fmDXLA
 id: comment.full
-label: 'Full comment'
+label: 'Comentario completo'
 targetEntityType: comment
 cache: true

@@ -1,0 +1,30 @@
+uuid: 71c731ed-e98f-4092-9c5e-705a40971022
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:57572b88-c46c-408a-96fc-aa8c437cbb55'
+  module:
+    - block_content
+    - system
+  theme:
+    - egsolive
+id: experiencessummary
+theme: egsolive
+region: content_above
+weight: -8
+provider: null
+plugin: 'block_content:57572b88-c46c-408a-96fc-aa8c437cbb55'
+settings:
+  id: 'block_content:57572b88-c46c-408a-96fc-aa8c437cbb55'
+  label: 'Experiences summary'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /taxonomy/term/5

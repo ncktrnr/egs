@@ -1,5 +1,5 @@
 uuid: 7cb34388-06f3-4f4e-a9d6-16d80940a91e
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -21,7 +21,7 @@ dependencies:
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
-label: 'Content editor'
+label: 'Editor de contenido'
 weight: 2
 is_admin: false
 permissions:
@@ -33,24 +33,24 @@ permissions:
   - 'access tour'
   - 'administer url aliases'
   - 'create article content'
+  - 'create content translations'
   - 'create page content'
   - 'create terms in tags'
   - 'create url aliases'
   - 'delete article revisions'
+  - 'delete content translations'
   - 'delete own article content'
   - 'delete own page content'
   - 'delete page revisions'
+  - 'display eu cookie compliance popup'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'translate any entity'
+  - 'translate editable entities'
+  - 'update content translations'
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view the administration theme'
-  - 'display eu cookie compliance popup'
-  - 'create content translations'
-  - 'delete content translations'
-  - 'update content translations'
-  - 'translate editable entities'
-  - 'translate any entity'

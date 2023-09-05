@@ -5,8 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.recipe.body
+    - field.field.node.recipe.field_content
+    - field.field.node.recipe.field_image
     - node.type.recipe
+    - responsive_image.styles.narrow
   module:
+    - responsive_image
     - text
     - user
 id: node.recipe.teaser
@@ -20,12 +24,22 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 2
+    region: content
+  field_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: narrow
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  field_content: true
   langcode: true

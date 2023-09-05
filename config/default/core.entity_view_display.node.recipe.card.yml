@@ -1,0 +1,50 @@
+uuid: 443a20e7-1be1-49b0-826e-e9bcdb4d6d3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.recipe.body
+    - field.field.node.recipe.field_content
+    - field.field.node.recipe.field_image
+    - node.type.recipe
+    - responsive_image.styles.narrow
+  module:
+    - layout_builder
+    - responsive_image
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.recipe.card
+targetEntityType: node
+bundle: recipe
+mode: card
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 140
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: narrow
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_content: true
+  langcode: true

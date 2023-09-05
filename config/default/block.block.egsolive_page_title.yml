@@ -1,5 +1,5 @@
 uuid: 2c0ded22-8621-4506-8f10-1a7343bf3a18
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -11,16 +11,16 @@ _core:
 id: egsolive_page_title
 theme: egsolive
 region: content_above
-weight: -5
+weight: -10
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: 'Título de la página'
   label_display: '0'
   provider: core
 visibility:
   request_path:
     id: request_path
     negate: true
-    pages: '<front>'
+    pages: "<front>\r\n/taxonomy/term/1"

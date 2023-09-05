@@ -6,6 +6,9 @@ dependencies:
     - block_content.type.accommodation_link_block
     - field.field.block_content.accommodation_link_block.body
     - field.field.block_content.accommodation_link_block.field_button
+    - field.field.block_content.accommodation_link_block.field_detail
+    - field.field.block_content.accommodation_link_block.field_heading
+    - field.field.block_content.accommodation_link_block.field_icon
     - field.field.block_content.accommodation_link_block.field_image
   module:
     - image
@@ -21,7 +24,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_button:
     type: link
@@ -33,7 +36,30 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 5
+    region: content
+  field_detail:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 2
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_icon:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_image:
     type: image
@@ -44,7 +70,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
 hidden:
   langcode: true

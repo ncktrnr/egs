@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Recipe
 type: recipe
-description: ''
+description: 'Use <em>recipe</em> to add a recipe that will appear on the dining page'
 help: ''
 new_revision: true
 preview_mode: 1

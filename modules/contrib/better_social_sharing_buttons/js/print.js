@@ -11,7 +11,7 @@
    */
   Drupal.behaviors.printLink = {
     attach: function (context) {
-      const printLink = context.querySelector('#printlink');
+      const printLink = context.querySelector('.bssb-printlink');
       printLink.addEventListener('click', function (e) {
         const links = document.getElementsByTagName('link');
         Array.from(links).forEach(function (link) {

@@ -1,0 +1,107 @@
+uuid: c58c0c8a-d464-40a2-827a-f506437f32d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.recipe_card.field_directions
+    - field.field.paragraph.recipe_card.field_ingredients
+    - field.field.paragraph.recipe_card.field_notes
+    - field.field.paragraph.recipe_card.field_tagline
+    - paragraphs.paragraphs_type.recipe_card
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_recipe_card:
+      children:
+        - group_ingredients
+        - group_directions
+        - group_notes
+      label: 'recipe card'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_ingredients:
+      children:
+        - field_ingredients
+      label: Ingredientes
+      parent_name: group_recipe_card
+      region: content
+      weight: 1
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+    group_directions:
+      children:
+        - field_directions
+      label: Direcciones
+      parent_name: group_recipe_card
+      region: content
+      weight: 2
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+    group_notes:
+      children:
+        - field_notes
+      label: Notas
+      parent_name: group_recipe_card
+      region: content
+      weight: 3
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+id: paragraph.recipe_card.default
+targetEntityType: paragraph
+bundle: recipe_card
+mode: default
+content:
+  field_directions:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_ingredients:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_notes:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_tagline:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,10 +1,10 @@
 uuid: 99413b85-aed9-48d6-93bc-9e0fde0f0f51
-langcode: en
+langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: NIKBt6kw_uPhNI0qtR2DnRf7mSOgAQdx7Q94SKMjXbQ
-name: 'Plain text'
+name: 'Texto sin formato'
 format: plain_text
 weight: 10
 filters:

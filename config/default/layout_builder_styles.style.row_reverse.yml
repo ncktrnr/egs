@@ -1,0 +1,14 @@
+uuid: 3b13daa5-d564-4c61-bc5c-0dd972ba9388
+langcode: en
+status: true
+dependencies: {  }
+id: row_reverse
+label: 'row reverse'
+classes: row-reverse
+type: component
+group: default
+block_restrictions:
+  - 'inline_block:accommodation_link_block'
+  - 'inline_block:link_block'
+layout_restrictions: {  }
+weight: 0

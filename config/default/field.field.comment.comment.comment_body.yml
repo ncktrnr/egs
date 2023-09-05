@@ -1,5 +1,5 @@
 uuid: 9fcdbb90-afe1-4bcd-b115-9eb8a7b2fb0e
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: comment.comment.comment_body
 field_name: comment_body
 entity_type: comment
 bundle: comment
-label: Comment
+label: Comentario
 description: ''
 required: true
 translatable: false

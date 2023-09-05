@@ -5,12 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.article.body
-    - field.field.node.article.comment
+    - field.field.node.article.field_categories
+    - field.field.node.article.field_content
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.wide
     - node.type.article
   module:
+    - entity_reference_revisions
     - image
     - layout_builder
     - text
@@ -33,6 +35,15 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_image:
     type: image
     label: hidden
@@ -50,13 +61,13 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
 hidden:
-  comment: true
+  field_categories: true
   langcode: true

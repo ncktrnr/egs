@@ -17,12 +17,13 @@
     "require": {
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.4",
         "drupal/animate_any": "^3.1",
         "drupal/backup_migrate": "^5.0",
         "drupal/better_social_sharing_buttons": "^4.0",
-        "drupal/core-composer-scaffold": "^9.4",
-        "drupal/core-project-message": "^9.4",
-        "drupal/core-recommended": "^9.4",
+        "drupal/core-composer-scaffold": "^10.0",
+        "drupal/core-project-message": "^10.0",
+        "drupal/core-recommended": "^10.0",
         "drupal/core-vendor-hardening": "^9.4",
         "drupal/eu_cookie_compliance": "^1.24",
         "drupal/expand_collapse_formatter": "^2.0",
@@ -54,7 +55,8 @@
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "cweagans/composer-patches": true
+            "cweagans/composer-patches": true,
+            "phpstan/extension-installer": true
         },
         "sort-packages": true
     },
@@ -117,5 +119,8 @@
         "patches": {
 
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "^10.0"
     }
 }

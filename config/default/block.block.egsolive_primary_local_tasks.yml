@@ -1,5 +1,5 @@
 uuid: f56ff025-0d7f-45e2-8839-d13027056c85
-langcode: es
+langcode: en
 status: true
 dependencies:
   theme:
@@ -9,12 +9,12 @@ _core:
 id: egsolive_primary_local_tasks
 theme: egsolive
 region: highlighted
-weight: -9
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Solapas principales'
+  label: 'Primary tabs'
   label_display: '0'
   provider: core
   primary: true

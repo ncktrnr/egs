@@ -7,7 +7,6 @@ dependencies:
     - node.type.accommodation
     - responsive_image.styles.wide
   module:
-    - flexslider_views
     - node
     - responsive_image
     - user
@@ -195,13 +194,11 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: flexslider
+        type: default
         options:
           grouping: {  }
-          flexslider: null
-          optionset: default
-          captionfield: ''
-          id: ''
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
       query:

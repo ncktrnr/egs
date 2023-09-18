@@ -25,7 +25,7 @@ content:
     region: content
   field_button:
     type: link
-    label: hidden
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -37,7 +37,7 @@ content:
     region: content
   field_image:
     type: image
-    label: hidden
+    label: above
     settings:
       image_link: ''
       image_style: ''

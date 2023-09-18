@@ -1,5 +1,5 @@
 uuid: 7ee768ca-595a-442e-b461-40c042093576
-langcode: es
+langcode: en
 status: true
 dependencies:
   module:
@@ -11,12 +11,12 @@ _core:
 id: egsolive_messages
 theme: egsolive
 region: highlighted
-weight: -10
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Mensajes de estado'
+  label: 'Status messages'
   label_display: '0'
   provider: system
 visibility: {  }

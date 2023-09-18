@@ -1,12 +1,11 @@
 uuid: b2c8f221-3478-4090-84b2-d1e5ddfe6e3a
-langcode: es
+langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.rss
     - field.field.node.article.body
-    - field.field.node.article.field_categories
-    - field.field.node.article.field_content
+    - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - node.type.article
@@ -24,8 +23,7 @@ content:
     region: content
 hidden:
   body: true
-  field_categories: true
-  field_content: true
+  comment: true
   field_image: true
   field_tags: true
   langcode: true

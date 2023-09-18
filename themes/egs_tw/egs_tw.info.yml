@@ -1,0 +1,23 @@
+name: egs_tw
+type: theme
+"base theme": stable9
+starterkit: true
+version: VERSION
+libraries:
+  - egs_tw/global-styling
+  - egs_tw/base
+  - egs_tw/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - egs_tw/user
+  core/drupal.dropbutton:
+    - egs_tw/dropbutton
+  core/drupal.dialog:
+    - egs_tw/dialog
+  file/drupal.file:
+    - egs_tw/file
+  core/drupal.progress:
+    - egs_tw/progress
+core_version_requirement: ^10
+generator: "starterkit_theme:10.1.3"

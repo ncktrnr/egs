@@ -1,5 +1,5 @@
 uuid: babf07e7-d6e1-49fb-923e-97e494f524f9
-langcode: es
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: Kcx1PIw-KgGbTo5_tOkbI6TWJiP_0Sr7t5T9SuMV2hA
 id: locale
-label: Traducción
+label: Translation
 module: locale
 routes:
   -
@@ -16,54 +16,54 @@ tips:
   locale-overview:
     id: locale-overview
     plugin: text
-    label: 'Traducción de la interfaz de usuario'
+    label: 'User interface translation'
     weight: 1
-    body: 'Esta página le permite traducir la interfaz de usuario o modificar traducciones existentes. Si ha instalado su sitio web inicialmente en inglés, primero debe añadir otro idioma en la <a href="[site:url]admin/config/regional/language">página de Idiomas</a>, para poder usar esta página.'
+    body: 'This page allows you to translate the user interface or modify existing translations. If you have installed your site initially in English, you must first add another language on the <a href="[site:url]admin/config/regional/language">Languages page</a>, in order to use this page.'
   locale-language:
     id: locale-language
     plugin: text
     label: 'Translation language'
     weight: 2
     selector: '#edit-langcode'
-    body: 'Seleccione el idioma que quiere traducir.'
+    body: 'Choose the language you want to translate.'
   locale-search:
     id: locale-search
     plugin: text
-    label: Buscar
+    label: Search
     weight: 3
     selector: '#edit-string'
-    body: 'Escriba la palabra o frase específica que desea traducir, también puede escribir sólo una parte de una palabra.'
+    body: 'Enter the specific word or sentence you want to translate, you can also write just a part of a word.'
   locale-filter:
     id: locale-filter
     plugin: text
-    label: 'Filtrar la búsqueda'
+    label: 'Filter the search'
     weight: 4
     selector: '#edit-translation'
-    body: 'Puedes buscar cadenas no traducidas si quieres traducir algo que aún no está traducido. Si desea modificar una traducción existente, es posible que sólo desee buscar cadenas traducidas.'
+    body: 'You can search for untranslated strings if you want to translate something that isn''t translated yet. If you want to modify an existing translation, you might want to search only for translated strings.'
   locale-submit:
     id: locale-submit
     plugin: text
-    label: 'Aplique sus criterios de búsqueda'
+    label: 'Apply your search criteria'
     weight: 5
     selector: '#edit-submit'
-    body: 'Para aplicar sus criterios de búsqueda, haga clic en el botón <em>Filtrar</em>.'
+    body: 'To apply your search criteria, click on the <em>Filter</em> button.'
   locale-translate:
     id: locale-translate
     plugin: text
-    label: Traducir
+    label: Translate
     weight: 6
     selector: .js-form-type-textarea
-    body: 'Puede escribir su propia traducción en los campos de texto de la columna derecha. Trate de averiguar en qué contexto se utilizará el texto para traducirlo de la manera adecuada.'
+    body: 'You can write your own translation in the text fields of the right column. Try to figure out in which context the text will be used in order to translate it in the appropriate way.'
   locale-validate:
     id: locale-validate
     plugin: text
-    label: 'Validar la traducción'
+    label: 'Validate the translation'
     weight: 7
     selector: '#edit-submit--2'
-    body: 'Cuando haya terminado sus traducciones, haga clic en el botón <em>Guardar traducciones </em>. Debe guardar sus traducciones, cada vez antes de cambiar la página o hacer una nueva búsqueda.'
+    body: 'When you have finished your translations, click on the <em>Save translations</em> button. You must save your translations, each time before changing the page or making a new search.'
   locale-continue:
     id: locale-continue
     plugin: text
-    label: Continuando
+    label: 'Continuing on'
     weight: 8
-    body: 'Las traducciones que usted haya hecho aquí se utilizarán en la interfaz de usuario de su sitio web. Si quiere utilizarlas en otro sitio o modificarlas en un editor de traducciones externo, puede <a href="[site:url]admin/config/regional/translate/export">exportarlas</a> a un archivo .po e <a href="[site:url]admin/config/regional/translate/import">importarlas</a> después.'
+    body: 'The translations you have made here will be used on your site''s user interface. If you want to use them on another site or modify them on an external translation editor, you can <a href="[site:url]admin/config/regional/translate/export">export them</a> to a .po file and <a href="[site:url]admin/config/regional/translate/import">import them</a> later.'

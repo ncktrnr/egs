@@ -12,7 +12,7 @@ dependencies:
 id: welcomemessage
 theme: egsolive
 region: highlighted
-weight: -7
+weight: -2
 provider: null
 plugin: 'block_content:03bee75f-c02b-4196-bf49-2985c5e97224'
 settings:

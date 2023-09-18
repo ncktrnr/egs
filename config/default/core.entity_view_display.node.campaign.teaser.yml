@@ -5,8 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.campaign.body
-    - field.field.node.campaign.field_content
-    - field.field.node.campaign.field_image
     - node.type.campaign
   module:
     - text
@@ -30,6 +28,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_content: true
-  field_image: true
   langcode: true

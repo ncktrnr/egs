@@ -1,16 +1,16 @@
-uuid: 851914f7-aa6e-4201-93dd-9ce7ac1cf0a4
-langcode: es
+uuid: 6687c554-c246-4150-9867-0ee481d92250
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: zW8dEKuN_hbYbIx-q05dK7KEUuXcAjFV4-9MKe9EOiw
 id: default
-label: 'Por defecto'
+label: Default
 options:
-  animation: slide
+  animation: fade
   animationSpeed: 600
   direction: horizontal
-  slideshow: false
+  slideshow: true
   easing: swing
   smoothHeight: false
   reverse: false

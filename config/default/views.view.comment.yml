@@ -1,5 +1,5 @@
 uuid: fd2abd9f-db8c-45b5-b01f-8ae55219fdb8
-langcode: es
+langcode: en
 status: true
 dependencies:
   module:
@@ -8,20 +8,20 @@ dependencies:
 _core:
   default_config_hash: CgXkKY33fd-yaHz89du2hSw6MJOoIeNUJ-VHE5BiSdQ
 id: comment
-label: Comentarios
+label: Comments
 module: comment
-description: 'Buscar y gestionar comentarios.'
+description: 'Find and manage comments.'
 tag: default
 base_table: comment_field_data
 base_field: cid
 display:
   default:
     id: default
-    display_title: 'Por defecto'
+    display_title: Default
     display_plugin: default
     position: 0
     display_options:
-      title: Comentarios
+      title: Comments
       fields:
         comment_bulk_form:
           id: comment_bulk_form
@@ -73,7 +73,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Acción
+          action_title: Action
           include_exclude: include
           selected_actions:
             - comment_delete_action
@@ -88,7 +88,7 @@ display:
           entity_type: comment
           entity_field: subject
           plugin_id: field
-          label: Asunto
+          label: Subject
           exclude: false
           alter:
             alter_text: false
@@ -218,7 +218,7 @@ display:
           entity_type: comment
           entity_field: name
           plugin_id: field
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -282,7 +282,7 @@ display:
           entity_type: comment
           entity_field: entity_id
           plugin_id: commented_entity
-          label: 'Enviado en'
+          label: 'Posted in'
           exclude: false
           alter:
             alter_text: false
@@ -347,7 +347,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: field
-          label: Actualizado
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -413,7 +413,7 @@ display:
           admin_label: ''
           entity_type: comment
           plugin_id: entity_operations
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -528,26 +528,26 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'siguiente ›'
-            previous: '‹ anterior'
-            first: '« primero'
-            last: 'último »'
+            next: 'next ›'
+            previous: '‹ previous'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementos por página'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Todo -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Desplazamiento
+            offset_label: Offset
           quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Filtro
+          submit_button: Filter
           reset_button: false
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -568,7 +568,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'No hay comentarios disponibles.'
+          content: 'No comments available.'
           tokenize: false
       sorts:
         changed:
@@ -645,7 +645,7 @@ display:
           exposed: true
           expose:
             operator_id: subject_op
-            label: Asunto
+            label: Subject
             description: ''
             use_operator: false
             operator: subject_op
@@ -685,7 +685,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Nombre del autor'
+            label: 'Author name'
             description: ''
             use_operator: false
             operator: combine_op
@@ -730,7 +730,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Idioma
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -850,7 +850,7 @@ display:
       show_admin_links: true
       use_more: false
       use_more_always: true
-      use_more_text: más
+      use_more_text: more
       header: {  }
       footer: {  }
       hide_attachment_summary: false
@@ -867,19 +867,19 @@ display:
       cacheable: false
   page_published:
     id: page_published
-    display_title: 'Comentarios publicados'
+    display_title: 'Published comments'
     display_plugin: page
     position: 1
     display_options:
-      display_description: 'La lista de comentarios aprobados.'
+      display_description: 'The approved comments listing.'
       display_comment: ''
       exposed_block: false
       display_extenders: {  }
       path: admin/content/comment
       menu:
         type: tab
-        title: Comentarios
-        description: 'Comentarios publicados'
+        title: Comments
+        description: 'Comments published'
         weight: 0
         menu_name: admin
         parent: ''
@@ -896,7 +896,7 @@ display:
       cacheable: false
   page_unapproved:
     id: page_unapproved
-    display_title: 'Comentarios sin aprobar'
+    display_title: 'Unapproved comments'
     display_plugin: page
     position: 2
     display_options:
@@ -951,7 +951,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Acción
+          action_title: Action
           include_exclude: include
           selected_actions:
             - comment_delete_action
@@ -966,7 +966,7 @@ display:
           entity_type: comment
           entity_field: subject
           plugin_id: field
-          label: Asunto
+          label: Subject
           exclude: false
           alter:
             alter_text: false
@@ -1096,7 +1096,7 @@ display:
           entity_type: comment
           entity_field: name
           plugin_id: field
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -1160,7 +1160,7 @@ display:
           entity_type: comment
           entity_field: entity_id
           plugin_id: commented_entity
-          label: 'Enviado en'
+          label: 'Posted in'
           exclude: false
           alter:
             alter_text: false
@@ -1225,7 +1225,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: field
-          label: Actualizado
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -1291,7 +1291,7 @@ display:
           admin_label: ''
           entity_type: comment
           plugin_id: entity_operations
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -1455,7 +1455,7 @@ display:
           exposed: true
           expose:
             operator_id: subject_op
-            label: Asunto
+            label: Subject
             description: ''
             use_operator: false
             operator: subject_op
@@ -1495,7 +1495,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Nombre del autor'
+            label: 'Author Name'
             description: ''
             use_operator: false
             operator: combine_op
@@ -1540,7 +1540,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Idioma
+            label: Language
             description: ''
             use_operator: false
             operator: langcode_op
@@ -1575,13 +1575,13 @@ display:
         fields: false
         filters: false
         filter_groups: false
-      display_description: 'La lista de comentarios no aprobados.'
+      display_description: 'The unapproved comments listing.'
       display_extenders: {  }
       path: admin/content/comment/approval
       menu:
         type: tab
-        title: 'Comentarios sin aprobar'
-        description: 'Comentarios no aprobados'
+        title: 'Unapproved comments'
+        description: 'Comments unapproved'
         weight: 1
         menu_name: admin
         parent: ''

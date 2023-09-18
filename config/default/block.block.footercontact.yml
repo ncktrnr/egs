@@ -11,7 +11,7 @@ dependencies:
 id: footercontact
 theme: egsolive
 region: footer_top
-weight: -9
+weight: 0
 provider: null
 plugin: 'block_content:b048e059-77c0-43ad-bdd0-7e4fe82093f8'
 settings:

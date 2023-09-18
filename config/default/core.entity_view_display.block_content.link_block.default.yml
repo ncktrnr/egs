@@ -7,9 +7,10 @@ dependencies:
     - field.field.block_content.link_block.body
     - field.field.block_content.link_block.field_button
     - field.field.block_content.link_block.field_image
+    - responsive_image.styles.wide
   module:
-    - image
     - link
+    - responsive_image
     - text
 id: block_content.link_block.default
 targetEntityType: block_content
@@ -36,13 +37,11 @@ content:
     weight: 2
     region: content
   field_image:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: wide
       image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content

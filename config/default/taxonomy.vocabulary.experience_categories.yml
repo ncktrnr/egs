@@ -1,8 +1,0 @@
-uuid: 5d810fea-f572-4c54-a894-b1efbedf3a3b
-langcode: en
-status: true
-dependencies: {  }
-name: 'Experience categories'
-vid: experience_categories
-description: ''
-weight: 0

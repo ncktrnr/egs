@@ -1,5 +1,5 @@
 uuid: 64e3d8eb-3fbc-4a2a-b551-06a6e5da7a53
-langcode: es
+langcode: en
 status: true
 dependencies:
   enforced:
@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: TD595kkS8PAS0v5TKF6ylAqyG4uSO1y52SQqy7zdTIw
 name: max_1300x1300
-label: 'Máximo 1300x1300'
+label: 'Max 1300x1300'
 effects:
   04caae9a-fa3e-4ea6-ae09-9c26aec7d308:
     uuid: 04caae9a-fa3e-4ea6-ae09-9c26aec7d308

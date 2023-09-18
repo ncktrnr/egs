@@ -10,8 +10,8 @@ dependencies:
     - egsolive
 id: footernewsletter
 theme: egsolive
-region: footer_top
-weight: -8
+region: footer_bottom
+weight: 0
 provider: null
 plugin: 'block_content:d386906b-2ed2-4fa3-9f31-6ef37b042dff'
 settings:

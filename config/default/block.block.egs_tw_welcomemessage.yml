@@ -1,0 +1,30 @@
+uuid: a4e841f6-2ccf-4d12-963a-0964f8aa083c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:03bee75f-c02b-4196-bf49-2985c5e97224'
+  module:
+    - block_content
+    - system
+  theme:
+    - egs_tw
+id: egs_tw_welcomemessage
+theme: egs_tw
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:03bee75f-c02b-4196-bf49-2985c5e97224'
+settings:
+  id: 'block_content:03bee75f-c02b-4196-bf49-2985c5e97224'
+  label: 'Welcome message'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

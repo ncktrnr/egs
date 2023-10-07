@@ -1,17 +1,17 @@
-uuid: e0750f3c-8662-4d62-ae9d-03c90a3f4d31
+uuid: 683036a3-a4d1-4880-be9a-c4447979a9c7
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - egsolive
+    - egs_tw
 _core:
-  default_config_hash: Dzb9MwGYrJAZFGIWpHigoRrvtvQLuoUqLU4YiiDcCU4
-id: egsolive_site_branding
-theme: egsolive
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: egs_tw_site_branding
+theme: egs_tw
 region: header
-weight: 0
+weight: -8
 provider: null
 plugin: system_branding_block
 settings:

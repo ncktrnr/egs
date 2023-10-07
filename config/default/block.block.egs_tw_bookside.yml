@@ -1,4 +1,4 @@
-uuid: aa54fabe-adfd-4e63-847c-7529ea668810
+uuid: 05d9ecbf-9698-49cd-bc1c-dee4c84f3140
 langcode: en
 status: true
 dependencies:
@@ -7,16 +7,16 @@ dependencies:
   module:
     - block_content
   theme:
-    - egsolive
-id: bookside
-theme: egsolive
-region: social
-weight: 0
+    - egs_tw
+id: egs_tw_bookside
+theme: egs_tw
+region: header
+weight: -5
 provider: null
 plugin: 'block_content:6c57fdce-c77c-435e-bbe4-2e4453bf1804'
 settings:
   id: 'block_content:6c57fdce-c77c-435e-bbe4-2e4453bf1804'
-  label: 'Book side'
+  label: 'Book icon'
   label_display: '0'
   provider: block_content
   status: true

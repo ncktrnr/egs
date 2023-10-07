@@ -1,16 +1,16 @@
-uuid: 7ee768ca-595a-442e-b461-40c042093576
+uuid: e07d81ab-db8a-484e-aef0-e577795fbeba
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - egsolive
+    - egs_tw
 _core:
-  default_config_hash: V7jyAl6gcXjCGUewJly8N5d0cDfPgWtq9rNE8VHwG7g
-id: egsolive_messages
-theme: egsolive
-region: highlighted
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: egs_tw_messages
+theme: egs_tw
+region: secondary_menu
 weight: -5
 provider: null
 plugin: system_messages_block

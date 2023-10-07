@@ -1,0 +1,10 @@
+uuid: 71662822-e74b-4102-bb2c-e162df65883c
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.card
+label: 'Card odd'
+targetEntityType: taxonomy_term
+cache: true

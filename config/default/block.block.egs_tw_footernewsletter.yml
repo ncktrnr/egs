@@ -1,4 +1,4 @@
-uuid: 003bd171-32b3-4579-a51d-886db3aa3713
+uuid: cfda01a1-cb10-45a9-88a7-9b56cdb179c1
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - block_content
   theme:
-    - egsolive
-id: footernewsletter
-theme: egsolive
-region: footer_bottom
+    - egs_tw
+id: egs_tw_footernewsletter
+theme: egs_tw
+region: footer
 weight: 0
 provider: null
 plugin: 'block_content:d386906b-2ed2-4fa3-9f31-6ef37b042dff'

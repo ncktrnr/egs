@@ -1,15 +1,15 @@
-uuid: bd17efdb-a17f-4abe-9966-7b0e48884ca1
+uuid: fb28baf8-fad6-4165-88b8-03850d2b721b
 langcode: en
 status: true
 dependencies:
   module:
     - language
   theme:
-    - egsolive
-id: languageswitcher
-theme: egsolive
-region: secondary_menu
-weight: 0
+    - egs_tw
+id: egs_tw_languageswitcher
+theme: egs_tw
+region: header
+weight: -6
 provider: null
 plugin: 'language_block:language_interface'
 settings:

@@ -1,14 +1,14 @@
-uuid: f56ff025-0d7f-45e2-8839-d13027056c85
+uuid: 52d41de8-aab3-4c84-b711-be6302f68b4a
 langcode: en
 status: true
 dependencies:
   theme:
-    - egsolive
+    - egs_tw
 _core:
-  default_config_hash: hfRQQNyc7JTj4kwFHVzBVFj7fTeQvJEU1qt0dBN2Tvg
-id: egsolive_primary_local_tasks
-theme: egsolive
-region: highlighted
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: egs_tw_primary_local_tasks
+theme: egs_tw
+region: secondary_menu
 weight: -4
 provider: null
 plugin: local_tasks_block

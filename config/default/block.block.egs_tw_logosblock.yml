@@ -1,0 +1,30 @@
+uuid: 8a765e46-8b4f-4a76-a6b3-fe5edb4f29a8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a53a9560-4264-4f38-9c63-2bfa7dd5ba8c'
+  module:
+    - block_content
+    - system
+  theme:
+    - egs_tw
+id: egs_tw_logosblock
+theme: egs_tw
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:a53a9560-4264-4f38-9c63-2bfa7dd5ba8c'
+settings:
+  id: 'block_content:a53a9560-4264-4f38-9c63-2bfa7dd5ba8c'
+  label: 'Logos block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

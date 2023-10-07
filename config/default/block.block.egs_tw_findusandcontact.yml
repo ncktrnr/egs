@@ -1,4 +1,4 @@
-uuid: 9136dd7a-2411-4b48-ac15-df5253817b1c
+uuid: 12ec008e-4861-4385-8a53-7da595de7e11
 langcode: en
 status: true
 dependencies:
@@ -6,20 +6,25 @@ dependencies:
     - 'block_content:layout_block:b048e059-77c0-43ad-bdd0-7e4fe82093f8'
   module:
     - block_content
+    - system
   theme:
-    - egsolive
-id: footercontact
-theme: egsolive
-region: footer_top
+    - egs_tw
+id: egs_tw_findusandcontact
+theme: egs_tw
+region: footer
 weight: 0
 provider: null
 plugin: 'block_content:b048e059-77c0-43ad-bdd0-7e4fe82093f8'
 settings:
   id: 'block_content:b048e059-77c0-43ad-bdd0-7e4fe82093f8'
-  label: 'Footer contact'
-  label_display: '0'
+  label: 'Find us and contact'
+  label_display: visible
   provider: block_content
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

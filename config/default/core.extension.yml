@@ -1,6 +1,7 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  admin_toolbar: 0
   animate_any: 0
   automated_cron: 0
   backup_migrate: 0
@@ -47,6 +48,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  phpass: 0
   redirect: 0
   responsive_image: 0
   search: 0
@@ -75,5 +77,6 @@ module:
 theme:
   olivero: 0
   claro: 0
-  egsolive: 0
+  stable9: 0
+  egs_tw: 0
 profile: standard

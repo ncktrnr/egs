@@ -1,0 +1,19 @@
+uuid: 4327e8d7-d8a4-4148-9be3-d3e1b1e9c410
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_button_text
+    - taxonomy.vocabulary.sitewide
+id: taxonomy_term.sitewide.field_button_text
+field_name: field_button_text
+entity_type: taxonomy_term
+bundle: sitewide
+label: 'Button text'
+description: 'Link text'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

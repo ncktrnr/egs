@@ -1,22 +1,24 @@
+@import url("https://use.typekit.net/ijg0jqz.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   h1 {
-    @apply text-4xl;
+    @apply text-4xl font-headline;
   }
   h2 {
-    @apply text-3xl;
+    @apply text-3xl font-headline;
   }
   h3 {
-    @apply text-2xl;
+    @apply text-2xl font-headline;
   }
   h4 {
-    @apply text-xl;
+    @apply text-xl font-headline;
   }
   h5 {
-    @apply text-lg;
+    @apply text-lg font-headline;
   }
   h6 {
   }
@@ -28,9 +30,28 @@
     @apply my-6;
   }
   blockquote {
-    @apply text-xl;
+    @apply text-xl font-headline;
   }
 }
 
 @layer components {
+  .region-highlighted img {
+    @apply object-cover w-full h-full;
+  }
+
+  #block-egs-tw-bookingbar {
+    @apply w-full bg-baragon;
+  }
+
+  #tbbform {
+    @apply list-none;
+  }
+
+  #tbbform ol {
+    @aply flex;
+  }
+
+  #block-egs-tw-welcomemessage {
+    @apply max-w-4xl mx-auto my-12 text-2xl font-headline font-bold leading-tight text-center text-gray-800;
+  }
 }

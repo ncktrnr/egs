@@ -1,0 +1,67 @@
+{#
+/**
+ * @file
+ * Theme override to display a taxonomy term.
+ *
+ * Available variables:
+ * - url: URL of the current term.
+ * - name: (optional) Name of the current term.
+ * - content: Items for the content of the term (fields and description).
+ *   Use 'content' to print them all, or print a subset such as
+ *   'content.description'. Use the following code to exclude the
+ *   printing of a given child element:
+ *   @code
+ *   {{ content|without('description') }}
+ *   @endcode
+ * - attributes: HTML attributes for the wrapper.
+ * - page: Flag for the full page state.
+ * - term: The taxonomy term entity, including:
+ *   - id: The ID of the taxonomy term.
+ *   - bundle: Machine name of the current vocabulary.
+ * - view_mode: View mode, e.g. 'full', 'teaser', etc.
+ *
+ * @see template_preprocess_taxonomy_term()
+ */
+#}
+{%
+  set classes = [
+    'taxonomy-term',
+    'vocabulary-' ~ term.bundle|clean_class,
+    'container',
+    'grid-cols-12',
+    'gap-10',
+    'py-12', 
+    'mx-auto',
+    'lg:grid',
+    'lg:items-center',
+  ]
+%}
+<div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
+  <div class="col-span-6 col-start-7 xl:self-center row-span-full">
+    {{ content.field_image }}
+  </div>
+
+  <div class="z-10 self-center col-span-7 col-end-8 p-6 border sm:py-12 sm:pr-12 sm:pl-12 lg:pr-20 xl:pl-12 xl:pr-28 2xl:mr-6 border-aths row-span-full mx-auto md:max-w-[calc(100%-2em)] lg:max-w-none md:relative md:-mt-8 lg:mt-0 2xl:ml-0">
+
+    {{ title_prefix }}
+    {% if name and not page %}
+      <h2 class="mb-4 leading-tight">{{ name }}</h2>
+    {% endif %}
+    {{ title_suffix }}
+
+    <div class="mb-12 md:text-md">
+      {{ content.description }}
+    </div>
+
+    <div class="mb-6">
+      <a href="{{ url }}" 
+      class="relative px-6 py-3 font-bold text-baragon group hover:no-underline hover:text-baragon">
+        <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform translate-x-1 translate-y-1 bg-aths group-hover:translate-x-0 group-hover:translate-y-0">
+        </span>
+        <span class="absolute inset-0 w-full h-full border-2 border-baragon"></span>
+        <span class="relative text-baragon">{{ content.field_button_text.0 }}</span>
+      </a>
+    </div>
+
+ </div>
+</div>

@@ -1,0 +1,26 @@
+uuid: 095912b9-2196-4f5f-bbcd-b3fde8e2a0f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - egs_tw
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: egs_tw_page_title
+theme: egs_tw
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

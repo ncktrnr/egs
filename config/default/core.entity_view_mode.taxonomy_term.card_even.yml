@@ -1,0 +1,10 @@
+uuid: 6b39f3fa-09b4-4820-9843-f49304f72cd8
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.card_even
+label: 'Card even'
+targetEntityType: taxonomy_term
+cache: true

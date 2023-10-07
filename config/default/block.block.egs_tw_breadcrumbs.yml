@@ -1,0 +1,26 @@
+uuid: 31f62969-f423-4b53-ae20-ea380aaf396a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - egs_tw
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: egs_tw_breadcrumbs
+theme: egs_tw
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

@@ -1,0 +1,25 @@
+uuid: 05d9ecbf-9698-49cd-bc1c-dee4c84f3140
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6c57fdce-c77c-435e-bbe4-2e4453bf1804'
+  module:
+    - block_content
+  theme:
+    - egs_tw
+id: egs_tw_bookside
+theme: egs_tw
+region: header
+weight: -5
+provider: null
+plugin: 'block_content:6c57fdce-c77c-435e-bbe4-2e4453bf1804'
+settings:
+  id: 'block_content:6c57fdce-c77c-435e-bbe4-2e4453bf1804'
+  label: 'Book icon'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

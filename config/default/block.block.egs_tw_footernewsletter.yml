@@ -1,0 +1,25 @@
+uuid: cfda01a1-cb10-45a9-88a7-9b56cdb179c1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d386906b-2ed2-4fa3-9f31-6ef37b042dff'
+  module:
+    - block_content
+  theme:
+    - egs_tw
+id: egs_tw_footernewsletter
+theme: egs_tw
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d386906b-2ed2-4fa3-9f31-6ef37b042dff'
+settings:
+  id: 'block_content:d386906b-2ed2-4fa3-9f31-6ef37b042dff'
+  label: 'Footer newsletter'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

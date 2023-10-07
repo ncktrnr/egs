@@ -1,0 +1,30 @@
+uuid: 37a3ba8a-c394-4934-825c-89fcf20e5afd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero:fce807d7-7485-4942-aaed-618f23b7fc5e'
+  module:
+    - block_content
+    - system
+  theme:
+    - egs_tw
+id: egs_tw_homehero
+theme: egs_tw
+region: highlighted
+weight: -6
+provider: null
+plugin: 'block_content:fce807d7-7485-4942-aaed-618f23b7fc5e'
+settings:
+  id: 'block_content:fce807d7-7485-4942-aaed-618f23b7fc5e'
+  label: 'home hero'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

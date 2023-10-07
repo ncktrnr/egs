@@ -1,0 +1,30 @@
+uuid: 397a8b4c-af86-47bb-a390-28835fb8bdd1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ede40f2c-4517-43a4-9b05-b13cb7f5d44d'
+  module:
+    - block_content
+    - system
+  theme:
+    - egs_tw
+id: egs_tw_bookingbar
+theme: egs_tw
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:ede40f2c-4517-43a4-9b05-b13cb7f5d44d'
+settings:
+  id: 'block_content:ede40f2c-4517-43a4-9b05-b13cb7f5d44d'
+  label: 'Booking bar'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

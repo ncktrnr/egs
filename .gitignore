@@ -41,4 +41,8 @@ sites/simpletest
 # Ignore SimpleTest multi-site environment.
 # simpletest
 
-# *.sql (todo add db file)
+# Ignore DB dumps (NT added)
+*.sql
+*.sql.gz
+*.mysql
+*.mysql.gz

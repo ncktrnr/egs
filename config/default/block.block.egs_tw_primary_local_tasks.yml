@@ -1,0 +1,22 @@
+uuid: 52d41de8-aab3-4c84-b711-be6302f68b4a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - egs_tw
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: egs_tw_primary_local_tasks
+theme: egs_tw
+region: secondary_menu
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 22a0afd0-ed3f-49ab-bdb7-72fc70cc0d23
+langcode: en
+status: true
+dependencies:
+  theme:
+    - egs_tw
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: egs_tw_primary_admin_actions
+theme: egs_tw
+region: secondary_menu
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

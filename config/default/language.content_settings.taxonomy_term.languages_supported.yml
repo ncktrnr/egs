@@ -1,17 +1,18 @@
-uuid: c67209fd-c921-4488-a629-41af673121a2
+uuid: e1698499-3148-437a-97f8-afc6f65eb4b8
 langcode: en
 status: true
 dependencies:
+  config:
+    - taxonomy.vocabulary.languages_supported
   module:
     - content_translation
-    - menu_link_content
 third_party_settings:
   content_translation:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: menu_link_content.menu_link_content
-target_entity_type_id: menu_link_content
-target_bundle: menu_link_content
+id: taxonomy_term.languages_supported
+target_entity_type_id: taxonomy_term
+target_bundle: languages_supported
 default_langcode: site_default
 language_alterable: true

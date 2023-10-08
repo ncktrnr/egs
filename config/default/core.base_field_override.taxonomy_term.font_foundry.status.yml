@@ -1,0 +1,22 @@
+uuid: 9eb6537b-2cd3-4bf1-a1f6-a48ecdcf1767
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.font_foundry
+id: taxonomy_term.font_foundry.status
+field_name: status
+entity_type: taxonomy_term
+bundle: font_foundry
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

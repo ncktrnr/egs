@@ -1,0 +1,18 @@
+uuid: 5ab919bd-9194-418b-80fe-963f7244ed4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.languages_supported
+id: taxonomy_term.languages_supported.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: languages_supported
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

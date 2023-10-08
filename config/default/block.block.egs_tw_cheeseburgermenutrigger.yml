@@ -1,0 +1,25 @@
+uuid: 90abbc42-6a11-4ae4-b921-8d2cf23596cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.egs_tw_cheeseburgermenu
+  module:
+    - cheeseburger_menu
+  theme:
+    - egs_tw
+id: egs_tw_cheeseburgermenutrigger
+theme: egs_tw
+region: header
+weight: 0
+provider: null
+plugin: cheeseburger_menu_trigger
+settings:
+  id: cheeseburger_menu_trigger
+  label: 'Cheeseburger menu trigger'
+  label_display: '0'
+  provider: cheeseburger_menu
+  block_to_trigger: egs_tw_cheeseburgermenu
+  breakpoints: {  }
+  custom_media_query: 'screen and (min-width: 1024px)'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 2f486c8c-d8e9-45f0-ad9b-6655933f5303
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.font_designer
+id: taxonomy_term.font_designer.status
+field_name: status
+entity_type: taxonomy_term
+bundle: font_designer
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

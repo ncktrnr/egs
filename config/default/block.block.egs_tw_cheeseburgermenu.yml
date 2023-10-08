@@ -1,0 +1,80 @@
+uuid: 54370b18-f08e-44a2-85f6-cc6236b718bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.language
+    - system.menu.main
+  module:
+    - cheeseburger_menu
+  theme:
+    - egs_tw
+id: egs_tw_cheeseburgermenu
+theme: egs_tw
+region: header
+weight: 0
+provider: null
+plugin: cheeseburger_menu
+settings:
+  id: cheeseburger_menu
+  label: 'Cheeseburger menu'
+  label_display: '0'
+  provider: cheeseburger_menu
+  default_css: true
+  default_js: true
+  hidden: true
+  parent_menu_as_link: false
+  show_navigation: true
+  invoke_hooks: false
+  track_active_trail: false
+  left_side_background_color: '#50591c'
+  left_side_background_opacity: '1'
+  left_side_text_color: '#ffffff'
+  left_side_text_opacity: '1'
+  right_side_background_color: '#fdfcf7'
+  right_side_background_opacity: '1'
+  right_side_text_color: '#292929'
+  right_side_text_opacity: '1'
+  trigger_color: '#591903'
+  trigger_opacity: '1'
+  trigger_background_color: '#ffffff'
+  trigger_background_opacity: '1'
+  scrollbar_color: '#b4f5fd'
+  scrollbar_opacity: '1'
+  menus:
+    main:
+      id: main
+      weight: -99
+      settings:
+        max_depth: 0
+        initial_visibility_level: 1
+        default_expanded: false
+        show_title_in_navigation: false
+        collapsible_title: false
+        title_default_expanded: true
+        show_title_above_menu: false
+        override_title: false
+        title_override: ''
+        show_links_in_navigation: false
+        icon: ''
+      menu_type: menu
+    language:
+      id: language
+      weight: -98
+      settings:
+        max_depth: 0
+        initial_visibility_level: 1
+        default_expanded: false
+        show_title_in_navigation: false
+        collapsible_title: false
+        title_default_expanded: true
+        show_title_above_menu: false
+        override_title: false
+        title_override: ''
+        show_links_in_navigation: false
+        icon: |
+          <svg xmlns="http://www.w3.org/2000/svg" width="20.007" height="19.747" viewBox="0 0 20.007 19.747">
+            <path id="Path_8224" data-name="Path 8224" d="M10.5,21,15.75,9.75,21,21m-9-3h7.5M3,5.621A48.475,48.475,0,0,1,9,5.25m0,0q1.68,0,3.334.114M9,5.25V3m3.334,2.364A18.027,18.027,0,0,1,3,17.5M12.334,5.364q1.344.091,2.666.257m-4.589,8.495a18.023,18.023,0,0,1-3.827-5.8" transform="translate(-1.99 -2.25)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          </svg>
+      menu_type: menu
+visibility: {  }

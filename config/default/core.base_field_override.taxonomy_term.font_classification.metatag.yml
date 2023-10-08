@@ -1,0 +1,20 @@
+uuid: a6999736-30fa-4b48-8352-d096ccfdd452
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.font_classification
+  module:
+    - metatag
+id: taxonomy_term.font_classification.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: font_classification
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

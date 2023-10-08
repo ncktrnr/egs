@@ -39,7 +39,7 @@
       <h2{{ heading.attributes }}>{{ heading.text }}</h2>
     {%- endif -%}
   {%- endif -%}
-  <ul{{ attributes.addClass('flex space-x-4 items-center') }}>
+  <ul{{ attributes.addClass('space-x-4 items-center mr-8 mb-1 hidden lg:flex ml-auto') }}>
     {%- for item in links -%}
       <li{{ item.attributes }}>
         {%- if item.link -%}

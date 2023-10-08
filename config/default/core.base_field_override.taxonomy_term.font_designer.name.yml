@@ -1,0 +1,18 @@
+uuid: 2f6e55b3-0b8f-4664-83b3-b96fb1f0b0f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.font_designer
+id: taxonomy_term.font_designer.name
+field_name: name
+entity_type: taxonomy_term
+bundle: font_designer
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 28fc879d-7b74-4bc1-96e9-80db2c786214
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.font_foundry
+  module:
+    - text
+id: taxonomy_term.font_foundry.description
+field_name: description
+entity_type: taxonomy_term
+bundle: font_foundry
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -21,6 +21,7 @@
         "drupal/animate_any": "^3.1",
         "drupal/backup_migrate": "^5.0",
         "drupal/better_social_sharing_buttons": "^4.0",
+        "drupal/cheeseburger_menu": "^5.0@RC",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",

@@ -6,9 +6,13 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.accommodation.body
     - field.field.node.accommodation.field_360
+    - field.field.node.accommodation.field_button_text
+    - field.field.node.accommodation.field_card_description
+    - field.field.node.accommodation.field_card_image
     - field.field.node.accommodation.field_detail
     - field.field.node.accommodation.field_dropdown
     - field.field.node.accommodation.field_gallery
+    - field.field.node.accommodation.field_icon
     - field.field.node.accommodation.field_overview
     - field.field.node.accommodation.field_portrait
     - field.field.node.accommodation.field_price
@@ -55,7 +59,7 @@ content:
     type: expand_collapse_formatter
     label: hidden
     settings:
-      trim_length: '1'
+      trim_length: 1
       default_state: collapsed
       link_text_open: 'Show full details'
       link_text_close: 'Show less'
@@ -107,4 +111,8 @@ content:
     weight: 0
     region: content
 hidden:
+  field_button_text: true
+  field_card_description: true
+  field_card_image: true
+  field_icon: true
   langcode: true

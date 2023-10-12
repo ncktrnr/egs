@@ -1,9 +1,9 @@
-uuid: 2bd2f08d-cd37-4220-ae61-126272db0880
+uuid: 7e8c469b-8f96-4d78-b96a-fa3d2d2d7f5b
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.card
     - field.field.node.accommodation.body
     - field.field.node.accommodation.field_360
     - field.field.node.accommodation.field_button_text
@@ -18,35 +18,63 @@ dependencies:
     - field.field.node.accommodation.field_price
     - node.type.accommodation
   module:
+    - image
+    - layout_builder
     - text
     - user
-id: node.accommodation.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.accommodation.card
 targetEntityType: node
 bundle: accommodation
-mode: teaser
+mode: card
 content:
-  body:
-    type: text_summary_or_trimmed
+  field_button_text:
+    type: string
     label: hidden
     settings:
-      trim_length: 600
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 101
+    weight: 3
+    region: content
+  field_card_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_card_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_icon:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  body: true
   field_360: true
-  field_button_text: true
-  field_card_description: true
-  field_card_image: true
   field_detail: true
   field_dropdown: true
   field_gallery: true
-  field_icon: true
   field_overview: true
   field_portrait: true
   field_price: true

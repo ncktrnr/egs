@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:layout_block:b048e059-77c0-43ad-bdd0-7e4fe82093f8'
   module:
     - block_content
-    - system
   theme:
     - egs_tw
 id: egs_tw_findusandcontact
@@ -18,13 +17,9 @@ plugin: 'block_content:b048e059-77c0-43ad-bdd0-7e4fe82093f8'
 settings:
   id: 'block_content:b048e059-77c0-43ad-bdd0-7e4fe82093f8'
   label: 'Find us and contact'
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+visibility: {  }

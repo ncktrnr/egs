@@ -1,28 +1,21 @@
-uuid: c07087c9-0e5f-4f37-8ef5-5e9026af1330
+uuid: be8ae8c9-e496-4350-a5e7-f9a1f2b76ad1
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.campaign.body
     - field.field.node.campaign.field_image
     - image.style.wide
     - node.type.campaign
   module:
     - image
-    - text
     - user
-id: node.campaign.default
+id: node.campaign.full
 targetEntityType: node
 bundle: campaign
-mode: default
+mode: full
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
-    region: content
   field_image:
     type: image
     label: hidden
@@ -32,7 +25,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 0
     region: content
   links:
     settings: {  }
@@ -40,4 +33,5 @@ content:
     weight: 100
     region: content
 hidden:
+  body: true
   langcode: true

@@ -5,8 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.recipe.body
+    - field.field.node.recipe.field_image
+    - field.field.node.recipe.field_information
+    - field.field.node.recipe.field_ingredients
+    - field.field.node.recipe.field_method
+    - image.style.medium
     - node.type.recipe
   module:
+    - image
     - text
     - user
 id: node.recipe.teaser
@@ -22,10 +28,24 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
+  field_information: true
+  field_ingredients: true
+  field_method: true
   langcode: true

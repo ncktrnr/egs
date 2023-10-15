@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.card
     - field.field.node.accommodation.body
     - field.field.node.accommodation.field_360
+    - field.field.node.accommodation.field_accommodation_type
     - field.field.node.accommodation.field_button_text
     - field.field.node.accommodation.field_card_description
     - field.field.node.accommodation.field_card_image
@@ -72,6 +73,7 @@ content:
 hidden:
   body: true
   field_360: true
+  field_accommodation_type: true
   field_detail: true
   field_dropdown: true
   field_gallery: true

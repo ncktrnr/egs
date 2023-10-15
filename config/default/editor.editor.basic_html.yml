@@ -25,7 +25,6 @@ settings:
       - drupalInsertImage
       - '|'
       - heading
-      - code
       - '|'
       - sourceEditing
       - removeFormat

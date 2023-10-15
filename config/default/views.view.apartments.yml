@@ -1,4 +1,4 @@
-uuid: ed033317-c856-46d5-8f7e-2959b9db87fb
+uuid: 72e79cab-ab8f-4518-8072-bb4612928c84
 langcode: en
 status: true
 dependencies:
@@ -9,10 +9,10 @@ dependencies:
     - node
     - options
     - user
-id: rooms
-label: Rooms
+id: apartments
+label: Apartments
 module: views
-description: 'List for rooms page'
+description: 'List for apartments page'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -23,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Rooms
+      title: Apartments
       fields:
         title:
           id: title
@@ -96,22 +96,21 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
+        title:
+          id: title
           table: node_field_data
-          field: created
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
+          entity_field: title
+          plugin_id: standard
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
-          granularity: second
       arguments: {  }
       filters:
         status:
@@ -134,7 +133,6 @@ display:
           plugin_id: bundle
           value:
             accommodation: accommodation
-          group: 1
         field_accommodation_type_value:
           id: field_accommodation_type_value
           table: node__field_accommodation_type
@@ -145,7 +143,7 @@ display:
           plugin_id: list_field
           operator: or
           value:
-            - '0'
+            1: '1'
           group: 1
           exposed: false
           expose:
@@ -218,10 +216,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
       style:
         type: default
       row:
@@ -234,7 +228,7 @@ display:
         options:
           query_comment: ''
           disable_sql_rewrite: false
-          distinct: true
+          distinct: false
           replica: false
           query_tags: {  }
       relationships: {  }
@@ -251,14 +245,14 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: 'Rooms block'
+    display_title: 'Apartments block'
     display_plugin: block
     position: 1
     display_options:
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders: {  }
-      block_description: 'Rooms block'
+      block_description: 'Apartments block'
     cache_metadata:
       max-age: -1
       contexts:

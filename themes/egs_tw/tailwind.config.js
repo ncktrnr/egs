@@ -41,6 +41,13 @@ module.exports = {
         'brick-pattern': "url('/themes/egs_tw/images/bw-wall.png')",
         'footer-texture': "url('/themes/egs_tw/images/footer-background.jpg')",
       }, 
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+              maxWidth: '70ch',
+          },
+        },
+      })
     },
   },
   plugins: [

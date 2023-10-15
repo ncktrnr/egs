@@ -32,3 +32,4 @@ function egs_tw_theme_suggestions_taxonomy_term_alter(array &$suggestions, array
   $suggestions[] = 'taxonomy_term__' . $term->bundle() . '__' . $sanitized_view_mode;
   $suggestions[] = 'taxonomy_term__' . $term->id() . '__' . $sanitized_view_mode;
 }
+

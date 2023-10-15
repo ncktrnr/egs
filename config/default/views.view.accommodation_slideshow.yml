@@ -7,6 +7,7 @@ dependencies:
     - node.type.accommodation
     - responsive_image.styles.wide
   module:
+    - flexslider_views
     - node
     - responsive_image
     - user
@@ -63,14 +64,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: div
+          element_class: 'flex-wrapper '
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -196,11 +197,13 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: default
+        type: flexslider
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
+          flexslider: null
+          optionset: accommodation_slider
+          captionfield: ''
+          id: ''
       row:
         type: fields
       query:

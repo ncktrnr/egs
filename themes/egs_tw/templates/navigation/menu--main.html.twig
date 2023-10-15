@@ -40,7 +40,7 @@
           'menu-item',
           item.is_expanded ? 'menu-item--expanded',
           item.is_collapsed ? 'menu-item--collapsed',
-          item.in_active_trail ? 'menu-item--active-trail',
+          item.in_active_trail ? 'menu-item--active-trail border-verdun',
           'mr-4', 
           'text-gray-900',
           'hover:text-gray-900', 
@@ -51,8 +51,7 @@
           'border-b-2', 
           'border-white',
           'visited:text-gray-900', 
-          'h-full', 
-          'active:border-verdun',
+          'h-full',
         ]
       %}
       <li{{ item.attributes.addClass(classes) }}>

@@ -1,0 +1,21 @@
+uuid: 1bbf437e-9cd8-4187-accd-643d7d4b0da4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accommodation_type
+    - node.type.accommodation
+  module:
+    - options
+id: node.accommodation.field_accommodation_type
+field_name: field_accommodation_type
+entity_type: node
+bundle: accommodation
+label: 'Accommodation type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.accommodation.body
     - field.field.node.accommodation.field_360
+    - field.field.node.accommodation.field_accommodation_type
     - field.field.node.accommodation.field_button_text
     - field.field.node.accommodation.field_card_description
     - field.field.node.accommodation.field_card_image
@@ -18,6 +19,7 @@ dependencies:
     - node.type.accommodation
   module:
     - image
+    - options
     - text
     - user
 id: node.accommodation.default
@@ -38,6 +40,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 108
+    region: content
+  field_accommodation_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 114
     region: content
   field_button_text:
     type: string

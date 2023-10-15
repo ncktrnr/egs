@@ -11,7 +11,7 @@ eu_only_js: false
 popup_position: false
 fixed_top_position: true
 popup_info:
-  value: '<h2>We use cookies on this site to enhance your user experience</h2><p>By clicking the Accept button, you agree to us doing so.</p>'
+  value: '<div>We use cookies on this site to enhance your user experience</div><div>Please click accept, or no thanks if you wish to opt out.</div>'
   format: full_html
 mobile_popup_info:
   value: ''
@@ -22,7 +22,7 @@ popup_more_info_button_message: 'More info'
 mobile_breakpoint: 768
 popup_agreed_enabled: false
 popup_hide_agreed: false
-disagree_button_label: 'No, thanks'
+disagree_button_label: 'No thanks'
 popup_agreed:
   value: '<h2>Thank you for accepting cookies</h2><p>You can now hide this message or find out more about cookies.</p>'
   format: full_html
@@ -33,9 +33,9 @@ popup_link_new_window: true
 popup_height: null
 popup_width: 100%
 popup_delay: 1000
-show_more_info: true
-popup_bg_hex: 5F3400
-popup_text_hex: ffffff
+show_more_info: false
+popup_bg_hex: DED8C1
+popup_text_hex: '111827'
 domain: ''
 domains_option: 1
 domains_list: ''
@@ -46,7 +46,7 @@ set_cookie_session_zero_on_disagree: 0
 cookie_lifetime: 100
 use_mobile_message: false
 use_bare_css: false
-use_olivero_css: true
+use_olivero_css: false
 disagree_do_not_show_popup: false
 reload_page: false
 reload_options: 0

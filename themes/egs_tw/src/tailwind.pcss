@@ -39,6 +39,10 @@
     @apply object-cover w-full h-full;
   }
 
+  #block-egs-tw-main-menu .menu-item--active-trail {
+    @apply border-baragon;
+  }
+
   #block-egs-tw-bookingbar {
     @apply w-full bg-baragon;
   }
@@ -71,5 +75,58 @@
   }
   .even .oe-col-end {
     @apply col-end-8 sm:py-12 sm:pr-12 sm:pl-12 lg:pr-20 xl:pl-12 xl:pr-28 2xl:pr-36 2xl:ml-0;
+  }
+
+  /*-- eu-cookie-compliance-message --*/
+  .sliding-popup-bottom {
+    @apply bg-gray-100 pt-2 w-full shadow-[0px_-3px_5px_-5px_#00000040];
+  }
+  .agree-button {
+    @apply px-3 py-2 transition rounded-full shadow-sm bg-white cursor-pointer mr-2 font-semibold hover:bg-aths-light hover:border hover:border-white;
+  }
+  .decline-button {
+    @apply hover:bg-none border-none bg-none shadow-none font-normal hover:bg-transparent;
+    text-shadow: none;
+  }
+  /*-- flexslider --*/
+  .flexslider {
+    @apply mb-0 border-none;
+  }
+
+  .flex-direction-nav a {
+    @apply block w-10 h-10 -my-5 absolute top-1/2 z-10 overflow-hidden opacity-0 text-baragon text-center rounded-full transition-all bg-aths border border-verdun;
+    text-shadow: none;
+  }
+
+  .flex-direction-nav a:before {
+    @apply inline-block text-xl text-baragon leading-10;
+    font-family: "flexslider-icon";
+    content: "\f001";
+    text-shadow: none;
+  }
+
+  .flex-direction-nav .flex-next {
+    @apply -right-12 text-center;
+  }
+  /*-- tabs --*/
+  .field-group-tabs-wrapper {
+    @apply mt-8;
+  }
+  .horizontal-tabs .horizontal-tabs-list {
+    @apply bg-light-bg border-aths;
+  }
+  .horizontal-tabs .selected a {
+    @apply border-t-0 border-r-0 border-l-0 border-b-2 border-aths;
+  }
+  .horizontal-tab-button.selected,
+  .horizontal-tabs .horizontal-tab-button {
+    @apply border-none bg-transparent;
+  }
+  .horizontal-tabs .horizontal-tab-button a:hover {
+    @apply bg-transparent;
+  }
+  .horizontal-tabs-panes details,
+  .horizontal-tabs-panes .details-wrapper {
+    @apply m-0 py-0 pt-0 pb-4;
   }
 }

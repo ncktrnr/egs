@@ -1,67 +1,56 @@
-uuid: 5c972c2c-f556-4a3e-afae-e0078e663afe
+uuid: a3345138-844c-4e98-8004-8c5cd394d726
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card
     - field.field.node.recipe.body
     - field.field.node.recipe.field_image
     - field.field.node.recipe.field_information
     - field.field.node.recipe.field_ingredients
     - field.field.node.recipe.field_method
-    - image.style.wide
+    - image.style.max_325x325
     - node.type.recipe
   module:
     - image
+    - layout_builder
     - text
     - user
-id: node.recipe.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.recipe.card
 targetEntityType: node
 bundle: recipe
-mode: default
+mode: card
 content:
   body:
-    type: text_default
+    type: text_summary_or_trimmed
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: 270
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   field_image:
     type: image
     label: hidden
     settings:
       image_link: ''
-      image_style: wide
+      image_style: max_325x325
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
-    region: content
-  field_information:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 105
-    region: content
-  field_ingredients:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 102
-    region: content
-  field_method:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 103
+    weight: 0
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden:
+  field_information: true
+  field_ingredients: true
+  field_method: true
   langcode: true

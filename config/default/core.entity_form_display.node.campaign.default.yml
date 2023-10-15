@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.campaign.body
+    - field.field.node.campaign.field_image
+    - image.style.thumbnail
     - node.type.campaign
   module:
+    - image
     - path
     - text
 id: node.campaign.default
@@ -28,6 +31,14 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -70,6 +81,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

@@ -84,13 +84,13 @@
 
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('node__content grid lg:gap-24 lg:grid-flow-col lg:grid-cols-2') }}>
-    <div class="col-span-1 my-12">
+    <div class="col-span-1 mb-12">
           <h1 class="mb-8 text-6xl page-title">{{ label }}</h1>
           <div class="mb-6 text-verdun">{{ content.field_information }}</div>
           <div class="mb-12 prose max-w-none">{{ content|without('field_image', 'field_information', 'field_ingredients', 'field_method') }}</div>
     </div>
 
-    <div class="col-span-1 my-12">
+    <div class="col-span-1 mb-12">
       <div>{{ content.field_image }}</div>
     </div>
 

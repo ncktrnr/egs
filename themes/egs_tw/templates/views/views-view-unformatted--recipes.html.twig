@@ -25,6 +25,8 @@
       set row_classes = [
         default_row_class ? 'views-row',
         cycle(['odd', 'even'], loop.index0),
+        'flex',
+        'flex-col',
       ]
     %}
     <div{{ row.attributes.addClass(row_classes) }}>

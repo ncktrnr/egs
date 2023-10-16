@@ -75,44 +75,32 @@
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-    'relative',
-    'flex',
-    'flex-col',
-    'transition',
-    'duration-300',
-    'ease-in-out',
-    'bg-aths',
-    'hover:bg-aths-light',
-    'sm:shrink-0',
-    'sm:grow',
-    'sm:basis-0',
-    'group',
   ]
 %}
-
 {{ attach_library('egs_tw/node') }}
-
 <article{{ attributes.addClass(classes) }}>
-  <a href="{{ url }}" class="hover:no-underline">
-     <div class="before:absolute before:content-[''] before:border before:border-white before:block before:inset-3 before:z-10">
-      <div class="relative overflow-hidden card-img">
-        {{ content.field_image }}
+
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <footer class="node__meta">
+      {{ author_picture }}
+      <div{{ author_attributes.addClass('node__submitted') }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
       </div>
+    </footer>
+  {% endif %}
 
-      <div class="p-6">
-         <h5 class="mb-2 text-2xl font-medium leading-tight text-neutral-800">{{ label }}</h5>
+  <div{{ content_attributes.addClass('node__content prose lg:prose-lg container') }}>
+    <h1 class="mb-8 text-4xl page-title">{{ label }}</h1>
+    {{ content }}
+  </div>
 
-        <div class="mb-4 text-base text-neutral-600">
-         {{ content.body }}
-        </div>   
-
-      </div>     
-
-    </div>
-  </a>
 </article>
-
-
-
-
-

@@ -1,8 +1,9 @@
 uuid: 7cb34388-06f3-4f4e-a9d6-16d80940a91e
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
+    - filter.format.full_html
     - node.type.article
     - node.type.page
     - taxonomy.vocabulary.tags
@@ -12,6 +13,7 @@ dependencies:
     - contextual
     - eu_cookie_compliance
     - file
+    - filter
     - node
     - path
     - system
@@ -21,7 +23,7 @@ dependencies:
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
-label: 'Content editor'
+label: 'Editor de contenido'
 weight: 2
 is_admin: false
 permissions:
@@ -52,6 +54,7 @@ permissions:
   - 'translate any entity'
   - 'translate editable entities'
   - 'update content translations'
+  - 'use text format full_html'
   - 'view all revisions'
   - 'view own unpublished content'
   - 'view the administration theme'

@@ -1,5 +1,5 @@
 uuid: a5bd00c6-5382-4c6d-9151-e41e52e7c308
-langcode: en
+langcode: es
 status: true
 dependencies:
   config:
@@ -15,7 +15,7 @@ id: font.font.field_tags
 field_name: field_tags
 entity_type: font
 bundle: font
-label: Tags
+label: Etiquetas
 description: ''
 required: false
 translatable: false

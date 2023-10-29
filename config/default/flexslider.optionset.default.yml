@@ -1,11 +1,11 @@
 uuid: 6687c554-c246-4150-9867-0ee481d92250
-langcode: en
+langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: zW8dEKuN_hbYbIx-q05dK7KEUuXcAjFV4-9MKe9EOiw
 id: default
-label: Default
+label: 'Por defecto'
 options:
   animation: fade
   animationSpeed: 600

@@ -19,7 +19,7 @@ dependencies:
     - field.field.node.accommodation.field_price
     - node.type.accommodation
   module:
-    - expand_collapse_formatter
+    - field_group
     - image
     - layout_builder
     - text
@@ -28,6 +28,47 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
+  field_group:
+    group_details:
+      children:
+        - group_detail
+        - group_360
+      label: Details
+      parent_name: ''
+      region: content
+      weight: 6
+      format_type: accordion
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        effect: none
+    group_detail:
+      children:
+        - field_dropdown
+      label: Información
+      parent_name: group_details
+      region: content
+      weight: 16
+      format_type: accordion_item
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+    group_360:
+      children:
+        - field_360
+      label: 360°
+      parent_name: group_details
+      region: content
+      weight: 17
+      format_type: accordion_item
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
 id: node.accommodation.full
 targetEntityType: node
 bundle: accommodation
@@ -40,6 +81,13 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_360:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
   field_detail:
     type: text_default
     label: hidden
@@ -48,17 +96,11 @@ content:
     weight: 3
     region: content
   field_dropdown:
-    type: expand_collapse_formatter
+    type: text_default
     label: hidden
-    settings:
-      trim_length: 1
-      default_state: collapsed
-      link_text_open: 'Show full details'
-      link_text_close: 'Show less'
-      link_class_open: ecf-open
-      link_class_close: ecf-close
+    settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 7
     region: content
   field_overview:
     type: text_default
@@ -76,7 +118,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 6
+    weight: 5
     region: content
   field_price:
     type: string
@@ -92,7 +134,6 @@ content:
     weight: 0
     region: content
 hidden:
-  field_360: true
   field_accommodation_type: true
   field_button_text: true
   field_card_description: true

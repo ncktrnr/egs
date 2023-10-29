@@ -1,5 +1,5 @@
 uuid: 78614e0b-5f89-400c-a414-863ba829649e
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: 7-f_3ASk-Ly7MqcUiwREHB0r0l-jkq7bKwjRLTMhDEs
 id: redirect
-label: Redirect
+label: Redirección
 module: views
 description: 'List of redirects'
 tag: ''
@@ -18,11 +18,11 @@ base_field: rid
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:
-      title: Redirect
+      title: Redirección
       fields:
         redirect_bulk_form:
           id: redirect_bulk_form
@@ -74,7 +74,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: 'With selection'
+          action_title: 'Con selección'
           include_exclude: exclude
           selected_actions: {  }
         redirect_source__path:
@@ -87,7 +87,7 @@ display:
           entity_type: redirect
           entity_field: redirect_source
           plugin_id: field
-          label: From
+          label: Desde
           exclude: false
           alter:
             alter_text: false
@@ -172,7 +172,7 @@ display:
           entity_type: redirect
           entity_field: created
           plugin_id: date
-          label: Created
+          label: Creado
           exclude: false
           alter:
             alter_text: false
@@ -230,26 +230,26 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'next ›'
-            previous: '‹ previous'
-            first: '« first'
-            last: 'last »'
+            next: 'siguiente ›'
+            previous: '‹ anterior'
+            first: '« primero'
+            last: 'último »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementos por página'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Todo -'
             offset: false
-            offset_label: Offset
+            offset_label: Desplazamiento
           quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtro
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -291,7 +291,7 @@ display:
           exposed: true
           expose:
             operator_id: redirect_source__path_op
-            label: From
+            label: Desde
             description: ''
             use_operator: false
             operator: redirect_source__path_op
@@ -333,7 +333,7 @@ display:
           exposed: true
           expose:
             operator_id: redirect_redirect__uri_op
-            label: To
+            label: Para
             description: ''
             use_operator: false
             operator: redirect_redirect__uri_op
@@ -405,49 +405,49 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: '300 Multiple Choices'
+                title: '300 Múltiples posibilidades'
                 operator: '='
                 value:
                   min: ''
                   max: ''
                   value: '300'
               2:
-                title: '301 Moved Permanently'
+                title: '301 Movido permanentemente'
                 operator: '='
                 value:
                   min: ''
                   max: ''
                   value: '301'
               3:
-                title: '302 Found'
+                title: '302 Encontrado'
                 operator: '='
                 value:
                   min: ''
                   max: ''
                   value: '302'
               4:
-                title: '303 See Other'
+                title: '303 Ver otra ubicación'
                 operator: '='
                 value:
                   min: ''
                   max: ''
                   value: '303'
               5:
-                title: '304 Not Modified'
+                title: '304 No modificado'
                 operator: '='
                 value:
                   min: ''
                   max: ''
                   value: '304'
               6:
-                title: '305 Use Proxy'
+                title: '305 Usar proxy'
                 operator: '='
                 value:
                   min: ''
                   max: ''
                   value: '305'
               7:
-                title: '307 Temporary Redirect'
+                title: '307 Redirección temporal'
                 operator: '='
                 value:
                   min: ''
@@ -469,7 +469,7 @@ display:
           exposed: true
           expose:
             operator_id: language_op
-            label: 'Original language'
+            label: 'Lenguaje original'
             description: ''
             use_operator: false
             operator: language_op
@@ -589,7 +589,7 @@ display:
       cacheable: false
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Página
     display_plugin: page
     position: 1
     display_options:

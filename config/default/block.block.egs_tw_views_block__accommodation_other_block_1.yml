@@ -1,0 +1,33 @@
+uuid: 84726f82-b155-42c3-a507-131c8d7f4046
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.accommodation_other
+  module:
+    - node
+    - views
+  theme:
+    - egs_tw
+id: egs_tw_views_block__accommodation_other_block_1
+theme: egs_tw
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:accommodation_other-block_1'
+settings:
+  id: 'views_block:accommodation_other-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      accommodation: accommodation

@@ -1,5 +1,5 @@
 uuid: c28d5e0f-0200-4c9e-99eb-829fb149f101
-langcode: en
+langcode: es
 status: true
 dependencies:
   module:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: x_ok_ZsfA4Xk4B_hVW3O4-3PcNoK57nXLz_Dlletidg
 id: pathauto_update_alias_user
-label: 'Update URL alias'
+label: 'Actualizar alias de URL'
 type: user
 plugin: pathauto_update_alias
 configuration: {  }

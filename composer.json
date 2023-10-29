@@ -32,6 +32,7 @@
         "drupal/flexslider": "^3.0@alpha",
         "drupal/fontyourface": "^4.0",
         "drupal/google_tag": "^2.0",
+        "drupal/jquery_ui_accordion": "^2.0",
         "drupal/layout_builder_styles": "^2.0",
         "drupal/libraries": "^4.0",
         "drupal/metatag": "^2.0",

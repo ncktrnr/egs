@@ -365,12 +365,12 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
+      rendering_language: '***LANGUAGE_language_interface***'
       display_extenders: {  }
       block_description: 'home do even'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
       tags: {  }

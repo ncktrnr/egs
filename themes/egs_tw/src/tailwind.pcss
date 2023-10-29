@@ -42,17 +42,20 @@
   #block-egs-tw-main-menu .menu-item--active-trail {
     @apply border-baragon;
   }
-
+  /*-- booking--*/
   #block-egs-tw-bookingbar {
     @apply w-full bg-baragon;
   }
-
   #tbbform {
     @apply list-none;
   }
-
   #tbbform ol {
     @aply flex;
+  }
+  #tbbform input[type="date"]::-webkit-inner-spin-button,
+  #tbbform input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
   }
 
   #block-egs-tw-welcomemessage {
@@ -116,7 +119,7 @@
     @apply bg-light-bg border-aths;
   }
   .horizontal-tabs .selected a {
-    @apply border-t-0 border-r-0 border-l-0 border-b-2 border-aths;
+    @apply border-t-0 border-r-0 border-l-0 border-b-2 border-verdun;
   }
   .horizontal-tab-button.selected,
   .horizontal-tabs .horizontal-tab-button {
@@ -136,5 +139,46 @@
 
   #taxonomy-term-sitewide-layout-builder-form {
     @apply container;
+  }
+  /*-- reset accordion --*/
+  .field-group-accordion-wrapper.ui-accordion .ui-accordion-header {
+    margin: 0;
+    font-size: x-large;
+    padding-left: 0;
+  }
+  .accordion .ui-accordion .ui-accordion-content {
+    padding: 0;
+  }
+
+  .field-group-accordion-wrapper .ui-state-default,
+  .field-group-accordion-wrapper .ui-state-active,
+  .field-group-accordion-wrapper .ui-widget-content {
+    background: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    color: inherit;
+  }
+
+  .accordion .field-group-accordion-wrapper.ui-widget {
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  .accordion .text-formatted {
+    @apply prose;
+  }
+
+  .ui-state-active .ui-icon,
+  .ui-button:active .ui-icon {
+    background-image: url(/modules/contrib/jquery_ui/assets/vendor/jquery.ui/themes/base/images/ui-icons_444444_256x240.png);
+  }
+
+  .field-group-accordion-wrapper {
+    .ui-state-active a,
+    .ui-state-active a:link,
+    .ui-state-active a:visited {
+      color: #000000;
+    }
   }
 }

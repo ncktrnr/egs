@@ -1,0 +1,14 @@
+{
+  "name": "drupal/animate_on_scroll",
+  "description": "A small library to animate elements as you scroll.",
+  "type": "drupal-module",
+  "homepage": "https://www.drupal.org/project/animate_on_scroll",
+  "support": {
+    "issues": "https://www.drupal.org/project/animate_on_scroll",
+    "source": "https://cgit.drupalcode.org/animate_on_scroll"
+  },
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/core": "^8.8 || ^9 || ^10"
+  }
+}

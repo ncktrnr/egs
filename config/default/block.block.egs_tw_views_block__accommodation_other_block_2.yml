@@ -1,4 +1,4 @@
-uuid: 84726f82-b155-42c3-a507-131c8d7f4046
+uuid: e7981800-852f-45a9-b337-5d974815eb80
 langcode: en
 status: true
 dependencies:
@@ -10,14 +10,14 @@ dependencies:
     - views
   theme:
     - egs_tw
-id: egs_tw_views_block__accommodation_other_block_1
+id: egs_tw_views_block__accommodation_other_block_2
 theme: egs_tw
 region: sidebar_first
-weight: -10
+weight: -9
 provider: null
-plugin: 'views_block:accommodation_other-block_1'
+plugin: 'views_block:accommodation_other-block_2'
 settings:
-  id: 'views_block:accommodation_other-block_1'
+  id: 'views_block:accommodation_other-block_2'
   label: ''
   label_display: '0'
   provider: views
@@ -35,4 +35,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/node/1\r\n/node/2\r\n/node/6\r\n/node/7\r\n/node/8"
+    pages: "/node/3\r\n/node/4\r\n/node/9"

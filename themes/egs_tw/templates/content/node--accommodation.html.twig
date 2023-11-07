@@ -83,14 +83,15 @@
 
 <div class="mb-12 bg-baragon"><div class="container py-2 text-white">{{ content.field_detail	}}</div></div>
 <article{{ attributes.addClass(classes) }}>
-  <div{{ content_attributes.addClass('node__content grid gap-4 lg:grid-flow-col lg:grid-cols-2') }}>
+  <div{{ content_attributes.addClass('node__content grid gap-4 lg:gap-12 lg:grid-flow-col lg:grid-cols-2') }}>
     
     <div class="col-span-1 mb-12">
-      <div class="flex">
+      <div class="relative flex">
       
-        <div>
+        <div class="absolute opacity-25 letter -left-28"> 
           {{ content.field_icon.0 }}
         </div>
+
         <div>
           <h1 class="mb-6 page-title">{{ label }}</h1>
           <div class="mb-6 text-verdun">{{ content.field_price }}</div>

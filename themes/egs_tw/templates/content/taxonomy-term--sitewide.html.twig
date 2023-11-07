@@ -31,14 +31,14 @@
 %}
 <div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
   <div class="container items-baseline mb-12 overflow-hidden xl:grid xl:gap-x-6 xl:grid-cols-12">
-    <div class="xl:col-span-4">
+    <div class="xl:col-span-3">
       {{ title_prefix }}
         <h1 class="mb-6 text-6xl">{{ name }}</h1>
       {{ title_suffix }}
     </div>
 
-    <div class="xl:col-span-8">
-     <div class="prose prose-lg lg:prose-xl font-headline">
+    <div class="xl:col-span-9">
+     <div class="prose prose-lg lg:prose-xl xl:prose-2xl font-headline first-letter:text-4xl">
         {% set description = {
           '#type':   'processed_text',
           '#text':    term.description.value,

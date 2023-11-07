@@ -32,19 +32,28 @@ module.exports = {
         'verdun-bright': '#78804a',
 
         link: {
-          "text": "#0d77b5",
-          "hover": "#50591c",
-          "visited": "#51758B"
+          "text": "#50591c",
+          "hover": "#78804a",
+          "visited": "#3c4315"
         }
       },
       backgroundImage: {
         'brick-pattern': "url('/themes/egs_tw/images/bw-wall.png')",
         'footer-texture': "url('/themes/egs_tw/images/footer-background.jpg')",
       }, 
+      maxWidth: {
+        '70': '70ch',
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
               maxWidth: '70ch',
+              a: {
+                color: '#50591c',
+                  '&:hover': { 
+                    color: '#78804a',
+                  },
+              },
           },
         },
       })

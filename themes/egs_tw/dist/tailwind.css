@@ -823,9 +823,13 @@ blockquote{
 }
 
 .prose :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)){
-  color: var(--tw-prose-links);
+  color: #50591c;
   text-decoration: underline;
   font-weight: 500;
+}
+
+.prose :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)):hover{
+  color: #78804a;
 }
 
 .prose :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)){
@@ -1602,7 +1606,7 @@ blockquote{
 
 #block-egs-tw-main-menu .menu-item--active-trail{
   --tw-border-opacity: 1;
-  border-color: rgb(89 25 3 / var(--tw-border-opacity));
+  border-color: rgb(80 89 28 / var(--tw-border-opacity));
 }
 
 /*-- booking--*/
@@ -1950,9 +1954,13 @@ blockquote{
 }
 
 .accordion .text-formatted :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)){
-  color: var(--tw-prose-links);
+  color: #50591c;
   text-decoration: underline;
   font-weight: 500;
+}
+
+.accordion .text-formatted :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)):hover{
+  color: #78804a;
 }
 
 .accordion .text-formatted :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)){
@@ -2446,6 +2454,14 @@ blockquote{
   }
 }
 
+.bg-mountains {
+  background-image: url(/themes/egs_tw/images/mountains.svg);
+}
+
+.letter svg {
+  width: 100px;
+}
+
 .visible{
   visibility: visible;
 }
@@ -2470,6 +2486,10 @@ blockquote{
   inset: 0px;
 }
 
+.-left-28{
+  left: -7rem;
+}
+
 .-right-12{
   right: -3rem;
 }
@@ -2484,6 +2504,10 @@ blockquote{
 
 .z-10{
   z-index: 10;
+}
+
+.order-last{
+  order: 9999;
 }
 
 .col-span-1{
@@ -2579,10 +2603,6 @@ blockquote{
   margin-bottom: 0px;
 }
 
-.mb-1{
-  margin-bottom: 0.25rem;
-}
-
 .mb-12{
   margin-bottom: 3rem;
 }
@@ -2617,10 +2637,6 @@ blockquote{
 
 .mr-6{
   margin-right: 1.5rem;
-}
-
-.mr-8{
-  margin-right: 2rem;
 }
 
 .mr-auto{
@@ -2718,6 +2734,10 @@ blockquote{
 
 .max-w-none{
   max-width: none;
+}
+
+.max-w-screen-lg{
+  max-width: 1024px;
 }
 
 .shrink-0{
@@ -3012,6 +3032,22 @@ blockquote{
   --tw-gradient-to: #f8f7f3 var(--tw-gradient-to-position);
 }
 
+.bg-contain{
+  background-size: contain;
+}
+
+.bg-scroll{
+  background-attachment: scroll;
+}
+
+.bg-bottom{
+  background-position: bottom;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -3214,6 +3250,10 @@ blockquote{
   opacity: 0.1;
 }
 
+.opacity-25{
+  opacity: 0.25;
+}
+
 .shadow-\[0px_-3px_5px_-5px_\#00000040\]{
   --tw-shadow: 0px -3px 5px -5px #00000040;
   --tw-shadow-colored: 0px -3px 5px -5px var(--tw-shadow-color);
@@ -3264,10 +3304,6 @@ blockquote{
 
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
-.ease-in{
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 @media (min-width: 1024px){
@@ -3810,6 +3846,260 @@ blockquote{
   }
 }
 
+@media (min-width: 1280px){
+  .xl\:prose-2xl{
+    font-size: 1.5rem;
+    line-height: 1.6666667;
+  }
+
+  .xl\:prose-2xl :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+  }
+
+  .xl\:prose-2xl :where([class~="lead"]):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 1.25em;
+    line-height: 1.4666667;
+    margin-top: 1.0666667em;
+    margin-bottom: 1.0666667em;
+  }
+
+  .xl\:prose-2xl :where(blockquote):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 1.7777778em;
+    margin-bottom: 1.7777778em;
+    padding-left: 1.1111111em;
+  }
+
+  .xl\:prose-2xl :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 2.6666667em;
+    margin-top: 0;
+    margin-bottom: 0.875em;
+    line-height: 1;
+  }
+
+  .xl\:prose-2xl :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 0.8333333em;
+    line-height: 1.0833333;
+  }
+
+  .xl\:prose-2xl :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 1.5em;
+    margin-top: 1.5555556em;
+    margin-bottom: 0.6666667em;
+    line-height: 1.2222222;
+  }
+
+  .xl\:prose-2xl :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 1.6666667em;
+    margin-bottom: 0.6666667em;
+    line-height: 1.5;
+  }
+
+  .xl\:prose-2xl :where(img):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .xl\:prose-2xl :where(picture):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .xl\:prose-2xl :where(picture > img):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .xl\:prose-2xl :where(video):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .xl\:prose-2xl :where(kbd):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 0.8333333em;
+    border-radius: 0.375rem;
+    padding-top: 0.25em;
+    padding-right: 0.3333333em;
+    padding-bottom: 0.25em;
+    padding-left: 0.3333333em;
+  }
+
+  .xl\:prose-2xl :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 0.8333333em;
+  }
+
+  .xl\:prose-2xl :where(h2 code):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 0.875em;
+  }
+
+  .xl\:prose-2xl :where(h3 code):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 0.8888889em;
+  }
+
+  .xl\:prose-2xl :where(pre):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 0.8333333em;
+    line-height: 1.8;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 0.5rem;
+    padding-top: 1.2em;
+    padding-right: 1.6em;
+    padding-bottom: 1.2em;
+    padding-left: 1.6em;
+  }
+
+  .xl\:prose-2xl :where(ol):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+    padding-left: 1.5833333em;
+  }
+
+  .xl\:prose-2xl :where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+    padding-left: 1.5833333em;
+  }
+
+  .xl\:prose-2xl :where(li):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .xl\:prose-2xl :where(ol > li):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    padding-left: 0.4166667em;
+  }
+
+  .xl\:prose-2xl :where(ul > li):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    padding-left: 0.4166667em;
+  }
+
+  .xl\:prose-2xl :where(.xl\:prose-2xl > ul > li p):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0.8333333em;
+    margin-bottom: 0.8333333em;
+  }
+
+  .xl\:prose-2xl :where(.xl\:prose-2xl > ul > li > *:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 1.3333333em;
+  }
+
+  .xl\:prose-2xl :where(.xl\:prose-2xl > ul > li > *:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-bottom: 1.3333333em;
+  }
+
+  .xl\:prose-2xl :where(.xl\:prose-2xl > ol > li > *:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 1.3333333em;
+  }
+
+  .xl\:prose-2xl :where(.xl\:prose-2xl > ol > li > *:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-bottom: 1.3333333em;
+  }
+
+  .xl\:prose-2xl :where(ul ul, ul ol, ol ul, ol ol):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0.6666667em;
+    margin-bottom: 0.6666667em;
+  }
+
+  .xl\:prose-2xl :where(dl):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+  }
+
+  .xl\:prose-2xl :where(dt):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 1.3333333em;
+  }
+
+  .xl\:prose-2xl :where(dd):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0.5em;
+    padding-left: 1.5833333em;
+  }
+
+  .xl\:prose-2xl :where(hr):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  .xl\:prose-2xl :where(hr + *):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0;
+  }
+
+  .xl\:prose-2xl :where(h2 + *):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0;
+  }
+
+  .xl\:prose-2xl :where(h3 + *):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0;
+  }
+
+  .xl\:prose-2xl :where(h4 + *):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0;
+  }
+
+  .xl\:prose-2xl :where(table):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 0.8333333em;
+    line-height: 1.4;
+  }
+
+  .xl\:prose-2xl :where(thead th):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    padding-right: 0.6em;
+    padding-bottom: 0.8em;
+    padding-left: 0.6em;
+  }
+
+  .xl\:prose-2xl :where(thead th:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    padding-left: 0;
+  }
+
+  .xl\:prose-2xl :where(thead th:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    padding-right: 0;
+  }
+
+  .xl\:prose-2xl :where(tbody td, tfoot td):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    padding-top: 0.8em;
+    padding-right: 0.6em;
+    padding-bottom: 0.8em;
+    padding-left: 0.6em;
+  }
+
+  .xl\:prose-2xl :where(tbody td:first-child, tfoot td:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    padding-left: 0;
+  }
+
+  .xl\:prose-2xl :where(tbody td:last-child, tfoot td:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    padding-right: 0;
+  }
+
+  .xl\:prose-2xl :where(figure):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .xl\:prose-2xl :where(figure > *):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .xl\:prose-2xl :where(figcaption):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-size: 0.8333333em;
+    line-height: 1.6;
+    margin-top: 1em;
+  }
+
+  .xl\:prose-2xl :where(.xl\:prose-2xl > :first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-top: 0;
+  }
+
+  .xl\:prose-2xl :where(.xl\:prose-2xl > :last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    margin-bottom: 0;
+  }
+}
+
+.first-letter\:text-4xl::first-letter{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -3967,6 +4257,10 @@ blockquote{
 }
 
 @media (min-width: 640px){
+  .sm\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .sm\:mr-2{
     margin-right: 0.5rem;
   }
@@ -4086,16 +4380,12 @@ blockquote{
     margin-bottom: -1.5rem;
   }
 
+  .lg\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .lg\:mt-0{
     margin-top: 0px;
-  }
-
-  .lg\:block{
-    display: block;
-  }
-
-  .lg\:flex{
-    display: flex;
   }
 
   .lg\:grid{
@@ -4122,6 +4412,10 @@ blockquote{
     align-items: center;
   }
 
+  .lg\:gap-12{
+    gap: 3rem;
+  }
+
   .lg\:gap-24{
     gap: 6rem;
   }
@@ -4140,17 +4434,29 @@ blockquote{
 }
 
 @media (min-width: 1280px){
-  .xl\:col-span-4{
-    grid-column: span 4 / span 4;
+  .xl\:col-span-3{
+    grid-column: span 3 / span 3;
   }
 
-  .xl\:col-span-8{
-    grid-column: span 8 / span 8;
+  .xl\:col-span-9{
+    grid-column: span 9 / span 9;
   }
 
   .xl\:mx-24{
     margin-left: 6rem;
     margin-right: 6rem;
+  }
+
+  .xl\:mr-8{
+    margin-right: 2rem;
+  }
+
+  .xl\:block{
+    display: block;
+  }
+
+  .xl\:flex{
+    display: flex;
   }
 
   .xl\:grid{

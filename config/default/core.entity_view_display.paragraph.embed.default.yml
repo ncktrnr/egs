@@ -1,0 +1,30 @@
+uuid: 2283f887-382c-48c2-81a9-e9a5acdda60d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embed.field_caption
+    - field.field.paragraph.embed.field_embed_media
+    - paragraphs.paragraphs_type.embed
+  module:
+    - text
+id: paragraph.embed.default
+targetEntityType: paragraph
+bundle: embed
+mode: default
+content:
+  field_caption:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_embed_media:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,29 +1,20 @@
-uuid: f39357cb-d7d9-4e67-bd3e-4300a2d1c727
-langcode: es
+uuid: 9b6cae5d-25d1-43b0-9083-656e28aec542
+langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.article
+    - field.storage.paragraph.field_image
+    - paragraphs.paragraphs_type.image
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
-_core:
-  default_config_hash: PmVL51L3A9QGbPLoeLHw5epAPszeZRasCeC3imeeDRQ
-id: node.article.field_image
+id: paragraph.image.field_image
 field_name: field_image
-entity_type: node
-bundle: article
-label: Imagen
-description: 'Image will display centred. Max-width: 1024px.'
+entity_type: paragraph
+bundle: image
+label: Image
+description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

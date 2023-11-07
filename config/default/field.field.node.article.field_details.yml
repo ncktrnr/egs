@@ -1,0 +1,24 @@
+uuid: 5e9df98c-19cc-46e2-97fd-888af49c10e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_details
+    - filter.format.basic_html
+    - node.type.article
+  module:
+    - text
+id: node.article.field_details
+field_name: field_details
+entity_type: node
+bundle: article
+label: Details
+description: 'Short line of text'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

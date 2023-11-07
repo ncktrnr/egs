@@ -1,0 +1,21 @@
+uuid: bfae274f-d5be-4b25-92a7-2c169e76dde0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block
+    - field.storage.block_content.field_image_right_align
+id: block_content.banner_block.field_image_right_align
+field_name: field_image_right_align
+entity_type: block_content
+bundle: banner_block
+label: 'Image right-align'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

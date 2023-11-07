@@ -1,0 +1,16 @@
+uuid: de2ec1a6-fc6d-40d0-bc62-ee53f57ada50
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.heading_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: block_content.heading_block
+target_entity_type_id: block_content
+target_bundle: heading_block
+default_langcode: site_default
+language_alterable: false

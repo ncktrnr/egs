@@ -1,0 +1,24 @@
+uuid: 3d7778c8-f149-4f4b-b739-45912c9be0f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embed_media
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.embed
+  module:
+    - text
+id: paragraph.embed.field_embed_media
+field_name: field_embed_media
+entity_type: paragraph
+bundle: embed
+label: 'Embed media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

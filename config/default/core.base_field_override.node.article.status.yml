@@ -1,17 +1,17 @@
-uuid: da63af37-682c-40fd-8aa4-d4ae4188f988
+uuid: 5ea7b352-2372-4b98-9d1d-bcc50c0e63da
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.article
-id: node.article.promote
-field_name: promote
+id: node.article.status
+field_name: status
 entity_type: node
 bundle: article
-label: 'Promoted to front page'
+label: Published
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 0

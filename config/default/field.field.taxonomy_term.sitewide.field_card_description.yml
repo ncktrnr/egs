@@ -1,17 +1,17 @@
-uuid: e4d97332-d0d0-4b17-9b46-04904bd2ce37
+uuid: 058a7ba2-ae09-4cf7-885f-5c780a0db6a8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_card_description
+    - field.storage.taxonomy_term.field_card_description
     - filter.format.basic_html
-    - node.type.accommodation
+    - taxonomy.vocabulary.sitewide
   module:
     - text
-id: node.accommodation.field_card_description
+id: taxonomy_term.sitewide.field_card_description
 field_name: field_card_description
-entity_type: node
-bundle: accommodation
+entity_type: taxonomy_term
+bundle: sitewide
 label: 'Card description'
 description: 'Text will appear on cards where displayed on other pages'
 required: false

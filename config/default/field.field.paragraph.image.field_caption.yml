@@ -1,0 +1,24 @@
+uuid: c404e950-13c0-42d3-8c34-c7a770cd459f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caption
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.image
+  module:
+    - text
+id: paragraph.image.field_caption
+field_name: field_caption
+entity_type: paragraph
+bundle: image
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

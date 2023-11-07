@@ -1,0 +1,24 @@
+uuid: 058a7ba2-ae09-4cf7-885f-5c780a0db6a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_card_description
+    - filter.format.basic_html
+    - taxonomy.vocabulary.sitewide
+  module:
+    - text
+id: taxonomy_term.sitewide.field_card_description
+field_name: field_card_description
+entity_type: taxonomy_term
+bundle: sitewide
+label: 'Card description'
+description: 'Text will appear on cards where displayed on other pages'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

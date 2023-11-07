@@ -310,7 +310,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      css_class: 'container my-6'
+      css_class: ''
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -330,6 +330,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      title: 'Ver nuestras otras habitaciones'
       filters:
         type:
           id: type
@@ -428,9 +429,12 @@ display:
         groups:
           1: AND
       defaults:
+        title: false
         filters: false
         filter_groups: false
+        header: false
       display_description: ''
+      header: {  }
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders: {  }
       block_description: 'Rooms block'
@@ -449,6 +453,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      title: 'Vea nuestros otros apartamentos'
       filters:
         type:
           id: type
@@ -547,6 +552,7 @@ display:
         groups:
           1: AND
       defaults:
+        title: false
         filters: false
         filter_groups: false
       display_description: ''

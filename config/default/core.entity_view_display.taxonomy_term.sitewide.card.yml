@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.card
     - field.field.taxonomy_term.sitewide.field_button_text
+    - field.field.taxonomy_term.sitewide.field_card_description
     - field.field.taxonomy_term.sitewide.field_image
     - field.field.taxonomy_term.sitewide.layout_builder__layout
     - taxonomy.vocabulary.sitewide
@@ -21,13 +22,6 @@ targetEntityType: taxonomy_term
 bundle: sitewide
 mode: card
 content:
-  description:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_button_text:
     type: string
     label: hidden
@@ -35,6 +29,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_card_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_image:
     type: responsive_image
@@ -48,5 +49,6 @@ content:
     weight: 0
     region: content
 hidden:
+  description: true
   langcode: true
   layout_builder__layout: true

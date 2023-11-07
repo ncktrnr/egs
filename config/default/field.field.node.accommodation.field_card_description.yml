@@ -13,7 +13,7 @@ field_name: field_card_description
 entity_type: node
 bundle: accommodation
 label: 'Card description'
-description: ''
+description: 'Text will appear on cards where displayed on other pages'
 required: false
 translatable: true
 default_value: {  }

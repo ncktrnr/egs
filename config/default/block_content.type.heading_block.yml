@@ -1,0 +1,8 @@
+uuid: 7f48497b-da5d-4794-bd24-ad882f97c310
+langcode: en
+status: true
+dependencies: {  }
+id: heading_block
+label: 'Heading block'
+revision: 0
+description: 'Title with description'

@@ -1,0 +1,21 @@
+uuid: c1dceac3-fbd6-4a95-877e-5fbe2700391a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_gallery
+    - media.type.image
+id: media.image.field_gallery
+field_name: field_gallery
+entity_type: media
+bundle: image
+label: Gallery
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

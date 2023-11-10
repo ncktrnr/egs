@@ -1,0 +1,24 @@
+uuid: bed0cf79-e47a-427c-b463-67d1c8243468
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caption
+    - filter.format.basic_html
+    - node.type.article
+  module:
+    - text
+id: node.article.field_caption
+field_name: field_caption
+entity_type: node
+bundle: article
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

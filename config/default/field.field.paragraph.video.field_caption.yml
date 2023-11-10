@@ -1,0 +1,24 @@
+uuid: d69ad2c0-c04d-4915-8ff2-a8dda88eb71d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caption
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.video
+  module:
+    - text
+id: paragraph.video.field_caption
+field_name: field_caption
+entity_type: paragraph
+bundle: video
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

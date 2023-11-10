@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.embed
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: node.article.field_paragraph
@@ -27,6 +28,7 @@ settings:
       text: text
       image: image
       embed: embed
+      video: video
     negate: 0
     target_bundles_drag_drop:
       embed:
@@ -40,5 +42,5 @@ settings:
         enabled: true
       video:
         weight: 8
-        enabled: false
+        enabled: true
 field_type: entity_reference_revisions

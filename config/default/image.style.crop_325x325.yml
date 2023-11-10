@@ -1,0 +1,15 @@
+uuid: 2b22db51-c8e7-4daf-9f4c-03de79f7c0a2
+langcode: en
+status: true
+dependencies: {  }
+name: crop_325x325
+label: 'Crop 325x325'
+effects:
+  27659c95-a9f3-4bcd-8b21-792b324ebdf3:
+    uuid: 27659c95-a9f3-4bcd-8b21-792b324ebdf3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 325
+      height: 325
+      anchor: center-center

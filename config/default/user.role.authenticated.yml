@@ -10,13 +10,14 @@ dependencies:
     - eu_cookie_compliance
     - file
     - filter
+    - media
     - search
     - shortcut
     - system
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
-label: 'Usuario autenticado'
+label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
@@ -30,3 +31,4 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'view media'

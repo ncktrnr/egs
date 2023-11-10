@@ -59,7 +59,7 @@
   }
 
   #block-egs-tw-welcomemessage {
-    @apply max-w-4xl mx-auto mb-12 text-2xl font-headline font-bold leading-tight text-center text-gray-800;
+    @apply max-w-4xl mx-auto pt-12 mb-12 text-3xl font-headline leading-tight text-center text-gray-800;
   }
 
   #block-egs-tw-site-branding {
@@ -185,7 +185,28 @@
     background-image: url(/themes/egs_tw/images/mountains.svg);
   }
 
+  .bg-map {
+    background-image: url(/themes/egs_tw/images/line-map.svg);
+  }
+
   .letter svg {
     width: 100px;
+  }
+  .field--name-field-caption {
+    @apply text-slate-500 text-base;
+  }
+
+  .field--name-field-embed-media iframe {
+    @apply w-full aspect-video max-w-[1000px];
+  }
+  .field--name-field-video iframe {
+    @apply w-full h-auto aspect-video;
+  }
+  .node__content .field--name-field-details {
+    margin-bottom: -1.3333333em;
+  }
+
+  .bg-mid {
+    background-position: 75% 25%;
   }
 }

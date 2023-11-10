@@ -21,7 +21,7 @@ field_name: field_image
 entity_type: node
 bundle: article
 label: Imagen
-description: 'Image will display centred. Max-width: 1024px.'
+description: 'Standard 16:9 images: 756x425px, or 1024x576px. Image will display centred; max-width: 1024px.'
 required: false
 translatable: true
 default_value: {  }

@@ -33,3 +33,12 @@ function egs_tw_theme_suggestions_taxonomy_term_alter(array &$suggestions, array
   $suggestions[] = 'taxonomy_term__' . $term->id() . '__' . $sanitized_view_mode;
 }
 
+/**
+ * Implementation of hook_theme_suggestions_hook().
+ */
+function egs_tw_theme_suggestions_block_alter(&$suggestions, $variables) {
+  if (isset($variables['elements']['content']['#block_content'])) {
+    $bundle = $variables['elements']['content']['#block_content']->bundle();
+    array_splice($suggestions, 1, 0, 'block__' . $bundle);
+  }
+}

@@ -12,7 +12,7 @@ field_name: field_image
 entity_type: paragraph
 bundle: image
 label: Image
-description: ''
+description: 'Standard 16:9 images: 756x425px, or 1024x576px. Image will display centred; max-width: 1024px.'
 required: false
 translatable: false
 default_value: {  }

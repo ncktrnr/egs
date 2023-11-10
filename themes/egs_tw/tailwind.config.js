@@ -10,7 +10,7 @@ module.exports = {
       DEFAULT: '0.5rem', sm: '1rem',
       lg: '1.5rem',
       xl: '2rem'
-      }, 
+      },
     },
 
     extend: {
@@ -44,15 +44,23 @@ module.exports = {
       maxWidth: {
         '70': '70ch',
       },
+      backgroundPosition: {
+        'mid': '75% 25%',
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
               maxWidth: '70ch',
               a: {
                 color: '#50591c',
+                textDecorationColor: '#d6cfb2',
                   '&:hover': { 
                     color: '#78804a',
+                    textDecorationColor: '#78804a',
                   },
+              },
+              blockquote: {
+                fontSize: '125%',
               },
           },
         },

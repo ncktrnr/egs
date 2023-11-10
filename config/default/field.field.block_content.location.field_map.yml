@@ -1,0 +1,26 @@
+uuid: 08a1cd5c-5923-495a-86c9-3aa93932b49f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.location
+    - field.storage.block_content.field_map
+    - filter.format.full_html
+    - filter.format.restricted_html
+  module:
+    - text
+id: block_content.location.field_map
+field_name: field_map
+entity_type: block_content
+bundle: location
+label: Map
+description: 'Map embed'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - restricted_html
+    - full_html
+field_type: text_long

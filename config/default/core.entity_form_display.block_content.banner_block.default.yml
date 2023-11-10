@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.banner_block
     - field.field.block_content.banner_block.body
+    - field.field.block_content.banner_block.field_heading
     - field.field.block_content.banner_block.field_image
     - field.field.block_content.banner_block.field_image_right_align
     - image.style.thumbnail
@@ -25,6 +26,14 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_heading:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_image:
     type: image_image

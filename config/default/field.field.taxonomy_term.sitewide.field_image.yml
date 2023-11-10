@@ -12,7 +12,7 @@ field_name: field_image
 entity_type: taxonomy_term
 bundle: sitewide
 label: Image
-description: ''
+description: "704x469px; aspect ratio is: 3 : 2 (940x640)\r\n"
 required: false
 translatable: false
 default_value: {  }

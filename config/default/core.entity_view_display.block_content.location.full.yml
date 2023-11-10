@@ -1,0 +1,52 @@
+uuid: c415d54f-ea20-430c-a795-124afaa13247
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.location
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.location.body
+    - field.field.block_content.location.field_directions
+    - field.field.block_content.location.field_map
+  module:
+    - expand_collapse_formatter
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: block_content.location.full
+targetEntityType: block_content
+bundle: location
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_directions:
+    type: expand_collapse_formatter
+    label: hidden
+    settings:
+      trim_length: 300
+      default_state: collapsed
+      link_text_open: '+ Ver más'
+      link_text_close: '- ver menos'
+      link_class_open: ecf-open
+      link_class_close: ecf-close
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_map:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

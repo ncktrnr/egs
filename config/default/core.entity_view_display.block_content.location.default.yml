@@ -1,0 +1,39 @@
+uuid: 890e5ed3-109d-4859-8e39-c8d32bc51196
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.location
+    - field.field.block_content.location.body
+    - field.field.block_content.location.field_directions
+    - field.field.block_content.location.field_map
+  module:
+    - text
+id: block_content.location.default
+targetEntityType: block_content
+bundle: location
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_directions:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_map:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

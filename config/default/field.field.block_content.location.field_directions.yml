@@ -1,0 +1,26 @@
+uuid: 8f0b5e50-9a56-48a9-b756-94b055a17f4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.location
+    - field.storage.block_content.field_directions
+    - filter.format.basic_html
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.location.field_directions
+field_name: field_directions
+entity_type: block_content
+bundle: location
+label: Directions
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

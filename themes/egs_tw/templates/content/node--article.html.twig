@@ -76,6 +76,7 @@
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     'container',
+    'py-12',
   ]
 %}
 {{ attach_library('egs_tw/node') }}
@@ -96,8 +97,10 @@
     {{ content.body }}
   </div>
 
-  <div class="flex justify-center max-w-screen-lg mx-auto prose lg:prose-lg">{{ content.field_image }}</div>
+  <div class="flex justify-center max-w-screen-lg mx-auto">
+    {{ content.field_image }}
+    <div class="text-sm text-slate-500">{{ content.field_caption.field_paragraph }}</div>
+  </div>
 
    {{ content.field_paragraph }}
-
 </article>

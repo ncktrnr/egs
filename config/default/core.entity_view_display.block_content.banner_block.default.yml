@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.banner_block
     - field.field.block_content.banner_block.body
+    - field.field.block_content.banner_block.field_heading
     - field.field.block_content.banner_block.field_image
     - field.field.block_content.banner_block.field_image_right_align
   module:
@@ -19,6 +20,14 @@ content:
     type: text_default
     label: hidden
     settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     weight: 0
     region: content

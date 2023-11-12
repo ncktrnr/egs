@@ -6,13 +6,20 @@ dependencies:
     - field.storage.node.field_image
     - node.type.recipe
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.recipe.field_image
 field_name: field_image
 entity_type: node
 bundle: recipe
 label: Image
-description: ''
+description: '704x469px; aspect ratio is: 3 : 2 (940x640)'
 required: false
 translatable: true
 default_value: {  }

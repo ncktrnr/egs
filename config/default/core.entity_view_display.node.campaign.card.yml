@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.card
     - field.field.node.campaign.body
     - field.field.node.campaign.field_image
+    - field.field.node.campaign.field_paragraph
     - image.style.max_325x325
     - node.type.campaign
   module:
@@ -47,4 +48,5 @@ content:
     weight: 2
     region: content
 hidden:
+  field_paragraph: true
   langcode: true

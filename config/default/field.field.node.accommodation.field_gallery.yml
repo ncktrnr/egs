@@ -6,13 +6,20 @@ dependencies:
     - field.storage.node.field_gallery
     - node.type.accommodation
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.accommodation.field_gallery
 field_name: field_gallery
 entity_type: node
 bundle: accommodation
 label: Gallery
-description: ''
+description: 'Aspect ratio 20 : 9 (2000x900px)'
 required: false
 translatable: true
 default_value: {  }
@@ -23,7 +30,7 @@ settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'jpg jpeg'
   max_filesize: ''
-  max_resolution: 1480x720
+  max_resolution: 2000x900
   min_resolution: ''
   alt_field: true
   alt_field_required: true

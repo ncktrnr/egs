@@ -12,7 +12,7 @@ field_name: field_image
 entity_type: node
 bundle: campaign
 label: Image
-description: ''
+description: 'Standard 16:9 images: 756x425px'
 required: false
 translatable: false
 default_value: {  }

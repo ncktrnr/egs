@@ -1,0 +1,10 @@
+{#
+/* Overwrites for the discover sub pages
+ */
+#}
+
+{% extends '@egs_tw/content/taxonomy-term--sitewide.html.twig' %}
+
+{% block blink %}
+ <div class="text-lg prose mb-7">{{ drupal_entity('block_content', '43') }}</div>
+{% endblock %}

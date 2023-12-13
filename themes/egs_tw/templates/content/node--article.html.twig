@@ -90,17 +90,22 @@
   {% endif %}
   {{ title_suffix }}
 
-  <div{{ content_attributes.addClass('node__content prose lg:prose-lg mx-auto') }}>
+  <div{{ content_attributes.addClass('node__content prose lg:prose-lg mx-auto mb-6') }}>
     <div class="mb-6">{{ content.field_category.0 }}</div>
     <h1 class="mb-8 text-4xl page-title">{{ label }}</h1>
     {{ content.field_details }}
     {{ content.body }}
+
   </div>
 
-  <div class="flex justify-center max-w-screen-lg mx-auto">
+  <div class="grid max-w-screen-lg mx-auto mb-12 place-content-center not-prose">
     {{ content.field_image }}
-    <div class="text-sm text-slate-500">{{ content.field_caption.field_paragraph }}</div>
+    <div class="text-sm text-slate-500">{{ content.field_caption }}</div>
   </div>
 
    {{ content.field_paragraph }}
 </article>
+
+<section class="pb-24">
+  {{ drupal_view('related_articles', 'related_block') }}
+</section>

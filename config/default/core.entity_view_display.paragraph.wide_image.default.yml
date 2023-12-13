@@ -1,18 +1,18 @@
-uuid: 3e9364b4-177a-4623-9ec9-4ce3a8d2d107
+uuid: db714feb-793c-4996-9156-ebd394d12ad0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.image.field_caption
-    - field.field.paragraph.image.field_image
-    - image.style.scale_756
-    - paragraphs.paragraphs_type.image
+    - field.field.paragraph.wide_image.field_caption
+    - field.field.paragraph.wide_image.field_image
+    - paragraphs.paragraphs_type.wide_image
+    - responsive_image.styles.full
   module:
-    - image
+    - responsive_image
     - text
-id: paragraph.image.default
+id: paragraph.wide_image.default
 targetEntityType: paragraph
-bundle: image
+bundle: wide_image
 mode: default
 content:
   field_caption:
@@ -23,11 +23,11 @@ content:
     weight: 1
     region: content
   field_image:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: full
       image_link: ''
-      image_style: scale_756
       image_loading:
         attribute: lazy
     third_party_settings: {  }

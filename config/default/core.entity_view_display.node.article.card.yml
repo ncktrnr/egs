@@ -12,7 +12,7 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_paragraph
     - field.field.node.article.field_tags
-    - image.style.wide
+    - image.style.crop_608x342
     - node.type.article
   module:
     - image
@@ -42,7 +42,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: wide
+      image_style: crop_608x342
       image_loading:
         attribute: lazy
     third_party_settings: {  }

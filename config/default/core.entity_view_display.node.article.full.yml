@@ -12,12 +12,12 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_paragraph
     - field.field.node.article.field_tags
-    - image.style.wide
     - node.type.article
+    - responsive_image.styles.full
   module:
     - entity_reference_revisions
-    - image
     - layout_builder
+    - responsive_image
     - text
     - user
 third_party_settings:
@@ -61,11 +61,11 @@ content:
     weight: 3
     region: content
   field_image:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: full
       image_link: ''
-      image_style: wide
       image_loading:
         attribute: lazy
     third_party_settings: {  }

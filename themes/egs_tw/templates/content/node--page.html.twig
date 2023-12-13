@@ -75,6 +75,8 @@
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'container',
+    'py-12',
   ]
 %}
 {{ attach_library('egs_tw/node') }}
@@ -100,7 +102,14 @@
 
   <div{{ content_attributes.addClass('node__content prose lg:prose-lg container') }}>
     <h1 class="mb-8 text-4xl page-title">{{ label }}</h1>
-    {{ content }}
+    {{ content.body }}
   </div>
 
+  <div class="grid max-w-screen-lg mx-auto mb-12 place-content-center not-prose">
+    {{ content.field_image }}
+    <div class="text-sm text-slate-500">{{ content.field_caption }}</div>
+  </div>
+
+   {{ content.field_paragraph }}
+   
 </article>

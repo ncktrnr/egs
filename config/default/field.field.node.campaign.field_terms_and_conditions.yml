@@ -1,0 +1,24 @@
+uuid: 6c38f6b9-04ca-42ff-938f-0f6e8b8f04d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_terms_and_conditions
+    - filter.format.basic_html
+    - node.type.campaign
+  module:
+    - text
+id: node.campaign.field_terms_and_conditions
+field_name: field_terms_and_conditions
+entity_type: node
+bundle: campaign
+label: 'Terms and conditions'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

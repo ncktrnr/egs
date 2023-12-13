@@ -1,17 +1,17 @@
-uuid: bed0cf79-e47a-427c-b463-67d1c8243468
+uuid: 43f27036-abf3-4b3b-bf9e-fd9e5b3a14f6
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_caption
     - filter.format.basic_html
-    - node.type.article
+    - node.type.page
   module:
     - text
-id: node.article.field_caption
+id: node.page.field_caption
 field_name: field_caption
 entity_type: node
-bundle: article
+bundle: page
 label: Caption
 description: ''
 required: false

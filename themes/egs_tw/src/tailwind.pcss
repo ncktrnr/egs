@@ -186,7 +186,7 @@
   }
 
   .bg-map {
-    background-image: url(/themes/egs_tw/images/line-map.svg);
+    background-image: url(/themes/egs_tw/images/outline-map.svg);
   }
 
   .letter svg {
@@ -197,10 +197,10 @@
   }
 
   .field--name-field-embed-media iframe {
-    @apply w-full aspect-video max-w-[1000px];
+    @apply aspect-video max-w-[1024px];
   }
   .field--name-field-video iframe {
-    @apply w-full h-auto aspect-video;
+    @apply h-auto aspect-video;
   }
   .node__content .field--name-field-details {
     margin-bottom: -1.3333333em;
@@ -208,5 +208,16 @@
 
   .bg-mid {
     background-position: 75% 25%;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }

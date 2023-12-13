@@ -1,0 +1,15 @@
+uuid: 1a0a6e4d-8718-43ca-a2aa-8cd8e2d148cf
+langcode: en
+status: true
+dependencies: {  }
+name: scale_756
+label: 'Scale 756'
+effects:
+  cc9ad519-58a3-48f9-9ec8-3891f1c25290:
+    uuid: cc9ad519-58a3-48f9-9ec8-3891f1c25290
+    id: image_scale
+    weight: 1
+    data:
+      width: 756
+      height: null
+      upscale: false

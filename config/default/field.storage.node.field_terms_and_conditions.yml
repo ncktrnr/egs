@@ -1,0 +1,19 @@
+uuid: b269e26a-337f-4eeb-9783-dc96c9b67229
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_terms_and_conditions
+field_name: field_terms_and_conditions
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

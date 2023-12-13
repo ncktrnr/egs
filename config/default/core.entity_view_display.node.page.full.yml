@@ -1,30 +1,38 @@
-uuid: c07087c9-0e5f-4f37-8ef5-5e9026af1330
+uuid: c95845e4-07ac-4d37-8e07-8181a6ef757f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.campaign.body
-    - field.field.node.campaign.field_image
-    - field.field.node.campaign.field_paragraph
-    - field.field.node.campaign.field_terms_and_conditions
+    - core.entity_view_mode.node.full
+    - field.field.node.page.body
+    - field.field.node.page.field_caption
+    - field.field.node.page.field_image
+    - field.field.node.page.field_paragraph
     - image.style.wide
-    - node.type.campaign
+    - node.type.page
   module:
     - entity_reference_revisions
     - image
     - text
     - user
-id: node.campaign.default
+id: node.page.full
 targetEntityType: node
-bundle: campaign
-mode: default
+bundle: page
+mode: full
 content:
   body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 2
+    region: content
+  field_caption:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_image:
     type: image
@@ -35,7 +43,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 0
     region: content
   field_paragraph:
     type: entity_reference_revisions_entity_view
@@ -44,19 +52,12 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 112
-    region: content
-  field_terms_and_conditions:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 113
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 4
     region: content
 hidden:
   langcode: true

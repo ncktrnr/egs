@@ -1,49 +1,41 @@
-uuid: 5aa4dc91-a56c-4968-a7e7-78e289115dbb
-langcode: es
+uuid: 081cf121-27ba-432f-9c7e-414880ec51ef
+langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.card
     - field.field.node.page.body
     - field.field.node.page.field_caption
     - field.field.node.page.field_image
     - field.field.node.page.field_paragraph
-    - image.style.medium
+    - image.style.crop_608x342
     - node.type.page
   module:
     - image
-    - text
     - user
-_core:
-  default_config_hash: 8BgdRtLbtQ0F__o0FHSH0Mx5fvXOra9tfT1GmNKbRYw
-id: node.page.teaser
+id: node.page.card
 targetEntityType: node
 bundle: page
-mode: teaser
+mode: card
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 100
-    region: content
   field_image:
     type: image
     label: hidden
     settings:
-      image_link: content
-      image_style: medium
+      image_link: ''
+      image_style: crop_608x342
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 0
     region: content
   links:
-    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
+  body: true
   field_caption: true
   field_paragraph: true
   langcode: true

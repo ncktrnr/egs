@@ -1,0 +1,23 @@
+uuid: 2ff9ce85-7f52-4ebe-aa77-56977ded1145
+langcode: en
+status: true
+dependencies: {  }
+name: crop_756x425
+label: 'Crop 756x425'
+effects:
+  04dcfcbd-c00a-4a72-99d2-7335b037cdb9:
+    uuid: 04dcfcbd-c00a-4a72-99d2-7335b037cdb9
+    id: image_scale
+    weight: 1
+    data:
+      width: 756
+      height: null
+      upscale: false
+  719f4c00-c7c3-41e1-80fa-6851ecdf136c:
+    uuid: 719f4c00-c7c3-41e1-80fa-6851ecdf136c
+    id: image_crop
+    weight: 2
+    data:
+      width: 756
+      height: 425
+      anchor: center-center

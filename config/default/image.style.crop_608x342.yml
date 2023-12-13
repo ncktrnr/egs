@@ -1,0 +1,15 @@
+uuid: 593991b7-4a25-47b8-a63e-aee5dd1f59aa
+langcode: en
+status: true
+dependencies: {  }
+name: crop_608x342
+label: 'Crop 608x342'
+effects:
+  f80b5fa1-9922-4b5c-a569-9dd2427e94f5:
+    uuid: f80b5fa1-9922-4b5c-a569-9dd2427e94f5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 608
+      height: 342
+      anchor: center-center

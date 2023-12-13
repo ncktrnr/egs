@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.campaign.body
     - field.field.node.campaign.field_image
     - field.field.node.campaign.field_paragraph
+    - field.field.node.campaign.field_terms_and_conditions
     - image.style.medium
     - node.type.campaign
   module:
@@ -44,4 +45,5 @@ content:
     region: content
 hidden:
   field_paragraph: true
+  field_terms_and_conditions: true
   langcode: true

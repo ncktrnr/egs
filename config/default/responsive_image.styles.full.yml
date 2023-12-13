@@ -1,0 +1,24 @@
+uuid: db5dc44e-c5bc-41cd-85fb-de0f05e9ba8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.crop_1024x576
+    - image.style.crop_756x425
+  module:
+    - toolbar
+id: full
+label: Full
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: crop_1024x576
+    breakpoint_id: toolbar.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: crop_756x425
+    breakpoint_id: toolbar.narrow
+    multiplier: 1x
+breakpoint_group: toolbar
+fallback_image_style: crop_1024x576

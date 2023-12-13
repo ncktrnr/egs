@@ -1,21 +1,21 @@
-uuid: bed0cf79-e47a-427c-b463-67d1c8243468
+uuid: 6d4a4aff-f0fb-46b9-a61c-d75eac2cfeb3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_caption
+    - field.storage.paragraph.field_caption
     - filter.format.basic_html
-    - node.type.article
+    - paragraphs.paragraphs_type.wide_image
   module:
     - text
-id: node.article.field_caption
+id: paragraph.wide_image.field_caption
 field_name: field_caption
-entity_type: node
-bundle: article
+entity_type: paragraph
+bundle: wide_image
 label: Caption
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

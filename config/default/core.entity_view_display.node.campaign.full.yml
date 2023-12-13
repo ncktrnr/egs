@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.campaign.body
     - field.field.node.campaign.field_image
     - field.field.node.campaign.field_paragraph
+    - field.field.node.campaign.field_terms_and_conditions
     - image.style.wide
     - node.type.campaign
   module:
     - entity_reference_revisions
     - image
+    - text
     - user
 id: node.campaign.full
 targetEntityType: node
@@ -36,12 +38,19 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 5
+    weight: 1
+    region: content
+  field_terms_and_conditions:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 3
     region: content
 hidden:
   body: true

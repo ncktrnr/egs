@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_caption
+    - field.field.node.page.field_details
     - field.field.node.page.field_image
     - field.field.node.page.field_paragraph
     - image.style.wide
@@ -34,6 +35,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 114
+    region: content
+  field_details:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
     region: content
   field_image:
     type: image

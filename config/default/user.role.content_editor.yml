@@ -3,11 +3,18 @@ langcode: es
 status: true
 dependencies:
   config:
+    - block_content.type.banner_block
+    - block_content.type.basic
+    - block_content.type.heading_block
     - filter.format.full_html
+    - node.type.accommodation
     - node.type.article
+    - node.type.campaign
     - node.type.page
+    - node.type.recipe
     - taxonomy.vocabulary.tags
   module:
+    - block_content
     - comment
     - content_translation
     - contextual
@@ -28,33 +35,66 @@ weight: 2
 is_admin: false
 permissions:
   - 'access administration pages'
+  - 'access block library'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
   - 'access toolbar'
   - 'access tour'
+  - 'administer nodes'
   - 'administer url aliases'
   - 'create article content'
+  - 'create basic block content'
+  - 'create campaign content'
   - 'create content translations'
   - 'create page content'
+  - 'create recipe content'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'delete any article content'
+  - 'delete any campaign content'
+  - 'delete any recipe content'
   - 'delete article revisions'
+  - 'delete campaign revisions'
   - 'delete content translations'
   - 'delete own article content'
+  - 'delete own campaign content'
   - 'delete own files'
   - 'delete own page content'
+  - 'delete own recipe content'
   - 'delete page revisions'
+  - 'delete recipe revisions'
   - 'display eu cookie compliance popup'
+  - 'edit any accommodation content'
+  - 'edit any article content'
+  - 'edit any banner_block block content'
+  - 'edit any basic block content'
+  - 'edit any campaign content'
+  - 'edit any heading_block block content'
+  - 'edit any page content'
+  - 'edit any recipe content'
+  - 'edit own accommodation content'
   - 'edit own article content'
+  - 'edit own campaign content'
   - 'edit own comments'
   - 'edit own page content'
+  - 'edit own recipe content'
   - 'edit terms in tags'
+  - 'revert accommodation revisions'
   - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert campaign revisions'
+  - 'revert page revisions'
+  - 'revert recipe revisions'
   - 'translate any entity'
   - 'translate editable entities'
   - 'update content translations'
   - 'use text format full_html'
+  - 'view accommodation revisions'
   - 'view all revisions'
+  - 'view article revisions'
+  - 'view campaign revisions'
   - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view recipe revisions'
   - 'view the administration theme'

@@ -6,18 +6,27 @@ dependencies:
     - core.entity_view_mode.node.card
     - field.field.node.page.body
     - field.field.node.page.field_caption
+    - field.field.node.page.field_details
     - field.field.node.page.field_image
     - field.field.node.page.field_paragraph
     - image.style.crop_608x342
     - node.type.page
   module:
     - image
+    - text
     - user
 id: node.page.card
 targetEntityType: node
 bundle: page
 mode: card
 content:
+  field_details:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_image:
     type: image
     label: hidden

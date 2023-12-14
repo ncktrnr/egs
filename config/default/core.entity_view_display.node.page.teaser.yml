@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
     - field.field.node.page.field_caption
+    - field.field.node.page.field_details
     - field.field.node.page.field_image
     - field.field.node.page.field_paragraph
     - image.style.medium
@@ -45,5 +46,6 @@ content:
     region: content
 hidden:
   field_caption: true
+  field_details: true
   field_paragraph: true
   langcode: true

@@ -2759,6 +2759,67 @@ blockquote{
   /* Firefox */
 }
 
+.user-login-form{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+@media (min-width: 640px){
+  .user-login-form{
+    max-width: 640px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 768px){
+  .user-login-form{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .user-login-form{
+    max-width: 1024px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .user-login-form{
+    max-width: 1280px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .user-login-form{
+    max-width: 1536px;
+  }
+}
+
+.user-login-form{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#block-egs-tw-homehero{
+  position: relative;
+}
+
+#block-egs-tw-homehero .field--name-body{
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 10;
+  width: 15rem;
+}
+
 .visible{
   visibility: visible;
 }
@@ -2795,12 +2856,20 @@ blockquote{
   right: 0px;
 }
 
+.right-3{
+  right: 0.75rem;
+}
+
 .top-0{
   top: 0px;
 }
 
 .top-1\/2{
   top: 50%;
+}
+
+.top-3{
+  top: 0.75rem;
 }
 
 .z-10{
@@ -2916,12 +2985,20 @@ blockquote{
   margin-bottom: 0.5rem;
 }
 
+.mb-24{
+  margin-bottom: 6rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
 
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
 }
 
 .mb-8{
@@ -2952,12 +3029,12 @@ blockquote{
   margin-top: 0px;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
+.mt-12{
+  margin-top: 3rem;
 }
 
-.mb-7{
-  margin-bottom: 1.75rem;
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .block{
@@ -3028,6 +3105,10 @@ blockquote{
   height: 100%;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -3051,6 +3132,10 @@ blockquote{
 .min-w-fit{
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.min-w-full{
+  min-width: 100%;
 }
 
 .max-w-4xl{
@@ -3550,9 +3635,8 @@ blockquote{
   padding-bottom: 1.5rem;
 }
 
-.py-px{
-  padding-top: 1px;
-  padding-bottom: 1px;
+.pb-24{
+  padding-bottom: 6rem;
 }
 
 .pt-0{
@@ -3565,10 +3649,6 @@ blockquote{
 
 .pt-2{
   padding-top: 0.5rem;
-}
-
-.pb-24{
-  padding-bottom: 6rem;
 }
 
 .text-center{
@@ -3594,6 +3674,11 @@ blockquote{
   line-height: 2.5rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -3617,11 +3702,6 @@ blockquote{
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-bold{
@@ -4339,9 +4419,18 @@ blockquote{
   border-width: 1px;
 }
 
+.hover\:border-transparent:hover{
+  border-color: transparent;
+}
+
 .hover\:border-verdun:hover{
   --tw-border-opacity: 1;
   border-color: rgb(80 89 28 / var(--tw-border-opacity));
+}
+
+.hover\:bg-aths:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 207 178 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-aths-light:hover{

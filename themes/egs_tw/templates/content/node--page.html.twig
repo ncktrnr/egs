@@ -100,7 +100,7 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('node__content prose lg:prose-lg container') }}>
+  <div{{ content_attributes.addClass('node__content prose lg:prose-lg mx-auto') }}>
     <h1 class="mb-8 text-4xl page-title">{{ label }}</h1>
     {{ content.field_details }}
     {{ content.body }}
@@ -112,5 +112,5 @@
   </div>
 
    {{ content.field_paragraph }}
-   
+
 </article>

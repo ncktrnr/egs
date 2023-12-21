@@ -59,7 +59,7 @@
   }
 
   #block-egs-tw-welcomemessage {
-    @apply max-w-4xl mx-auto pt-12 mb-12 text-3xl font-headline leading-tight text-center text-gray-800;
+    @apply max-w-4xl mx-auto pt-12 mb-12 px-4 lg:px-0 text-3xl font-headline leading-tight text-center text-gray-800;
   }
 
   #block-egs-tw-site-branding {
@@ -200,8 +200,12 @@
     @apply aspect-video max-w-[1024px];
   }
   .field--name-field-video iframe {
-    @apply h-auto aspect-video;
+    @apply h-auto aspect-video w-full;
   }
+  .field--name-field-360 iframe {
+    @apply h-auto aspect-video w-full;
+  }
+
   .node__content .field--name-field-details {
     margin-bottom: -1.3333333em;
   }

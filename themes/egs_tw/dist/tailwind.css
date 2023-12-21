@@ -1886,6 +1886,8 @@ blockquote{
   margin-right: auto;
   margin-bottom: 3rem;
   max-width: 56rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 3rem;
   text-align: center;
   font-family: kepler-3-display-variable;
@@ -1894,6 +1896,13 @@ blockquote{
   line-height: 1.25;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  #block-egs-tw-welcomemessage{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 #block-egs-tw-site-branding{
@@ -2734,6 +2743,13 @@ blockquote{
 .field--name-field-video iframe{
   aspect-ratio: 16 / 9;
   height: auto;
+  width: 100%;
+}
+
+.field--name-field-360 iframe{
+  aspect-ratio: 16 / 9;
+  height: auto;
+  width: 100%;
 }
 
 .node__content .field--name-field-details {
@@ -4581,6 +4597,10 @@ blockquote{
     gap: 3rem;
   }
 
+  .sm\:gap-8{
+    gap: 2rem;
+  }
+
   .sm\:space-x-6 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -4719,6 +4739,11 @@ blockquote{
 
   .lg\:border-b-0{
     border-bottom-width: 0px;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:pl-20{

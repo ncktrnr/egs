@@ -1,0 +1,14 @@
+uuid: d217a7ff-dd92-4144-a33c-eddc80621372
+langcode: en
+status: true
+dependencies: {  }
+id: GTM-T9CZCC9.65845065d1f6f8.23259423
+label: GTM-T9CZCC9
+weight: 0
+tag_container_ids:
+  - GTM-T9CZCC9
+advanced_settings: {  }
+dimensions_metrics: {  }
+conditions: {  }
+events:
+  custom: {  }

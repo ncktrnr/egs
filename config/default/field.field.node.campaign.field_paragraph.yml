@@ -33,6 +33,9 @@ settings:
       video: video
     negate: 0
     target_bundles_drag_drop:
+      box:
+        weight: 8
+        enabled: false
       button:
         weight: 7
         enabled: true

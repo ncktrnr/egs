@@ -6,5 +6,6 @@ dependencies:
     - taxonomy
 id: taxonomy_term.card
 label: 'Card odd'
+description: ''
 targetEntityType: taxonomy_term
 cache: true

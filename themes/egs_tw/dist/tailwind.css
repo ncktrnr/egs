@@ -3238,6 +3238,10 @@ blockquote{
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -3297,6 +3301,10 @@ blockquote{
 .gap-x-12{
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+
+.gap-y-4{
+  row-gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -4573,6 +4581,10 @@ blockquote{
     display: flex;
   }
 
+  .sm\:grid{
+    display: grid;
+  }
+
   .sm\:shrink-0{
     flex-shrink: 0;
   }
@@ -4583,6 +4595,10 @@ blockquote{
 
   .sm\:basis-0{
     flex-basis: 0px;
+  }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:flex-row{
@@ -4672,6 +4688,10 @@ blockquote{
 
   .md\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:pl-4{

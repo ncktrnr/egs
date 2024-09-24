@@ -7,7 +7,11 @@ label: GTM-T9CZCC9
 weight: 0
 tag_container_ids:
   - GTM-T9CZCC9
-advanced_settings: {  }
+advanced_settings:
+  gtm:
+    GTM-T9CZCC9:
+      data_layer: dataLayer
+      include_environment: false
 dimensions_metrics: {  }
 conditions: {  }
 events:

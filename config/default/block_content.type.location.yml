@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: location
 label: Location
-revision: 0
+revision: false
 description: 'Location on about page'

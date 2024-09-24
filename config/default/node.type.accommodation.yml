@@ -11,7 +11,7 @@ third_party_settings:
 name: Accommodation
 type: accommodation
 description: 'Use <em>accommodation</em> for rooms and apartments'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

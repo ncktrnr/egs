@@ -1,6 +1,5 @@
 _core:
   default_config_hash: OzrbOs-fgy0YWgtT1RKdBpBSIt8fpBszxCBPfhwjcIs
-langcode: es
 default_google_tag_entity: GTM-T9CZCC9.65845065d1f6f8.23259423
 uri: 'public:/'
 compact_snippet: true

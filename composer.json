@@ -25,7 +25,7 @@
         "drupal/cheeseburger_menu": "^5.0@RC",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
-        "drupal/core-recommended": "^10.0",
+        "drupal/core-recommended": "^10.3",
         "drupal/core-vendor-hardening": "^9.4",
         "drupal/eu_cookie_compliance": "^1.24",
         "drupal/expand_collapse_formatter": "^2.0",
@@ -40,7 +40,7 @@
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
         "drupal/redirect": "^1.8",
-        "drupal/twig_tweak": "^3.2",
+        "drupal/twig_tweak": "^3.4",
         "drupal/upgrade_status": "^4.0",
         "drupal/views_slideshow": "^5.0",
         "drupal/xmlsitemap": "^1.4",
@@ -59,7 +59,8 @@
             "drupal/core-vendor-hardening": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "cweagans/composer-patches": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
         },
         "sort-packages": true
     },

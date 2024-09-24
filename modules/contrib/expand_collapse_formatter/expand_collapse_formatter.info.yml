@@ -1,9 +1,9 @@
 name: Expand Collapse Formatter
 type: module
 description: A formatter to expand and collapse text area fields.
-core_version_requirement: ^8.8 || ^9 || ^10
+core_version_requirement: ^8.8 || ^9 || ^10 || ^11
 
-# Information added by Drupal.org packaging script on 2023-03-14
-version: '2.0.2'
+# Information added by Drupal.org packaging script on 2024-08-13
+version: '2.0.3'
 project: 'expand_collapse_formatter'
-datestamp: 1678798593
+datestamp: 1723586212

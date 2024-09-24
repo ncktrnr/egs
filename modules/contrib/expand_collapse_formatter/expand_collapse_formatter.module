@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains expand_collapse_formatter.module..
+ * Contains expand_collapse_formatter.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -17,6 +17,12 @@ function expand_collapse_formatter_help($route_name, RouteMatchInterface $route_
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('A formatter to expand and collapse text area fields.') . '</p>';
+      $output .= '<h3>' . t('How to use') . '</h3>';
+      $output .= '<p>' . t('Navigate to your entity type\'s "manage display" tab.') . '</p>';
+      $output .= '<p>' . t('Choose the "Expand collapse formatter"') . '</p>';
+      $output .= '<p>' . t('Adjust the settings using the gear icon. You can change the "trim length", "default state", open and close text, and the classes used for each action.') . '</p>';
+      $output .= '<p>' . t('Click "Update" to save these settings and then remember to click "Save" at the bottom of the page.') . '</p>';
+      $output .= '<p>' . t('After these steps, you should see the "read more" link at the bottom of the fields with this formatter, so long as they contain more characters than the trim length.') . '</p>';
       return $output;
 
     default:

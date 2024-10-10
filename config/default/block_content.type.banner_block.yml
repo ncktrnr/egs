@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: banner_block
 label: 'Banner block'
-revision: 0
+revision: false
 description: 'Two column text with image right/left'

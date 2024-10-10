@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: accommodation_link_block
 label: 'Accommodation link block'
-revision: 0
+revision: false
 description: 'Use for rooms and apartments'

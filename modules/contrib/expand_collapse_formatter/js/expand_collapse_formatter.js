@@ -1,6 +1,6 @@
 /**
  * @file
- * Javacript for the expand_collapse_formatter module.
+ * Javascript for the expand_collapse_formatter module.
  */
 
 ((Drupal, once) => {
@@ -22,6 +22,7 @@
       formatter.toggleLink.addEventListener('click', (event) => {
         event.preventDefault();
         formatter.toggle();
+        Drupal.attachBehaviors();
       });
     }
   }

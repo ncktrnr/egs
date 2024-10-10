@@ -1,6 +1,5 @@
 _core:
   default_config_hash: 5UHMfSmFu9rzzODqDc4xPCxSBK0u_u9xq0ftLz8uy4Q
-langcode: es
 iconset: social-icons--square
 services:
   facebook: facebook

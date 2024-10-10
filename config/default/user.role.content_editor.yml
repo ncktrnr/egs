@@ -21,6 +21,7 @@ dependencies:
     - eu_cookie_compliance
     - file
     - filter
+    - help
     - node
     - path
     - system
@@ -30,7 +31,7 @@ dependencies:
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
-label: 'Content editor'
+label: 'Editor de contenido'
 weight: 2
 is_admin: false
 permissions:
@@ -39,6 +40,7 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access help pages'
   - 'access toolbar'
   - 'access tour'
   - 'administer nodes'

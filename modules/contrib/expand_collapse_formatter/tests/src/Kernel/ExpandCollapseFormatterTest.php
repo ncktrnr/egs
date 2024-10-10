@@ -103,7 +103,7 @@ class ExpandCollapseFormatterTest extends FieldKernelTestBase {
   /**
    * Data provider for testHtmlOutput().
    */
-  public function htmlOutputDataProvider(): array {
+  public static function htmlOutputDataProvider(): array {
     return [
       'default settings' => [
         'expected' => [

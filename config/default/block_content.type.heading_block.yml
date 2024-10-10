@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: heading_block
 label: 'Heading block'
-revision: 0
+revision: false
 description: 'Title with description'

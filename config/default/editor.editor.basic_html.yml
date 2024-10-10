@@ -35,13 +35,15 @@ settings:
         - heading5
         - heading6
     ckeditor5_list:
-      reversed: false
-      startIndex: true
+      properties:
+        reversed: false
+        startIndex: true
+      multiBlock: true
 image_upload:
   status: true
   scheme: public
   directory: inline-images
-  max_size: ''
+  max_size: null
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

@@ -14,9 +14,11 @@ use Drupal\node\Entity\NodeType;
 /**
  * Implements hook_theme().
  *
+ * {@inheritdoc}
+ *
  * Defines template files for the social sharing buttons module.
  */
-function better_social_sharing_buttons_theme($existing, $type, $theme, $path) {
+function better_social_sharing_buttons_theme($existing, $type, $theme, $path): array {
   return [
     'better_social_sharing_buttons' => [
       'variables' => ['items' => ''],
@@ -27,6 +29,8 @@ function better_social_sharing_buttons_theme($existing, $type, $theme, $path) {
 
 /**
  * Implements hook_entity_extra_field_info().
+ *
+ * {@inheritdoc}
  */
 function better_social_sharing_buttons_entity_extra_field_info() {
   if (\Drupal::config('better_social_sharing_buttons.settings')->get('node_field')) {
@@ -42,14 +46,17 @@ function better_social_sharing_buttons_entity_extra_field_info() {
 
     return $extra;
   }
+  return NULL;
 }
 
 /**
  * Implements hook_ENTITY_TYPE_view().
  *
+ * {@inheritdoc}
+ *
  * @throws \Drupal\Core\Entity\EntityMalformedException
  */
-function better_social_sharing_buttons_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+function better_social_sharing_buttons_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode): void {
   if ($display->getComponent('sharing_buttons')) {
     $config = \Drupal::config('better_social_sharing_buttons.settings');
 
@@ -82,8 +89,10 @@ function better_social_sharing_buttons_node_view(array &$build, EntityInterface 
 
 /**
  * Implements hook_preprocess_HOOK().
+ *
+ * {@inheritdoc}
  */
-function better_social_sharing_buttons_preprocess_better_social_sharing_buttons(&$variables) {
+function better_social_sharing_buttons_preprocess_better_social_sharing_buttons(&$variables): void {
   if (isset($variables['items']['iconset'])) {
     $icon_set = $variables['items']['iconset'];
   }
@@ -96,7 +105,7 @@ function better_social_sharing_buttons_preprocess_better_social_sharing_buttons(
 /**
  * Implements hook_help().
  *
- * @inheritdoc
+ * {@inheritdoc}
  */
 function better_social_sharing_buttons_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {

@@ -5,10 +5,12 @@
  * Post update functions for the Better Social Sharing Buttons module.
  */
 
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
 /**
  * Update default social sharing buttons block for Layout Builder sections.
  */
-function better_social_sharing_buttons_post_update_update_layout_builder_more_settings() {
+function better_social_sharing_buttons_post_update_update_layout_builder_more_settings(): ?TranslatableMarkup {
   if (!\Drupal::moduleHandler()->moduleExists('layout_builder')) {
     return NULL;
   }

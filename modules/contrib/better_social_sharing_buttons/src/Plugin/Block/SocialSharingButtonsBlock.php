@@ -4,11 +4,15 @@ namespace Drupal\better_social_sharing_buttons\Plugin\Block;
 
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Config\ConfigFactoryInterface;
+use Drupal\Core\Controller\TitleResolverInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Routing\RouteObjectInterface;
 use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * Provides a social sharing buttons block.
@@ -22,31 +26,23 @@ class SocialSharingButtonsBlock extends BlockBase implements ContainerFactoryPlu
 
   /**
    * Symfony\Component\HttpFoundation\RequestStack definition.
-   *
-   * @var \Symfony\Component\HttpFoundation\RequestStack
    */
-  protected $requestStack;
+  protected RequestStack $requestStack;
 
   /**
    * Drupal\Core\Controller\TitleResolverInterface definition.
-   *
-   * @var \Drupal\Core\Controller\TitleResolverInterface
    */
-  protected $titleResolver;
+  protected TitleResolverInterface $titleResolver;
 
   /**
    * Default Configuration.
-   *
-   * @var \Drupal\Core\Config\ConfigFactoryInterface
    */
-  protected $configFactory;
+  protected ConfigFactoryInterface $configFactory;
 
   /**
    * The current route match.
-   *
-   * @var \Drupal\Core\Routing\RouteMatchInterface
    */
-  protected $routeMatch;
+  protected RouteMatchInterface $routeMatch;
 
   /**
    * {@inheritdoc}
@@ -86,6 +82,8 @@ class SocialSharingButtonsBlock extends BlockBase implements ContainerFactoryPlu
         'xing' => $this->t('Xing'),
         'tumblr' => $this->t('Tumblr'),
         'reddit' => $this->t('Reddit'),
+        'truth' => $this->t('Truth Social'),
+        'bluesky' => $this->t('Bluesky'),
         'evernote' => $this->t('Evernote'),
         'print' => $this->t('Print'),
         'copy' => $this->t('Copy current page url to clipboard'),

@@ -6,8 +6,8 @@
 <div class="social-sharing-buttons">
     {# Facebook share button #}
     {% if items.services.facebook %}
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ items.page_url }}&amp;title={{ items.title }}" target="_blank" title="{{ 'Share to'|t }} Facebook" aria-label="{{ 'Share to'|t }} Facebook" class="social-sharing-buttons__button share-facebook" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ items.page_url }}&amp;title={{ items.title }}" target="_blank" title="{{ 'Share to'|t }} Facebook" aria-label="{{ 'Share to'|t }} Facebook" class="social-sharing-buttons-button share-facebook" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#facebook" />
             </svg>
         </a>
@@ -15,8 +15,8 @@
 
     {# X share button #}
     {% if items.services.x %}
-        <a href="https://twitter.com/intent/tweet?text={{ items.title }}+{{ items.page_url }}" target="_blank" title="{{ 'Share to'|t }} X" aria-label="{{ 'Share to'|t }} X" class="social-sharing-buttons__button share-x" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="https://twitter.com/intent/tweet?text={{ items.title }}+{{ items.page_url }}" target="_blank" title="{{ 'Share to'|t }} X" aria-label="{{ 'Share to'|t }} X" class="social-sharing-buttons-button share-x" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#x" />
             </svg>
         </a>
@@ -24,8 +24,8 @@
 
     {# WhatsApp share button #}
     {% if items.services.whatsapp %}
-        <a href="https://wa.me/?text={{ items.page_url }}" target="_blank" title="{{ 'Share to'|t }} WhatsApp" aria-label="{{ 'Share to'|t }} WhatsApp" class="social-sharing-buttons__button share-whatsapp" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="https://wa.me/?text={{ items.page_url }}" target="_blank" title="{{ 'Share to'|t }} WhatsApp" aria-label="{{ 'Share to'|t }} WhatsApp" class="social-sharing-buttons-button share-whatsapp" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#whatsapp" />
             </svg>
         </a>
@@ -33,8 +33,8 @@
 
     {# Facebook Messenger share button #}
     {% if items.services.facebook_messenger %}
-        <a href="https://www.facebook.com/dialog/send?app_id={{ items.facebook_app_id }}&amp;link={{ items.page_url }}&amp;redirect_uri={{ url('<current>') }}" target="_blank" title="{{ 'Share to'|t }} Facebook Messenger" aria-label="{{ 'Share to'|t }} Facebook Messenger" class="social-sharing-buttons__button share-facebook-messenger" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="https://www.facebook.com/dialog/send?app_id={{ items.facebook_app_id }}&amp;link={{ items.page_url }}&amp;redirect_uri={{ url('<current>') }}" target="_blank" title="{{ 'Share to'|t }} Facebook Messenger" aria-label="{{ 'Share to'|t }} Facebook Messenger" class="social-sharing-buttons-button share-facebook-messenger" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#messenger" />
             </svg>
         </a>
@@ -42,8 +42,8 @@
 
     {# Pinterest share button #}
     {% if items.services.pinterest %}
-        <a href="https://pinterest.com/pin/create/link/?url={{ items.page_url }}&amp;description={{ items.title }}" target="_blank" title="{{ 'Share to'|t }} Pinterest" aria-label="{{ 'Share to'|t }} Pinterest" class="social-sharing-buttons__button share-pinterest" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="https://pinterest.com/pin/create/link/?url={{ items.page_url }}&amp;description={{ items.title }}" target="_blank" title="{{ 'Share to'|t }} Pinterest" aria-label="{{ 'Share to'|t }} Pinterest" class="social-sharing-buttons-button share-pinterest" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#pinterest" />
             </svg>
         </a>
@@ -51,17 +51,36 @@
 
     {# Linkedin share button #}
     {% if items.services.linkedin %}
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ items.page_url }}" target="_blank" title="{{ 'Share to'|t }} Linkedin" aria-label="{{ 'Share to'|t }} Linkedin" class="social-sharing-buttons__button share-linkedin" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ items.page_url }}" target="_blank" title="{{ 'Share to'|t }} Linkedin" aria-label="{{ 'Share to'|t }} Linkedin" class="social-sharing-buttons-button share-linkedin" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#linkedin" />
             </svg>
         </a>
     {% endif %}
 
+  {# Truth share button #}
+  {% if items.services.truth %}
+    <a href="https://truthsocial.com/share?text={{ items.title }}&url={{ items.page_url }}" target="_blank" title="{{ 'Share to'|t }} Truth Social" aria-label="{{ 'Share to'|t }} Truth Social" class="social-sharing-buttons-button share-truth" rel="noopener">
+      <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <use href="{{ social_buttons_sprite }}#truth" />
+      </svg>
+    </a>
+  {% endif %}
+
+  {# Bluesky share button #}
+  {% if items.services.bluesky %}
+    {{ attach_library('better_social_sharing_buttons/bluesky') }}
+    <a href="#" target="_blank" title="{{ 'Share to'|t }} Bluesky" aria-label="{{ 'Share to'|t }} Bluesky" class="social-sharing-buttons-button share-bluesky" rel="noopener">
+      <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <use href="{{ social_buttons_sprite }}#bluesky" />
+      </svg>
+    </a>
+  {% endif %}
+
     {# Xing share button #}
     {% if items.services.xing %}
-        <a href="https://www.xing.com/spi/shares/new?url={{ items.page_url }}" target="_blank" title="{{ 'Share to'|t }} Xing" aria-label="{{ 'Share to'|t }} Xing" class="social-sharing-buttons__button share-xing" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="https://www.xing.com/spi/shares/new?url={{ items.page_url }}" target="_blank" title="{{ 'Share to'|t }} Xing" aria-label="{{ 'Share to'|t }} Xing" class="social-sharing-buttons-button share-xing" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#xing" />
             </svg>
         </a>
@@ -69,8 +88,8 @@
 
     {# Tumblr share button #}
     {% if items.services.tumblr %}
-        <a href="https://www.tumblr.com/share?v=3&amp;u={{ items.page_url }}&amp;t={{ items.title }}" target="_blank" title="{{ 'Share to'|t }} Tumblr" aria-label="{{ 'Share to'|t }} Tumblr" class="social-sharing-buttons__button share-tumblr" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="https://www.tumblr.com/share?v=3&amp;u={{ items.page_url }}&amp;t={{ items.title }}" target="_blank" title="{{ 'Share to'|t }} Tumblr" aria-label="{{ 'Share to'|t }} Tumblr" class="social-sharing-buttons-button share-tumblr" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#tumblr" />
             </svg>
         </a>
@@ -78,8 +97,8 @@
 
     {# Reddit share button #}
     {% if items.services.reddit %}
-        <a href="https://www.reddit.com/submit?url={{ items.page_url }}&amp;title={{ items.title }}" target="_blank" title="{{ 'Share to'|t }} Reddit" aria-label="{{ 'Share to'|t }} Reddit" class="social-sharing-buttons__button share-reddit" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="https://www.reddit.com/submit?url={{ items.page_url }}&amp;title={{ items.title }}" target="_blank" title="{{ 'Share to'|t }} Reddit" aria-label="{{ 'Share to'|t }} Reddit" class="social-sharing-buttons-button share-reddit" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#reddit" />
             </svg>
         </a>
@@ -87,8 +106,8 @@
 
     {# Evernote share button #}
     {% if items.services.evernote %}
-        <a href="https://www.evernote.com/clip.action?url={{ items.page_url }}&amp;title={{ items.title }}" target="_blank" title="{{ 'Share to'|t }} Evernote" aria-label="{{ 'Share to'|t }} Evernote" class="social-sharing-buttons__button share-evernote" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="https://www.evernote.com/clip.action?url={{ items.page_url }}&amp;title={{ items.title }}" target="_blank" title="{{ 'Share to'|t }} Evernote" aria-label="{{ 'Share to'|t }} Evernote" class="social-sharing-buttons-button share-evernote" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#evernote" />
             </svg>
         </a>
@@ -96,8 +115,8 @@
 
     {# Email share button #}
     {% if items.services.email %}
-        <a href="mailto:?subject={{ items.title }}&amp;body={{ items.page_url }}" title="{{ 'Share to'|t }} Email" aria-label="{{ 'Share to'|t }} Email" class="social-sharing-buttons__button share-email" target="_blank" rel="noopener">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="mailto:?subject={{ items.title }}&amp;body={{ items.page_url }}" title="{{ 'Share to'|t }} Email" aria-label="{{ 'Share to'|t }} Email" class="social-sharing-buttons-button share-email" target="_blank" rel="noopener">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#email" />
             </svg>
         </a>
@@ -106,11 +125,11 @@
     {# Copy link share button #}
     {% if items.services.copy %}
         {{ attach_library('better_social_sharing_buttons/copy-current-url') }}
-        <a class="btnCopy social-sharing-buttons__button share-copy">
-            <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+        <a href="#" class="btn-copy social-sharing-buttons-button share-copy" role="button" title="{{ 'Copy link'|t }}" aria-label="{{ 'Copy link'|t }}">
+            <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
                 <use href="{{ social_buttons_sprite }}#copy" />
             </svg>
-            <div class="social-sharing-buttons__popup">{{ 'Copied to clipboard'|t }}</div>
+            <div class="social-sharing-buttons-popup" role="alert" aria-live="assertive">{{ 'Copied to clipboard'|t }}</div>
         </a>
     {% endif %}
 
@@ -123,8 +142,8 @@
     {% else %}
       {% set href = "javascript:window.print()" %}
     {% endif %}
-    <a href="{{ href }}" rel="{{ rel }}" class="bssb-printlink" class="share-print">
-      <svg width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
+    <a href="{{ href }}" rel="{{ rel }}" class="bssb-printlink share-print" title="{{ 'Print'|t }}"  aria-label="{{ 'Print'|t }}">
+      <svg aria-hidden="true" width="{{ items.width }}" height="{{ items.width }}" style="border-radius:{{ items.radius }};">
         <use href="{{ social_buttons_sprite }}#print" />
       </svg>
     </a>

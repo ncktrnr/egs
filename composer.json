@@ -39,6 +39,7 @@
         "drupal/metatag": "^2.0",
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
+        "drupal/photoswipe": "^5.0",
         "drupal/redirect": "^1.8",
         "drupal/twig_tweak": "^3.2",
         "drupal/upgrade_status": "^4.0",

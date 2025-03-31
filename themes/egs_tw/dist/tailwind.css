@@ -2735,8 +2735,11 @@ blockquote{
   color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
+/*-- TODO make this responsive --*/
+
 .field--name-field-embed-media iframe{
   aspect-ratio: 16 / 9;
+  width: 100%;
   max-width: 1024px;
 }
 
@@ -2858,10 +2861,6 @@ blockquote{
 
 .inset-0{
   inset: 0px;
-}
-
-.-left-28{
-  left: -7rem;
 }
 
 .-right-12{
@@ -3234,12 +3233,12 @@ blockquote{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -3794,10 +3793,6 @@ blockquote{
 
 .opacity-10{
   opacity: 0.1;
-}
-
-.opacity-25{
-  opacity: 0.25;
 }
 
 .shadow-\[0px_-3px_5px_-5px_\#00000040\]{
@@ -4581,10 +4576,6 @@ blockquote{
     display: flex;
   }
 
-  .sm\:grid{
-    display: grid;
-  }
-
   .sm\:shrink-0{
     flex-shrink: 0;
   }
@@ -4595,10 +4586,6 @@ blockquote{
 
   .sm\:basis-0{
     flex-basis: 0px;
-  }
-
-  .sm\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:flex-row{
@@ -4747,10 +4734,6 @@ blockquote{
 
   .lg\:items-center{
     align-items: center;
-  }
-
-  .lg\:gap-12{
-    gap: 3rem;
   }
 
   .lg\:gap-24{

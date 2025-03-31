@@ -8,7 +8,7 @@
 /**
  * Updates services and settings configuration.
  */
-function better_social_sharing_buttons_update_8001() {
+function better_social_sharing_buttons_update_8001(): void {
   $config_factory = \Drupal::configFactory();
   $config = $config_factory->getEditable('better_social_sharing_buttons.settings');
   $services = $config->get('services');
@@ -41,7 +41,7 @@ function better_social_sharing_buttons_update_8001() {
 /**
  * Removes slashdot service configuration.
  */
-function better_social_sharing_buttons_update_8002() {
+function better_social_sharing_buttons_update_8002(): void {
   $config_factory = \Drupal::configFactory();
   $config = $config_factory->getEditable('better_social_sharing_buttons.settings');
   $config->clear('services.slashdot')->save();
@@ -50,7 +50,7 @@ function better_social_sharing_buttons_update_8002() {
 /**
  * Removes stumbleupon service configuration.
  */
-function better_social_sharing_buttons_update_8003() {
+function better_social_sharing_buttons_update_8003(): void {
   $config_factory = \Drupal::configFactory();
   $config = $config_factory->getEditable('better_social_sharing_buttons.settings');
   $config->clear('services.stumbleupon')->save();
@@ -59,7 +59,7 @@ function better_social_sharing_buttons_update_8003() {
 /**
  * Converts settings to schema conform format.
  */
-function better_social_sharing_buttons_update_8004() {
+function better_social_sharing_buttons_update_8004(): void {
   // Updates the system configuration.
   $config_factory = \Drupal::configFactory();
   $config = $config_factory->getEditable('better_social_sharing_buttons.settings');
@@ -84,7 +84,7 @@ function better_social_sharing_buttons_update_8004() {
 /**
  * Removes digg service configuration.
  */
-function better_social_sharing_buttons_update_8005() {
+function better_social_sharing_buttons_update_8005(): void {
   $config_factory = \Drupal::configFactory();
   $config = $config_factory->getEditable('better_social_sharing_buttons.settings');
   $config->clear('services.digg')->save();
@@ -104,7 +104,7 @@ function better_social_sharing_buttons_update_8005() {
 /**
  * Replaces twitter service with X.
  */
-function better_social_sharing_buttons_update_8006() {
+function better_social_sharing_buttons_update_8006(): void {
   $config_factory = \Drupal::configFactory();
   $config = $config_factory->getEditable('better_social_sharing_buttons.settings');
   $services = $config->get('services');

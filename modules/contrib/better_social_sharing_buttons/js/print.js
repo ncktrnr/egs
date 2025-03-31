@@ -4,13 +4,11 @@
  */
 
 (function () {
-  'use strict';
-
   /**
    * Set the print view of the page.
    */
   Drupal.behaviors.printLink = {
-    attach: function (context) {
+    attach(context) {
       const printLink = context.querySelector('.bssb-printlink');
       printLink.addEventListener('click', function (e) {
         const links = document.getElementsByTagName('link');
@@ -21,7 +19,6 @@
 
         e.preventDefault();
       });
-    }
+    },
   };
-
 })(Drupal);

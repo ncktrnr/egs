@@ -37,7 +37,7 @@
         "drupal/layout_builder_styles": "^2.0",
         "drupal/libraries": "^4.0",
         "drupal/metatag": "^2.0",
-        "drupal/paragraphs": "^1.15",
+        "drupal/paragraphs": "^1.15, <2.0",
         "drupal/pathauto": "^1.11",
         "drupal/photoswipe": "^5.0",
         "drupal/redirect": "^1.8",
@@ -67,6 +67,11 @@
         "sort-packages": true
     },
     "extra": {
+        "patches": {
+            "drupal/paragraphs": {
+                "Issue #3125638": "https://www.drupal.org/files/issues/2024-09-23/paragraghs-buttons_do_not_appear_if_translated_node-3125638-15.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "./"

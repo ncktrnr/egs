@@ -53,16 +53,16 @@
 
   {{ page.secondary_menu }}
 
-  {{ page.breadcrumb }}
-
   {{ page.highlighted }}
 
-  {{ page.help }}
+
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content bg-gradient-to-br from-light-bg via-v-light-bg to-light-bg">
+      {{ page.help }}
+      {{ page.breadcrumb }}
       {{ page.content }}
     </div>{# /.layout-content #}
 

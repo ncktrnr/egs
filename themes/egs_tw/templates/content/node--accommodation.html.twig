@@ -75,7 +75,6 @@
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-    'container',
   ]
 %}
 
@@ -83,17 +82,106 @@
 
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('node__content') }}>
-    
-          <div class="">{{ content }}</div>
+
+      <div class="relative">
+      {{ content.field_media_gallery }}
+        <div class="absolute bottom-0 inline-flex p-2 text-white transform -translate-x-1/2 bg-gray-900 bg-opacity-50 pointer-events-none left-1/2">
+            <span>{{ 'Open gallery'|t }}</span>
+        </div>
+      </div>
+      
+
+      <div class="bg-white">
+        <div class="container relative">
+          <div class="grid grid-cols-1 py-12 sm:gap-6 md:gap-12 sm:grid-cols-2 md:grid-cols-3">
+            
+            <div class="col-span-1">
+              <h1 class="mb-8 text-4xl lg:text-6xl text-verdun-bright page-title">{{ label }}</h1>
+              <div class="mb-8 text-2xl font-headline">
+                {{ content.field_strapline }}
+              </div>  
+            </div>
+
+            <div class="col-span-2 prose lg:prose-lg">
+
+              <div class="mb-6">{{ content.field_detail	}}</div>
+              <div class="mb-8">{{ content.field_price }}</div>
+
+              <a href="{{ content.field_booking_link.0['#url'] }}" class="px-6 py-3 font-bold border bg-aths-lighter text-baragon hover:no-underline hover:text-baragon hover:bg-aths border-baragon not-prose">
+                {{ content.field_booking_link.0['#title'] }}
+              </a>
 
 
-    <div class="">
-      More stuff
-    </div>
+            </div>
+
+            <div class="absolute bottom-0 right-0 opacity-25 letter">
+            {{ content.field_icon.0 }}
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      {# top section #}
+      <div class="container">
+        <div class="grid items-end grid-cols-1 py-6 mb-6 sm:gap-6 md:gap-12 2xl:gap-24 md:grid-cols-3">
+
+          <div class="col-span-2">
+            <div class="prose lg:prose-lg !max-w-none mb-6">{{ content.body }}</div>
+            {{ content.field_main_image_one }} 
+          </div>
+
+          <div class="col-span-1">
+            <div class="">
+              {{ content.field_main_image_two }} 
+            </div>
+          </div>  
+
+        </div>
+      </div>
+
+
+      {# mid section #}
+      <div class="container">
+        <div class="grid grid-cols-1 py-6 md:gap-12 2xl:gap-24 md:grid-cols-3">
+
+          <div class="col-span-1">
+            <div class="prose lg:prose-lg">{{ content.field_mid_section_heading }}</div>
+          </div>
+
+          <div class="col-span-2">
+              <div class="prose lg:prose-lg !max-w-none">
+              {{ content.field_mid_section_text }}
+              </div>
+          </div>  
+
+        </div>
+
+        <div class="mb-6">
+          {{ content.field_mid_section_images }} 
+        </div>
+
+      </div>
+
+
+      {# bottom section #}
+      <div class="container">
+        <div class="grid grid-cols-1 py-6 md:gap-12 2xl:gap-24 md:grid-cols-3">
+          <div class="col-span-2">
+            <div class="prose border border-aths lg:prose-lg !max-w-none mb-12">
+            {{ content.field_accordion }} 
+            </div>
+          </div>
+
+          <div class="col-span-1 mb-12">
+              {{ content.field_bottom_image}} 
+          </div>
+
+        </div>
+      </div>
 
   </div>
-
-
 </article>
 
 

@@ -32,17 +32,18 @@
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
     'container',
-    'flex',
     'my-6',
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <div class="mr-4">{{ label }}:</div>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    {{ content }}
+  <div class="flex prose lg:prose-lg">
+    {{ title_prefix }}
+    {% if label %}
+      <div class="mr-4">{{ label }}:</div>
+    {% endif %}
+    {{ title_suffix }}
+    {% block content %}
+      {{ content }}
   {% endblock %}
+  </div>
 </div>

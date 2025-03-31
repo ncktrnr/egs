@@ -12,7 +12,7 @@ dependencies:
 id: egs_tw_homehero
 theme: egs_tw
 region: highlighted
-weight: -6
+weight: -11
 provider: null
 plugin: 'block_content:fce807d7-7485-4942-aaed-618f23b7fc5e'
 settings:

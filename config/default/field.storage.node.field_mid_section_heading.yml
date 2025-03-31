@@ -1,0 +1,19 @@
+uuid: 471bfa1a-768e-4557-a16f-e81bea031729
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_mid_section_heading
+field_name: field_mid_section_heading
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

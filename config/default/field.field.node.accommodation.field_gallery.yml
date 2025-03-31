@@ -18,7 +18,7 @@ id: node.accommodation.field_gallery
 field_name: field_gallery
 entity_type: node
 bundle: accommodation
-label: Gallery
+label: 'Legacy Gallery'
 description: 'Aspect ratio 20 : 9 (2000x900px)'
 required: false
 translatable: true

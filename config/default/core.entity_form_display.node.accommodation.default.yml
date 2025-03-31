@@ -6,6 +6,9 @@ dependencies:
     - field.field.node.accommodation.body
     - field.field.node.accommodation.field_360
     - field.field.node.accommodation.field_accommodation_type
+    - field.field.node.accommodation.field_accordion
+    - field.field.node.accommodation.field_booking_link
+    - field.field.node.accommodation.field_bottom_image
     - field.field.node.accommodation.field_button_text
     - field.field.node.accommodation.field_card_description
     - field.field.node.accommodation.field_card_image
@@ -13,14 +16,24 @@ dependencies:
     - field.field.node.accommodation.field_dropdown
     - field.field.node.accommodation.field_gallery
     - field.field.node.accommodation.field_icon
+    - field.field.node.accommodation.field_main_image_one
+    - field.field.node.accommodation.field_main_image_two
+    - field.field.node.accommodation.field_media_gallery
+    - field.field.node.accommodation.field_mid_section_heading
+    - field.field.node.accommodation.field_mid_section_images
+    - field.field.node.accommodation.field_mid_section_text
     - field.field.node.accommodation.field_overview
     - field.field.node.accommodation.field_portrait
     - field.field.node.accommodation.field_price
+    - field.field.node.accommodation.field_strapline
     - image.style.thumbnail
     - node.type.accommodation
   module:
     - field_group
     - image
+    - link
+    - media_library
+    - paragraphs
     - path
     - text
 third_party_settings:
@@ -34,7 +47,7 @@ third_party_settings:
       label: Card
       region: content
       parent_name: ''
-      weight: 19
+      weight: 27
       format_type: tab
       format_settings:
         classes: ''
@@ -46,9 +59,9 @@ third_party_settings:
     group_main:
       children: {  }
       label: Main
-      region: hidden
+      region: content
       parent_name: ''
-      weight: 20
+      weight: 28
       format_type: tabs
       format_settings:
         classes: ''
@@ -56,6 +69,23 @@ third_party_settings:
         id: ''
         direction: horizontal
         width_breakpoint: 640
+    group_mid_section:
+      children:
+        - field_mid_section_heading
+        - field_mid_section_text
+        - field_mid_section_images
+      label: 'Mid section'
+      region: content
+      parent_name: ''
+      weight: 15
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+        required_fields: true
 id: node.accommodation.default
 targetEntityType: node
 bundle: accommodation
@@ -63,7 +93,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 14
+    weight: 11
     region: content
     settings:
       rows: 9
@@ -73,13 +103,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_360:
     type: text_textarea
-    weight: 18
+    weight: 19
     region: content
     settings:
       rows: 5
@@ -87,9 +117,42 @@ content:
     third_party_settings: {  }
   field_accommodation_type:
     type: options_select
-    weight: 2
+    weight: 3
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_accordion:
+    type: paragraphs
+    weight: 17
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_booking_link:
+    type: link_default
+    weight: 10
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_bottom_image:
+    type: media_library_widget
+    weight: 16
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_button_text:
     type: string_textfield
@@ -117,7 +180,7 @@ content:
     third_party_settings: {  }
   field_detail:
     type: text_textfield
-    weight: 12
+    weight: 8
     region: content
     settings:
       size: 60
@@ -125,7 +188,7 @@ content:
     third_party_settings: {  }
   field_dropdown:
     type: text_textarea
-    weight: 17
+    weight: 18
     region: content
     settings:
       rows: 5
@@ -133,7 +196,7 @@ content:
     third_party_settings: {  }
   field_gallery:
     type: image_image
-    weight: 11
+    weight: 25
     region: content
     settings:
       progress_indicator: throbber
@@ -147,9 +210,53 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_main_image_one:
+    type: media_library_widget
+    weight: 12
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_main_image_two:
+    type: media_library_widget
+    weight: 13
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_media_gallery:
+    type: media_library_widget
+    weight: 7
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_mid_section_heading:
+    type: text_textarea
+    weight: 27
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_mid_section_images:
+    type: media_library_widget
+    weight: 29
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_mid_section_text:
+    type: text_textarea
+    weight: 28
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_overview:
     type: text_textarea
-    weight: 16
+    weight: 14
     region: content
     settings:
       rows: 5
@@ -157,7 +264,7 @@ content:
     third_party_settings: {  }
   field_portrait:
     type: image_image
-    weight: 15
+    weight: 26
     region: content
     settings:
       progress_indicator: throbber
@@ -165,7 +272,15 @@ content:
     third_party_settings: {  }
   field_price:
     type: string_textfield
-    weight: 13
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_strapline:
+    type: string_textfield
+    weight: 2
     region: content
     settings:
       size: 60
@@ -180,27 +295,27 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 6
+    weight: 24
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 23
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 7
+    weight: 21
     region: content
     settings:
       display_label: true
@@ -214,13 +329,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -229,7 +344,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 9
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }

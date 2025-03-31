@@ -6,12 +6,19 @@ dependencies:
     - field.storage.node.field_portrait
     - node.type.accommodation
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.accommodation.field_portrait
 field_name: field_portrait
 entity_type: node
 bundle: accommodation
-label: Portrait
+label: 'Legacy Portrait'
 description: ''
 required: false
 translatable: true

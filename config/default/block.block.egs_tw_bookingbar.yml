@@ -12,7 +12,7 @@ dependencies:
 id: egs_tw_bookingbar
 theme: egs_tw
 region: highlighted
-weight: 0
+weight: -10
 provider: null
 plugin: 'block_content:ede40f2c-4517-43a4-9b05-b13cb7f5d44d'
 settings:

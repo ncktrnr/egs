@@ -8,10 +8,16 @@ weight: 0
 tag_container_ids:
   - GTM-T9CZCC9
 advanced_settings:
+  consent_mode: false
   gtm:
     GTM-T9CZCC9:
       data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
       include_environment: false
+      environment_id: ''
+      environment_token: ''
 dimensions_metrics: {  }
 conditions: {  }
 events:

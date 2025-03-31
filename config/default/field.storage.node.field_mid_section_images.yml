@@ -1,0 +1,20 @@
+uuid: 56f2d31b-3c8b-401f-817d-a9df02822bc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_mid_section_images
+field_name: field_mid_section_images
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

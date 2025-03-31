@@ -7,9 +7,8 @@ mail: info@elgransueno.es
 slogan: ''
 page:
   403: ''
-  404: ''
+  404: /node/68
   front: /taxonomy/term/13
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: es
-mail_notification: null

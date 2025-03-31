@@ -7,6 +7,9 @@ dependencies:
     - field.field.node.accommodation.body
     - field.field.node.accommodation.field_360
     - field.field.node.accommodation.field_accommodation_type
+    - field.field.node.accommodation.field_accordion
+    - field.field.node.accommodation.field_booking_link
+    - field.field.node.accommodation.field_bottom_image
     - field.field.node.accommodation.field_button_text
     - field.field.node.accommodation.field_card_description
     - field.field.node.accommodation.field_card_image
@@ -14,14 +17,25 @@ dependencies:
     - field.field.node.accommodation.field_dropdown
     - field.field.node.accommodation.field_gallery
     - field.field.node.accommodation.field_icon
+    - field.field.node.accommodation.field_main_image_one
+    - field.field.node.accommodation.field_main_image_two
+    - field.field.node.accommodation.field_media_gallery
+    - field.field.node.accommodation.field_mid_section_heading
+    - field.field.node.accommodation.field_mid_section_images
+    - field.field.node.accommodation.field_mid_section_text
     - field.field.node.accommodation.field_overview
     - field.field.node.accommodation.field_portrait
     - field.field.node.accommodation.field_price
+    - field.field.node.accommodation.field_strapline
     - node.type.accommodation
+    - responsive_image.styles.hero
   module:
+    - entity_reference_revisions
     - field_group
     - image
     - layout_builder
+    - link
+    - photoswipe
     - text
     - user
 third_party_settings:
@@ -30,45 +44,50 @@ third_party_settings:
     allow_custom: false
   field_group:
     group_details:
-      children:
-        - group_detail
-        - group_360
+      children: {  }
       label: Details
       parent_name: ''
       region: content
-      weight: 7
-      format_type: accordion
+      weight: 22
+      format_type: tabs
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
+        label_as_html: false
+        direction: vertical
+        width_breakpoint: 640
         effect: none
     group_detail:
-      children:
-        - field_dropdown
+      children: {  }
       label: Información
-      parent_name: group_details
+      parent_name: ''
       region: content
-      weight: 16
-      format_type: accordion_item
+      weight: 21
+      format_type: tabs
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
+        label_as_html: false
         formatter: closed
+        direction: vertical
+        width_breakpoint: 640
     group_360:
-      children:
-        - field_360
+      children: {  }
       label: 360°
-      parent_name: group_details
+      parent_name: ''
       region: content
-      weight: 17
-      format_type: accordion_item
+      weight: 20
+      format_type: tabs
       format_settings:
         classes: ''
         show_empty_fields: false
         id: ''
+        label_as_html: false
         formatter: closed
+        direction: vertical
+        width_breakpoint: 640
 id: node.accommodation.full
 targetEntityType: node
 bundle: accommodation
@@ -79,28 +98,69 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_360:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    weight: 9
+    region: content
+  field_accordion:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_booking_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_bottom_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive
+      link: false
+    third_party_settings: {  }
+    weight: 15
     region: content
   field_detail:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_dropdown:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 8
+    region: content
+  field_gallery:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_icon:
     type: text_default
@@ -109,12 +169,65 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_main_image_one:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive
+      link: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_main_image_two:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive
+      link: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_media_gallery:
+    type: photoswipe_responsive_field_formatter
+    label: hidden
+    settings:
+      photoswipe_thumbnail_style_first: hero
+      photoswipe_thumbnail_style: hide
+      photoswipe_image_style: ''
+      photoswipe_reference_image_field: field_media_image
+      photoswipe_view_mode: full
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_mid_section_heading:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_mid_section_images:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: responsive
+      link: false
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_mid_section_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 17
+    region: content
   field_overview:
     type: text_default
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_portrait:
     type: image
@@ -125,11 +238,19 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_price:
     type: string
     label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_strapline:
+    type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -145,5 +266,5 @@ hidden:
   field_button_text: true
   field_card_description: true
   field_card_image: true
-  field_gallery: true
   langcode: true
+  layout_builder__layout: true

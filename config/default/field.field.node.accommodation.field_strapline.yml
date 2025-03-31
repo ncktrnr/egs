@@ -1,0 +1,19 @@
+uuid: 67e2bb09-43d9-4a39-930d-2ce7e1003e67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_strapline
+    - node.type.accommodation
+id: node.accommodation.field_strapline
+field_name: field_strapline
+entity_type: node
+bundle: accommodation
+label: Strapline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

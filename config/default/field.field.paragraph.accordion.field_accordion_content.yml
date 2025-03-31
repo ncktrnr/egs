@@ -1,0 +1,31 @@
+uuid: cb7be3f7-1392-4181-892d-9a9168bc7f45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_content
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - text
+id: paragraph.accordion.field_accordion_content
+field_name: field_accordion_content
+entity_type: paragraph
+bundle: accordion
+label: 'Accordion content'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '<p>Accordion content</p>'
+    format: basic_html
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+field_type: text_long

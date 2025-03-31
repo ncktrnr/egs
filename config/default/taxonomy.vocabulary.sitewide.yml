@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 name: Sitewide
 vid: sitewide
-description: 'Para navegación de alto nivel'
+description: 'For top level navigation'
 weight: 0
 new_revision: false

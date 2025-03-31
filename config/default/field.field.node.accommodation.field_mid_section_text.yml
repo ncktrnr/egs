@@ -1,0 +1,24 @@
+uuid: 631b4290-84da-4188-9e79-7be2f52fb25c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mid_section_text
+    - filter.format.basic_html
+    - node.type.accommodation
+  module:
+    - text
+id: node.accommodation.field_mid_section_text
+field_name: field_mid_section_text
+entity_type: node
+bundle: accommodation
+label: 'Mid section text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

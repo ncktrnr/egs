@@ -39,6 +39,12 @@ better_social_sharing_buttons.settings:
         reddit:
           type: string
           label: 'Reddit'
+        truth:
+          type: string
+          label: 'Truth'
+        bluesky:
+          type: string
+          label: 'Blue Sky'
         evernote:
           type: string
           label: 'Evernote'

@@ -1,0 +1,30 @@
+uuid: 1c5301a5-177b-488e-9b14-5659bea3e808
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2a059b5e-a601-4991-8681-a15ba6b76b8b'
+  module:
+    - block_content
+    - system
+  theme:
+    - egs_tw
+id: egs_tw_apartamentosbreadcrumb
+theme: egs_tw
+region: help
+weight: -10
+provider: null
+plugin: 'block_content:2a059b5e-a601-4991-8681-a15ba6b76b8b'
+settings:
+  id: 'block_content:2a059b5e-a601-4991-8681-a15ba6b76b8b'
+  label: 'Apartamentos breadcrumb'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/9\r\n/node/3\r\n/node/4"

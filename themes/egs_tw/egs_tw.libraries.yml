@@ -107,3 +107,6 @@ user:
     component:
       css/components/user.css:
         weight: -10
+alpine:
+  js:
+    https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js: { type: external, minified: true, attributes: { defer: true } }

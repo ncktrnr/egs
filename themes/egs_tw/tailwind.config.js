@@ -22,6 +22,7 @@ module.exports = {
         'gold': '#fdca40',
         'aths': '#d6cfb2',
         'aths-light': '#dad3b9',
+        'aths-lighter': '#eae5d6',
         'light-bg': '#f8f7f3',
         'v-light-bg':'#fbfbf9',
         'dark-engine': '#3c3e42',

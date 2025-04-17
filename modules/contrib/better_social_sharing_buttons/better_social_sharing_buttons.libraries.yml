@@ -9,6 +9,17 @@ copy-current-url:
   version: 1.x
   js:
     js/copy-current-url.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+
+bluesky:
+  version: 1.x
+  js:
+    js/bluesky.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
 
 # Load print css
 print-css:

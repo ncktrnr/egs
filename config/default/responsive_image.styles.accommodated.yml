@@ -1,0 +1,29 @@
+uuid: 763ec446-729f-4dcb-b93d-eb78064681e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.scale_620
+    - image.style.scale_960
+  theme:
+    - olivero
+id: accommodated
+label: accommodated
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: '_original image_'
+    breakpoint_id: olivero.grid-max
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_960
+    breakpoint_id: olivero.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: scale_620
+    breakpoint_id: olivero.md
+    multiplier: 1x
+breakpoint_group: olivero
+fallback_image_style: scale_960

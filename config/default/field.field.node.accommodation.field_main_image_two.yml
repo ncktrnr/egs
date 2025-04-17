@@ -1,0 +1,29 @@
+uuid: 6d9d258c-eaa3-41d3-889f-504581a13b35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_image_two
+    - media.type.image
+    - node.type.accommodation
+id: node.accommodation.field_main_image_two
+field_name: field_main_image_two
+entity_type: node
+bundle: accommodation
+label: 'main image two'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

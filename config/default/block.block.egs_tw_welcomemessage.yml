@@ -12,7 +12,7 @@ dependencies:
 id: egs_tw_welcomemessage
 theme: egs_tw
 region: content
-weight: -6
+weight: -11
 provider: null
 plugin: 'block_content:03bee75f-c02b-4196-bf49-2985c5e97224'
 settings:

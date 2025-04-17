@@ -196,8 +196,9 @@
     @apply text-slate-500 text-base;
   }
 
+ /*-- TODO make this responsive --*/
   .field--name-field-embed-media iframe {
-    @apply aspect-video max-w-[1024px];
+    @apply aspect-video max-w-[1024px] w-full ;
   }
   .field--name-field-video iframe {
     @apply h-auto aspect-video w-full;
@@ -235,4 +236,12 @@
   #block-egs-tw-homehero .field--name-body {
     @apply absolute top-3 right-3 z-10 w-60;
   }
+  .field--name-field-media-gallery img {
+    @apply w-full object-cover; 
+  }
+
+  .field--name-field-mid-section-heading h2 {
+    @apply mt-8 mb-4;
+  }
+
 }

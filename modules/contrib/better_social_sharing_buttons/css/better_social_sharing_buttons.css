@@ -1,57 +1,57 @@
 .social-sharing-buttons {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin: 2em 0;
 }
 
 .social-sharing-buttons a,
-.social-sharing-buttons__button {
-  text-decoration: none;
-  margin: 0 4px;
+.social-sharing-buttons-button {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin: 0 4px;
+  text-decoration: none;
 }
 
-.btnCopy {
+.btn-copy {
   position: relative;
   padding: 0;
   cursor: pointer;
 }
 
-.social-sharing-buttons__popup {
+.social-sharing-buttons-popup {
   position: absolute;
-  left: 50%;
   top: 0;
-  transform: translate(-50%, -100%);
-  background-color: black;
-  color: white;
-  font-size: small;
-  padding: 4px;
-  border-radius: 3px;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: all .5s ease;
-}
-
-.social-sharing-buttons__popup.visible {
-  opacity: 1;
-  height: auto;
-  overflow: unset;
-}
-
-.social-sharing-buttons__popup:before {
-  position: absolute;
   left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 100%);
+  display: none;
+  overflow: hidden;
+  height: 0;
+  padding: 4px;
+  transition: all 0.5s ease;
+  transform: translate(-50%, -100%);
+  color: white;
+  border-radius: 3px;
+  background-color: black;
+  font-size: small;
+}
+
+.social-sharing-buttons-popup.visible {
   display: block;
-  content: '';
+  overflow: unset;
+  height: auto;
+}
+
+.social-sharing-buttons-popup::before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+  content: "";
+  transform: translate(-50%, 100%);
   border-top: 10px solid black;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
 }

@@ -46,6 +46,8 @@ class BetterSocialSharingButtonsForm extends ConfigFormBase {
       'xing' => $this->t('Xing'),
       'tumblr' => $this->t('Tumblr'),
       'reddit' => $this->t('Reddit'),
+      'truth' => $this->t('Truth Social'),
+      'bluesky' => $this->t('Bluesky'),
       'evernote' => $this->t('Evernote'),
       'print' => $this->t('Print'),
       'copy' => $this->t('Copy current page url to clipboard'),

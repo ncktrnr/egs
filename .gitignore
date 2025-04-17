@@ -46,3 +46,9 @@ sites/simpletest
 *.sql.gz
 *.mysql
 *.mysql.gz
+
+# Ignore Lando overrides
+.lando.local.yml
+
+# Ignore MacOS files
+.DS_Store

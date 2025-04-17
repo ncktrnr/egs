@@ -1,0 +1,23 @@
+uuid: 9f6474e4-58fe-4828-a0e6-f26adc661b56
+langcode: en
+status: true
+dependencies: {  }
+name: scale_620
+label: 'Scale 620'
+effects:
+  3013e1b5-f652-4e2b-bc0f-dfd6d9a5a336:
+    uuid: 3013e1b5-f652-4e2b-bc0f-dfd6d9a5a336
+    id: image_scale
+    weight: 1
+    data:
+      width: 620
+      height: null
+      upscale: false
+  0778f612-4d3c-4619-9f4e-1107fa4b9570:
+    uuid: 0778f612-4d3c-4619-9f4e-1107fa4b9570
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 620
+      upscale: false

@@ -2735,8 +2735,11 @@ blockquote{
   color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
+/*-- TODO make this responsive --*/
+
 .field--name-field-embed-media iframe{
   aspect-ratio: 16 / 9;
+  width: 100%;
   max-width: 1024px;
 }
 
@@ -2836,12 +2839,31 @@ blockquote{
   width: 15rem;
 }
 
+.field--name-field-media-gallery img{
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.field--name-field-mid-section-heading h2{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .visible{
   visibility: visible;
 }
 
 .invisible{
   visibility: hidden;
+}
+
+.collapse{
+  visibility: collapse;
 }
 
 .absolute{
@@ -2860,12 +2882,16 @@ blockquote{
   inset: 0px;
 }
 
-.-left-28{
-  left: -7rem;
-}
-
 .-right-12{
   right: -3rem;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.left-1\/2{
+  left: 50%;
 }
 
 .right-0{
@@ -3053,6 +3079,10 @@ blockquote{
   margin-top: 1.5rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .block{
   display: block;
 }
@@ -3067,6 +3097,10 @@ blockquote{
 
 .flex{
   display: flex;
+}
+
+.inline-flex{
+  display: inline-flex;
 }
 
 .table{
@@ -3121,6 +3155,14 @@ blockquote{
   height: 100%;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
+.h-11{
+  height: 2.75rem;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -3139,6 +3181,10 @@ blockquote{
 
 .w-full{
   width: 100%;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .min-w-\[240px\]{
@@ -3170,8 +3216,17 @@ blockquote{
   max-width: 1024px;
 }
 
+.\!max-w-none{
+  max-width: none !important;
+}
+
 .shrink-0{
   flex-shrink: 0;
+}
+
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .translate-x-1{
@@ -3191,6 +3246,11 @@ blockquote{
 
 .rotate-12{
   --tw-rotate: 12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-180{
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3234,12 +3294,12 @@ blockquote{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -3331,6 +3391,12 @@ blockquote{
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
 .self-center{
   align-self: center;
 }
@@ -3357,6 +3423,10 @@ blockquote{
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
 }
 
 .border{
@@ -3451,6 +3521,11 @@ blockquote{
   background-color: rgb(218 211 185 / var(--tw-bg-opacity));
 }
 
+.bg-aths-lighter{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 229 214 / var(--tw-bg-opacity));
+}
+
 .bg-bakers{
   --tw-bg-opacity: 1;
   background-color: rgb(95 52 0 / var(--tw-bg-opacity));
@@ -3471,6 +3546,11 @@ blockquote{
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-gray-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
 .bg-light-bg{
   --tw-bg-opacity: 1;
   background-color: rgb(248 247 243 / var(--tw-bg-opacity));
@@ -3488,6 +3568,10 @@ blockquote{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
 }
 
 .bg-brick-pattern{
@@ -3659,6 +3743,15 @@ blockquote{
   padding-bottom: 1.5rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pb-12{
+  padding-bottom: 3rem;
+}
+
 .pb-24{
   padding-bottom: 6rem;
 }
@@ -3673,6 +3766,14 @@ blockquote{
 
 .pt-2{
   padding-top: 0.5rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -3783,9 +3884,18 @@ blockquote{
   color: rgb(80 89 28 / var(--tw-text-opacity));
 }
 
+.text-verdun-bright{
+  --tw-text-opacity: 1;
+  color: rgb(120 128 74 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline-offset-2{
+  text-underline-offset: 2px;
 }
 
 .opacity-0{
@@ -3832,6 +3942,12 @@ blockquote{
 
 .transition-all{
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform{
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -4549,6 +4665,10 @@ blockquote{
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
 }
 
+.focus-visible\:underline:focus-visible{
+  text-decoration-line: underline;
+}
+
 .group:hover .group-hover\:-translate-x-40{
   --tw-translate-x: -10rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4581,10 +4701,6 @@ blockquote{
     display: flex;
   }
 
-  .sm\:grid{
-    display: grid;
-  }
-
   .sm\:shrink-0{
     flex-shrink: 0;
   }
@@ -4597,8 +4713,8 @@ blockquote{
     flex-basis: 0px;
   }
 
-  .sm\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-row{
@@ -4611,6 +4727,10 @@ blockquote{
 
   .sm\:gap-12{
     gap: 3rem;
+  }
+
+  .sm\:gap-6{
+    gap: 1.5rem;
   }
 
   .sm\:gap-8{
@@ -4650,6 +4770,11 @@ blockquote{
 
   .sm\:pr-12{
     padding-right: 3rem;
+  }
+
+  .sm\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -4692,6 +4817,10 @@ blockquote{
 
   .md\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .md\:gap-12{
+    gap: 3rem;
   }
 
   .md\:pl-4{
@@ -4749,10 +4878,6 @@ blockquote{
     align-items: center;
   }
 
-  .lg\:gap-12{
-    gap: 3rem;
-  }
-
   .lg\:gap-24{
     gap: 6rem;
   }
@@ -4772,6 +4897,11 @@ blockquote{
 
   .lg\:pr-20{
     padding-right: 5rem;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
@@ -4855,6 +4985,10 @@ blockquote{
 
   .\32xl\:mr-6{
     margin-right: 1.5rem;
+  }
+
+  .\32xl\:gap-24{
+    gap: 6rem;
   }
 
   .\32xl\:pr-36{

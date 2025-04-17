@@ -11,7 +11,7 @@ _core:
 id: egs_tw_content
 theme: egs_tw
 region: content
-weight: -4
+weight: -10
 provider: null
 plugin: system_main_block
 settings:

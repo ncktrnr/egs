@@ -6,6 +6,9 @@ dependencies:
     - field.field.node.accommodation.body
     - field.field.node.accommodation.field_360
     - field.field.node.accommodation.field_accommodation_type
+    - field.field.node.accommodation.field_accordion
+    - field.field.node.accommodation.field_booking_link
+    - field.field.node.accommodation.field_bottom_image
     - field.field.node.accommodation.field_button_text
     - field.field.node.accommodation.field_card_description
     - field.field.node.accommodation.field_card_image
@@ -13,13 +16,25 @@ dependencies:
     - field.field.node.accommodation.field_dropdown
     - field.field.node.accommodation.field_gallery
     - field.field.node.accommodation.field_icon
+    - field.field.node.accommodation.field_main_image_one
+    - field.field.node.accommodation.field_main_image_two
+    - field.field.node.accommodation.field_media_gallery
+    - field.field.node.accommodation.field_mid_section_heading
+    - field.field.node.accommodation.field_mid_section_images
+    - field.field.node.accommodation.field_mid_section_text
     - field.field.node.accommodation.field_overview
     - field.field.node.accommodation.field_portrait
     - field.field.node.accommodation.field_price
+    - field.field.node.accommodation.field_strapline
+    - image.style.wide
     - node.type.accommodation
+    - responsive_image.styles.wide
   module:
+    - entity_reference_revisions
     - image
+    - link
     - options
+    - photoswipe
     - text
     - user
 id: node.accommodation.default
@@ -32,21 +47,51 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   field_360:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 108
+    weight: 8
     region: content
   field_accommodation_type:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 114
+    weight: 14
+    region: content
+  field_accordion:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 123
+    region: content
+  field_booking_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_bottom_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 119
     region: content
   field_button_text:
     type: string
@@ -54,14 +99,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 111
+    weight: 11
     region: content
   field_card_description:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 112
+    weight: 12
     region: content
   field_card_image:
     type: image
@@ -72,21 +117,21 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 110
+    weight: 10
     region: content
   field_detail:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 104
+    weight: 3
     region: content
   field_dropdown:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 109
+    weight: 9
     region: content
   field_gallery:
     type: image
@@ -97,21 +142,74 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 105
+    weight: 5
     region: content
   field_icon:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 113
+    weight: 13
+    region: content
+  field_main_image_one:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  field_main_image_two:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 118
+    region: content
+  field_media_gallery:
+    type: photoswipe_responsive_field_formatter
+    label: above
+    settings:
+      photoswipe_thumbnail_style_first: wide
+      photoswipe_thumbnail_style: hide
+      photoswipe_image_style: ''
+      photoswipe_reference_image_field: field_media_image
+      photoswipe_view_mode: default
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_mid_section_heading:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  field_mid_section_images:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 122
+    region: content
+  field_mid_section_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 121
     region: content
   field_overview:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 106
+    weight: 6
     region: content
   field_portrait:
     type: image
@@ -122,7 +220,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 107
+    weight: 7
     region: content
   field_price:
     type: string
@@ -130,12 +228,20 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 103
+    weight: 2
+    region: content
+  field_strapline:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 116
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   langcode: true

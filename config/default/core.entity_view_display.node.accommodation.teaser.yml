@@ -7,6 +7,9 @@ dependencies:
     - field.field.node.accommodation.body
     - field.field.node.accommodation.field_360
     - field.field.node.accommodation.field_accommodation_type
+    - field.field.node.accommodation.field_accordion
+    - field.field.node.accommodation.field_booking_link
+    - field.field.node.accommodation.field_bottom_image
     - field.field.node.accommodation.field_button_text
     - field.field.node.accommodation.field_card_description
     - field.field.node.accommodation.field_card_image
@@ -14,9 +17,16 @@ dependencies:
     - field.field.node.accommodation.field_dropdown
     - field.field.node.accommodation.field_gallery
     - field.field.node.accommodation.field_icon
+    - field.field.node.accommodation.field_main_image_one
+    - field.field.node.accommodation.field_main_image_two
+    - field.field.node.accommodation.field_media_gallery
+    - field.field.node.accommodation.field_mid_section_heading
+    - field.field.node.accommodation.field_mid_section_images
+    - field.field.node.accommodation.field_mid_section_text
     - field.field.node.accommodation.field_overview
     - field.field.node.accommodation.field_portrait
     - field.field.node.accommodation.field_price
+    - field.field.node.accommodation.field_strapline
     - node.type.accommodation
   module:
     - text
@@ -42,6 +52,9 @@ content:
 hidden:
   field_360: true
   field_accommodation_type: true
+  field_accordion: true
+  field_booking_link: true
+  field_bottom_image: true
   field_button_text: true
   field_card_description: true
   field_card_image: true
@@ -49,7 +62,14 @@ hidden:
   field_dropdown: true
   field_gallery: true
   field_icon: true
+  field_main_image_one: true
+  field_main_image_two: true
+  field_media_gallery: true
+  field_mid_section_heading: true
+  field_mid_section_images: true
+  field_mid_section_text: true
   field_overview: true
   field_portrait: true
   field_price: true
+  field_strapline: true
   langcode: true

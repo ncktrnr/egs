@@ -1,0 +1,23 @@
+uuid: 5fb8ed57-218b-4743-91fa-e71a858e7a0a
+langcode: en
+status: true
+dependencies: {  }
+name: scale_960
+label: 'Scale 960'
+effects:
+  1ffde75e-9516-4944-b684-7a4b0a8fdbde:
+    uuid: 1ffde75e-9516-4944-b684-7a4b0a8fdbde
+    id: image_scale
+    weight: 1
+    data:
+      width: 960
+      height: null
+      upscale: false
+  5e94cadb-2310-47ca-93ec-830610a54082:
+    uuid: 5e94cadb-2310-47ca-93ec-830610a54082
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 960
+      upscale: false

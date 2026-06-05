@@ -407,7 +407,13 @@ class InlineParagraphsWidget extends WidgetBase {
         // Avoid checking delete access for new entities.
         $delete_access = $paragraphs_entity->isNew() || $paragraphs_entity->access('delete');
         // Hide the button when translating.
-        $button_access = $delete_access && !$this->isTranslating;
+
+        $allow_reference_changes = \Drupal::configFactory()
+          ->getEditable('paragraphs.settings')
+          ->get('allow_reference_changes');
+        $button_access = (
+          $delete_access && ($allow_reference_changes || !$this->isTranslating)
+        );
         if ($item_mode != 'remove') {
           $links['remove_button'] = [
             '#type' => 'submit',
@@ -944,8 +950,11 @@ class InlineParagraphsWidget extends WidgetBase {
       // to get the langcode at a stage when the chosen value is more certain.
       $elements['#host'] = $host;
     }
-
-    if (($this->realItemCount < $cardinality || $cardinality == FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED) && !$form_state->isProgrammed() && !$this->isTranslating) {
+    
+    $allow_reference_changes = \Drupal::configFactory()
+      ->getEditable('paragraphs.settings')
+      ->get('allow_reference_changes');
+    if (($this->realItemCount < $cardinality || $cardinality == FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED) && !$form_state->isProgrammed() && (!$this->isTranslating || $allow_reference_changes)) {
       $elements['add_more'] = $this->buildAddActions();
     }
 
